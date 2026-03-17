@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-from PySide6.QtCore import QSortFilterProxyModel, Qt
-from PySide6.QtGui import QStandardItem, QStandardItemModel
+from PySide6.QtCore import QSize, QSortFilterProxyModel, Qt
+from PySide6.QtGui import QIcon, QStandardItem, QStandardItemModel
 from PySide6.QtWidgets import (
     QAbstractItemView,
     QComboBox,
@@ -12,14 +12,32 @@ from PySide6.QtWidgets import (
     QLabel,
     QLineEdit,
     QListWidget,
+    QListWidgetItem,
     QPushButton,
     QTableView,
     QVBoxLayout,
     QWidget,
 )
 
-from gui.game_data import GameData
+from gui.game_data import GameData, RelicInfo
 from gui.save_model import SaveModel
+
+ICON_SIZE = QSize(28, 28)
+
+
+def _relic_icon(relic: RelicInfo) -> QIcon:
+    if relic.image_path:
+        return QIcon(relic.image_path)
+    return QIcon()
+
+
+def _relic_tooltip(relic: RelicInfo) -> str:
+    parts = []
+    if relic.description:
+        parts.append(relic.description)
+    if relic.flavor:
+        parts.append(f"\n\"{relic.flavor}\"")
+    return "".join(parts)
 
 
 class RelicsPanel(QWidget):
@@ -41,6 +59,7 @@ class RelicsPanel(QWidget):
         left_inner = QVBoxLayout(left_group)
 
         self._relic_list = QListWidget()
+        self._relic_list.setIconSize(ICON_SIZE)
         left_inner.addWidget(self._relic_list)
 
         self._remove_btn = QPushButton("Remove Selected")
@@ -86,6 +105,7 @@ class RelicsPanel(QWidget):
         self._avail_table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self._avail_table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
         self._avail_table.setSortingEnabled(True)
+        self._avail_table.setIconSize(ICON_SIZE)
         self._avail_table.horizontalHeader().setStretchLastSection(True)
         right_inner.addWidget(self._avail_table)
 
@@ -109,13 +129,14 @@ class RelicsPanel(QWidget):
         self._avail_model.removeRows(0, self._avail_model.rowCount())
         items = relics if relics is not None else self._game_data.relics
         for relic in items:
-            row = [
-                QStandardItem(relic.name),
-                QStandardItem(relic.tier),
-            ]
-            for item in row:
-                item.setEditable(False)
-            self._avail_model.appendRow(row)
+            name_item = QStandardItem(_relic_icon(relic), relic.name)
+            tooltip = _relic_tooltip(relic)
+            if tooltip:
+                name_item.setToolTip(tooltip)
+            tier_item = QStandardItem(relic.tier)
+            name_item.setEditable(False)
+            tier_item.setEditable(False)
+            self._avail_model.appendRow([name_item, tier_item])
 
     def _apply_tier_filter(self) -> None:
         tier = self._tier_combo.currentData()
@@ -127,7 +148,19 @@ class RelicsPanel(QWidget):
         self._relic_list.clear()
         if self._model.is_loaded:
             for relic_name in self._model.relics:
-                self._relic_list.addItem(relic_name)
+                relic_info = (
+                    self._game_data.relics_by_name.get(relic_name)
+                    or self._game_data.relics_by_id.get(relic_name)
+                )
+                if relic_info:
+                    icon = _relic_icon(relic_info)
+                    item = QListWidgetItem(icon, relic_name)
+                    tooltip = _relic_tooltip(relic_info)
+                    if tooltip:
+                        item.setToolTip(tooltip)
+                else:
+                    item = QListWidgetItem(relic_name)
+                self._relic_list.addItem(item)
         self._updating = False
 
     def _on_add_relic(self) -> None:
