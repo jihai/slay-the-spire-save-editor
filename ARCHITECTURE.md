@@ -71,6 +71,14 @@ Files: `IRONCLAD.autosave`, `SILENT.autosave`, `DEFECT.autosave`, `WATCHER.autos
                │  cards.csv    │──→ 356 cards: name, color, type, rarity
                │  potions.csv  │──→ 43 potions: name
                │  relics.csv   │──→ 186 relics: name, tier
+               │               │
+               │  wiki_data.   │──→ Descriptions, flavor text, image paths
+               │  json         │    (merged into dataclasses at load time)
+               │               │
+               │  images/      │──→ 605 downloaded wiki images
+               │  ├─ cards/    │    (370 card thumbnails)
+               │  ├─ relics/   │    (193 relic icons)
+               │  └─ potions/  │    (42 potion icons)
                └───────────────┘
 ```
 
@@ -84,6 +92,10 @@ Thin layer over the CLI tool. Handles file discovery (scanning the Steam directo
 
 ### `gui/game_data.py` — Game reference data
 Loads the three CSV files into dataclasses (`CardInfo`, `PotionInfo`, `RelicInfo`) and provides lookup dicts and filter methods. Column names are defined as constants at the top of the file (e.g., `CARD_NAME_COL = "name"`) so they can be easily changed if the CSV schema changes.
+
+Also loads `game_resources/wiki_data.json` and merges wiki descriptions and image paths into each dataclass instance. Name matching is case-insensitive and tries both the display name and the raw CSV id (e.g., wiki "Apparition" matches CSV `id=Apparition` even though `name=Ghostly`). If wiki data or image files are missing, the app still works — fields default to empty strings.
+
+Dual-index lookups (`cards_by_name` / `cards_by_id`, etc.) let panels find items whether the save file uses display names or internal game IDs.
 
 ### `gui/save_model.py` — Save data model
 The central piece. A `QObject` subclass that wraps the raw JSON dict from a save file. Key design decisions:
@@ -100,15 +112,18 @@ Each panel is a self-contained `QWidget` that reads from and writes to the `Save
 | Panel | What it edits | Key widgets |
 |-------|--------------|-------------|
 | `stats_panel.py` | Gold, HP, act, floor, potion slots | `QSpinBox` with form layout |
-| `cards_panel.py` | Deck contents | Split view: deck table (left) + searchable card browser (right) |
-| `potions_panel.py` | Potion slots | One `QComboBox` per slot |
-| `relics_panel.py` | Equipped relics | Split view: relic list (left) + searchable relic browser (right) |
+| `cards_panel.py` | Deck contents | Split view: deck table with icons (left) + searchable card browser with thumbnails and description tooltips (right) |
+| `potions_panel.py` | Potion slots | One `QComboBox` per slot with potion icons and description tooltips |
+| `relics_panel.py` | Equipped relics | Split view: relic list with icons (left) + searchable relic browser with icons, description + flavor tooltips (right) |
 
 ### `gui/main_window.py` — Main window
 Assembles everything: menu bar, tab widget with the 4 panels, status bar. Handles file open/save dialogs, backup creation, and the unsaved-changes confirmation on close.
 
 ### `gui/app.py` + `gui/__main__.py` — Entry point
 `QApplication` setup. Run with `python -m gui`.
+
+### `scripts/scrape_wiki.py` — Wiki scraper (run once, offline)
+Fetches the three wiki list pages from `slaythespire.wiki.gg` (Cards_List, Relics_List, Potions_List), parses HTML with BeautifulSoup to extract names, descriptions, and image URLs, downloads images to `game_resources/images/`, and writes `game_resources/wiki_data.json`. Run manually with `python scripts/scrape_wiki.py` — output files are committed to the repo so the GUI needs no network access.
 
 ## Data Flow: Editing a Value
 
@@ -147,3 +162,6 @@ Save files are active game state — a corrupted file means a lost run. Backups 
 
 **Why `_updating` guard in panels?**
 Prevents signal loops. When the model emits `data_changed`, panels refresh their widgets, which would normally trigger the widget's own change signal (e.g., `valueChanged` on a `QSpinBox`), which would write back to the model. The `_updating` flag breaks this cycle.
+
+**Why scrape wiki data offline instead of fetching at runtime?**
+The wiki has 605 images across 3 pages. Downloading at startup would add seconds of latency and require network access. Instead, `scripts/scrape_wiki.py` runs once and commits the results. The GUI loads pre-downloaded images from disk — instant and works offline. If wiki data is missing, the app still functions (just without icons/descriptions).
