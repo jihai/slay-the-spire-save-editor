@@ -2,8 +2,8 @@
 
 from __future__ import annotations
 
-from PySide6.QtCore import QSortFilterProxyModel, Qt
-from PySide6.QtGui import QStandardItem, QStandardItemModel
+from PySide6.QtCore import QSize, QSortFilterProxyModel, Qt
+from PySide6.QtGui import QIcon, QStandardItem, QStandardItemModel
 from PySide6.QtWidgets import (
     QAbstractItemView,
     QComboBox,
@@ -19,8 +19,16 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from gui.game_data import GameData
+from gui.game_data import CardInfo, GameData
 from gui.save_model import SaveModel
+
+ICON_SIZE = QSize(40, 40)
+
+
+def _card_icon(card: CardInfo) -> QIcon:
+    if card.image_path:
+        return QIcon(card.image_path)
+    return QIcon()
 
 
 class CardsPanel(QWidget):
@@ -48,6 +56,7 @@ class CardsPanel(QWidget):
         self._deck_table.setModel(self._deck_table_model)
         self._deck_table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self._deck_table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
+        self._deck_table.setIconSize(ICON_SIZE)
         self._deck_table.horizontalHeader().setStretchLastSection(True)
         left_inner.addWidget(self._deck_table)
 
@@ -112,6 +121,7 @@ class CardsPanel(QWidget):
         self._avail_table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
         self._avail_table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
         self._avail_table.setSortingEnabled(True)
+        self._avail_table.setIconSize(ICON_SIZE)
         self._avail_table.horizontalHeader().setStretchLastSection(True)
         right_inner.addWidget(self._avail_table)
 
@@ -133,50 +143,46 @@ class CardsPanel(QWidget):
         self._set_upgrade_btn.clicked.connect(self._on_set_upgrade)
         self._model.data_changed.connect(self._refresh_deck)
 
+    def _make_card_row(self, card: CardInfo) -> list[QStandardItem]:
+        name_item = QStandardItem(_card_icon(card), card.name)
+        if card.description:
+            name_item.setToolTip(card.description)
+        color_item = QStandardItem(card.color)
+        type_item = QStandardItem(card.card_type)
+        rarity_item = QStandardItem(card.rarity)
+        for item in (name_item, color_item, type_item, rarity_item):
+            item.setEditable(False)
+        return [name_item, color_item, type_item, rarity_item]
+
     def _populate_available(self) -> None:
         self._avail_model.removeRows(0, self._avail_model.rowCount())
         for card in self._game_data.cards:
-            row = [
-                QStandardItem(card.name),
-                QStandardItem(card.color),
-                QStandardItem(card.card_type),
-                QStandardItem(card.rarity),
-            ]
-            for item in row:
-                item.setEditable(False)
-            self._avail_model.appendRow(row)
+            self._avail_model.appendRow(self._make_card_row(card))
 
     def _apply_filters(self) -> None:
         color = self._color_combo.currentData()
         card_type = self._type_combo.currentData()
         filtered = self._game_data.filter_cards(color=color, card_type=card_type)
-        names = {c.name for c in filtered}
-
-        for row in range(self._avail_model.rowCount()):
-            name = self._avail_model.item(row, 0).text()
-            source_index = self._avail_model.index(row, 0)
-            proxy_index = self._proxy_model.mapFromSource(source_index)
-            # Show/hide by checking if name is in filtered set
-            # We rebuild the model for simplicity
-        # Rebuild with filtered data
         self._avail_model.removeRows(0, self._avail_model.rowCount())
         for card in filtered:
-            row = [
-                QStandardItem(card.name),
-                QStandardItem(card.color),
-                QStandardItem(card.card_type),
-                QStandardItem(card.rarity),
-            ]
-            for item in row:
-                item.setEditable(False)
-            self._avail_model.appendRow(row)
+            self._avail_model.appendRow(self._make_card_row(card))
 
     def _refresh_deck(self) -> None:
         self._updating = True
         self._deck_table_model.removeRows(0, self._deck_table_model.rowCount())
         if self._model.is_loaded:
             for card in self._model.cards:
-                name_item = QStandardItem(card.get("id", "?"))
+                card_id = card.get("id", "?")
+                card_info = (
+                    self._game_data.cards_by_name.get(card_id)
+                    or self._game_data.cards_by_id.get(card_id)
+                )
+                icon = _card_icon(card_info) if card_info else QIcon()
+                tooltip = card_info.description if card_info else ""
+
+                name_item = QStandardItem(icon, card_id)
+                if tooltip:
+                    name_item.setToolTip(tooltip)
                 upgrades_item = QStandardItem(str(card.get("upgrades", 0)))
                 name_item.setEditable(False)
                 upgrades_item.setEditable(False)

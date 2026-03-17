@@ -88,10 +88,12 @@ def load_cards(path: Path | None = None) -> list[CardInfo]:
     result = []
     for row in rows:
         name = row[CARD_NAME_COL]
-        w = wiki_lower.get(name.lower(), {})
+        raw_id = row["id"]
+        # Try matching wiki by display name first, then by CSV id
+        w = wiki_lower.get(name.lower()) or wiki_lower.get(raw_id.lower(), {})
         result.append(
             CardInfo(
-                id=row[CARD_ID_COL],
+                id=raw_id,  # Always use raw CSV id for save-file lookups
                 name=name,
                 color=row[CARD_COLOR_COL],
                 card_type=row[CARD_TYPE_COL],
@@ -111,10 +113,11 @@ def load_potions(path: Path | None = None) -> list[PotionInfo]:
     result = []
     for row in rows:
         name = row[POTION_NAME_COL]
-        w = wiki_lower.get(name.lower(), {})
+        raw_id = row["id"]
+        w = wiki_lower.get(name.lower()) or wiki_lower.get(raw_id.lower(), {})
         result.append(
             PotionInfo(
-                id=row[POTION_ID_COL],
+                id=raw_id,  # Always use raw CSV id for save-file lookups
                 name=name,
                 description=w.get("description", ""),
                 image_path=_resolve_image(w.get("image", "")),
@@ -131,10 +134,11 @@ def load_relics(path: Path | None = None) -> list[RelicInfo]:
     result = []
     for row in rows:
         name = row[RELIC_NAME_COL]
-        w = wiki_lower.get(name.lower(), {})
+        raw_id = row["id"]
+        w = wiki_lower.get(name.lower()) or wiki_lower.get(raw_id.lower(), {})
         result.append(
             RelicInfo(
-                id=row[RELIC_ID_COL],
+                id=raw_id,  # Always use raw CSV id for save-file lookups
                 name=name,
                 tier=row[RELIC_TIER_COL],
                 description=w.get("description", ""),
@@ -159,8 +163,13 @@ class GameData:
         self.relics = load_relics()
 
         self.cards_by_name: dict[str, CardInfo] = {c.name: c for c in self.cards}
+        # Also index by CSV id column for save-file ID lookups (save files may
+        # use internal IDs that differ from display names, e.g. "Apparition" vs "Ghostly")
+        self.cards_by_id: dict[str, CardInfo] = {c.id: c for c in self.cards}
         self.potions_by_name: dict[str, PotionInfo] = {p.name: p for p in self.potions}
+        self.potions_by_id: dict[str, PotionInfo] = {p.id: p for p in self.potions}
         self.relics_by_name: dict[str, RelicInfo] = {r.name: r for r in self.relics}
+        self.relics_by_id: dict[str, RelicInfo] = {r.id: r for r in self.relics}
 
     def filter_cards(
         self,
