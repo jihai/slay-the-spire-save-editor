@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+from PySide6.QtCore import QSize, Qt
+from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import (
     QComboBox,
     QFormLayout,
@@ -10,10 +12,11 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
-from gui.game_data import GameData
+from gui.game_data import GameData, PotionInfo
 from gui.save_model import SaveModel
 
 EMPTY_POTION = "Potion Slot"
+ICON_SIZE = QSize(24, 24)
 
 
 class PotionsPanel(QWidget):
@@ -28,9 +31,9 @@ class PotionsPanel(QWidget):
         self._updating = False
         self._combos: list[QComboBox] = []
 
-        # Build the potion name list: empty slot + all potions sorted by name
-        self._potion_names = [EMPTY_POTION] + sorted(
-            [p.name for p in game_data.potions]
+        # Build sorted potion list for combo boxes
+        self._sorted_potions: list[PotionInfo] = sorted(
+            game_data.potions, key=lambda p: p.name
         )
 
         self._layout = QVBoxLayout(self)
@@ -40,6 +43,23 @@ class PotionsPanel(QWidget):
         self._layout.addStretch()
 
         self._model.data_changed.connect(self._refresh)
+
+    def _build_combo(self) -> QComboBox:
+        combo = QComboBox()
+        combo.setIconSize(ICON_SIZE)
+
+        # Add empty slot first
+        combo.addItem(EMPTY_POTION)
+
+        # Add all potions with icons and tooltips
+        for potion in self._sorted_potions:
+            icon = QIcon(potion.image_path) if potion.image_path else QIcon()
+            combo.addItem(icon, potion.name)
+            idx = combo.count() - 1
+            if potion.description:
+                combo.setItemData(idx, potion.description, Qt.ItemDataRole.ToolTipRole)
+
+        return combo
 
     def _refresh(self) -> None:
         self._updating = True
@@ -60,8 +80,7 @@ class PotionsPanel(QWidget):
         num_slots = max(len(potions), self._model.potion_slots)
 
         for i in range(num_slots):
-            combo = QComboBox()
-            combo.addItems(self._potion_names)
+            combo = self._build_combo()
 
             # Set current value
             current = potions[i] if i < len(potions) else EMPTY_POTION
@@ -69,7 +88,7 @@ class PotionsPanel(QWidget):
             if idx >= 0:
                 combo.setCurrentIndex(idx)
             else:
-                # Potion not in our list — add it as-is
+                # Potion not in our list — add it as-is (e.g. save-file ID)
                 combo.addItem(current)
                 combo.setCurrentIndex(combo.count() - 1)
 
