@@ -1,0 +1,357 @@
+id,name,color,type,rarity
+Aggregate,Aggregate,Blue,Skill,Uncommon
+AllForOne,All For One,Blue,Attack,Rare
+Amplify,Amplify,Blue,Skill,Rare
+AutoShields,Auto Shields,Blue,Skill,Uncommon
+BallLightning,Ball Lightning,Blue,Attack,Common
+Barrage,Barrage,Blue,Attack,Common
+BeamCell,Beam Cell,Blue,Attack,Common
+BiasedCognition,Biased Cognition,Blue,Power,Rare
+Blizzard,Blizzard,Blue,Attack,Uncommon
+BootSequence,BootSequence,Blue,Skill,Uncommon
+Buffer,Buffer,Blue,Power,Rare
+Capacitor,Capacitor,Blue,Power,Uncommon
+Chaos,Chaos,Blue,Skill,Uncommon
+Chill,Chill,Blue,Skill,Uncommon
+Claw,Gash,Blue,Attack,Common
+ColdSnap,Cold Snap,Blue,Attack,Common
+CompileDriver,Compile Driver,Blue,Attack,Common
+ConserveBattery,Conserve Battery,Blue,Skill,Common
+Consume,Consume,Blue,Skill,Uncommon
+Coolheaded,Coolheaded,Blue,Skill,Common
+CoreSurge,Core Surge,Blue,Attack,Rare
+CreativeAI,Creative AI,Blue,Power,Rare
+Darkness,Darkness,Blue,Skill,Uncommon
+Defend_Blue,Defend_B,Blue,Skill,Basic
+Defragment,Defragment,Blue,Power,Uncommon
+DoomAndGloom,Doom and Gloom,Blue,Attack,Uncommon
+DoubleEnergy,Double Energy,Blue,Skill,Uncommon
+Dualcast,Dualcast,Blue,Skill,Basic
+EchoForm,Echo Form,Blue,Power,Rare
+Electrodynamics,Electrodynamics,Blue,Power,Rare
+Equilibrium,Undo,Blue,Skill,Uncommon
+FTL,FTL,Blue,Attack,Uncommon
+Fission,Fission,Blue,Skill,Rare
+ForceField,Force Field,Blue,Skill,Uncommon
+Fusion,Fusion,Blue,Skill,Uncommon
+GeneticAlgorithm,Genetic Algorithm,Blue,Skill,Uncommon
+Glacier,Glacier,Blue,Skill,Uncommon
+GoForTheEyes,Go for the Eyes,Blue,Attack,Common
+Heatsinks,Heatsinks,Blue,Power,Uncommon
+HelloWorld,Hello World,Blue,Power,Uncommon
+Hologram,Hologram,Blue,Skill,Common
+Hyperbeam,Hyperbeam,Blue,Attack,Rare
+Impulse,Impulse,Blue,Skill,Uncommon
+Leap,Leap,Blue,Skill,Common
+LockOn,Lockon,Blue,Attack,Uncommon
+Loop,Loop,Blue,Power,Uncommon
+MachineLearning,Machine Learning,Blue,Power,Rare
+Melter,Melter,Blue,Attack,Uncommon
+MeteorStrike,Meteor Strike,Blue,Attack,Rare
+MultiCast,Multi-Cast,Blue,Skill,Rare
+Overclock,Steam Power,Blue,Skill,Uncommon
+Rainbow,Rainbow,Blue,Skill,Rare
+Reboot,Reboot,Blue,Skill,Rare
+Rebound,Rebound,Blue,Attack,Common
+Recursion,Redo,Blue,Skill,Common
+Recycle,Recycle,Blue,Skill,Uncommon
+ReinforcedBody,Reinforced Body,Blue,Skill,Uncommon
+Reprogram,Reprogram,Blue,Skill,Uncommon
+RipAndTear,Rip and Tear,Blue,Attack,Uncommon
+Scrape,Scrape,Blue,Attack,Uncommon
+Seek,Seek,Blue,Skill,Rare
+SelfRepair,Self Repair,Blue,Power,Uncommon
+Skim,Skim,Blue,Skill,Uncommon
+Stack,Stack,Blue,Skill,Common
+StaticDischarge,Static Discharge,Blue,Power,Uncommon
+SteamBarrier,Steam,Blue,Skill,Common
+Storm,Storm,Blue,Power,Uncommon
+Streamline,Streamline,Blue,Attack,Common
+Strike_Blue,Strike_B,Blue,Attack,Basic
+Sunder,Sunder,Blue,Attack,Uncommon
+SweepingBeam,Sweeping Beam,Blue,Attack,Common
+Tempest,Tempest,Blue,Skill,Uncommon
+ThunderStrike,Thunder Strike,Blue,Attack,Rare
+Turbo,Turbo,Blue,Skill,Common
+WhiteNoise,White Noise,Blue,Skill,Uncommon
+Zap,Zap,Blue,Skill,Basic
+Apotheosis,Apotheosis,Colorless,Skill,Rare
+Apparition,Ghostly,Colorless,Skill,Special
+BandageUp,Bandage Up,Colorless,Skill,Uncommon
+Bite,Bite,Colorless,Attack,Special
+Blind,Blind,Colorless,Skill,Uncommon
+Chrysalis,Chrysalis,Colorless,Skill,Rare
+DarkShackles,Dark Shackles,Colorless,Skill,Uncommon
+DeepBreath,Deep Breath,Colorless,Skill,Uncommon
+Discovery,Discovery,Colorless,Skill,Uncommon
+DramaticEntrance,Dramatic Entrance,Colorless,Attack,Uncommon
+Enlightenment,Enlightenment,Colorless,Skill,Uncommon
+Finesse,Finesse,Colorless,Skill,Uncommon
+FlashOfSteel,Flash of Steel,Colorless,Attack,Uncommon
+Forethought,Forethought,Colorless,Skill,Uncommon
+GoodInstincts,Good Instincts,Colorless,Skill,Uncommon
+HandOfGreed,HandOfGreed,Colorless,Attack,Rare
+Impatience,Impatience,Colorless,Skill,Uncommon
+JAX,J,Colorless,Skill,Special
+JackOfAllTrades,Jack Of All Trades,Colorless,Skill,Uncommon
+Madness,Madness,Colorless,Skill,Uncommon
+Magnetism,Magnetism,Colorless,Power,Rare
+MasterOfStrategy,Master of Strategy,Colorless,Skill,Rare
+Mayhem,Mayhem,Colorless,Power,Rare
+Metamorphosis,Metamorphosis,Colorless,Skill,Rare
+MindBlast,Mind Blast,Colorless,Attack,Uncommon
+Panacea,Panacea,Colorless,Skill,Uncommon
+Panache,Panache,Colorless,Power,Rare
+PanicButton,PanicButton,Colorless,Skill,Uncommon
+Purity,Purity,Colorless,Skill,Uncommon
+RitualDagger,RitualDagger,Colorless,Attack,Special
+SadisticNature,Sadistic Nature,Colorless,Power,Rare
+SecretTechnique,Secret Technique,Colorless,Skill,Rare
+SecretWeapon,Secret Weapon,Colorless,Skill,Rare
+SwiftStrike,Swift Strike,Colorless,Attack,Uncommon
+TheBomb,The Bomb,Colorless,Skill,Rare
+ThinkingAhead,Thinking Ahead,Colorless,Skill,Rare
+Transmutation,Transmutation,Colorless,Skill,Rare
+Trip,Trip,Colorless,Skill,Uncommon
+Violence,Violence,Colorless,Skill,Rare
+AscendersBane,AscendersBane,Curses,Curse,Special
+Clumsy,Clumsy,Curses,Curse,Curse
+CurseOfTheBell,CurseOfTheBell,Curses,Curse,Special
+Decay,Decay,Curses,Curse,Curse
+Doubt,Doubt,Curses,Curse,Curse
+Injury,Injury,Curses,Curse,Curse
+Necronomicurse,Necronomicurse,Curses,Curse,Special
+Normality,Normality,Curses,Curse,Curse
+Pain,Pain,Curses,Curse,Curse
+Parasite,Parasite,Curses,Curse,Curse
+Pride,Pride,Curses,Curse,Special
+Regret,Regret,Curses,Curse,Curse
+Shame,Shame,Curses,Curse,Curse
+Writhe,Writhe,Curses,Curse,Curse
+AThousandCuts,A Thousand Cuts,Green,Power,Rare
+Accuracy,Accuracy,Green,Power,Uncommon
+Acrobatics,Acrobatics,Green,Skill,Common
+Adrenaline,Adrenaline,Green,Skill,Rare
+AfterImage,After Image,Green,Power,Rare
+Alchemize,Venomology,Green,Skill,Rare
+AllOutAttack,All Out Attack,Green,Attack,Uncommon
+Backflip,Backflip,Green,Skill,Common
+Backstab,Backstab,Green,Attack,Uncommon
+Bane,Bane,Green,Attack,Common
+BladeDance,Blade Dance,Green,Skill,Common
+Blur,Blur,Green,Skill,Uncommon
+BouncingFlask,Bouncing Flask,Green,Skill,Uncommon
+BulletTime,Bullet Time,Green,Skill,Rare
+Burst,Burst,Green,Skill,Rare
+CalculatedGamble,Calculated Gamble,Green,Skill,Uncommon
+Caltrops,Caltrops,Green,Power,Uncommon
+Catalyst,Catalyst,Green,Skill,Uncommon
+Choke,Choke,Green,Attack,Uncommon
+CloakAndDagger,Cloak And Dagger,Green,Skill,Common
+Concentrate,Concentrate,Green,Skill,Uncommon
+CorpseExplosion,Corpse Explosion,Green,Skill,Rare
+CripplingPoison,Crippling Poison,Green,Skill,Uncommon
+DaggerSpray,Dagger Spray,Green,Attack,Common
+DaggerThrow,Dagger Throw,Green,Attack,Common
+Dash,Dash,Green,Attack,Uncommon
+DeadlyPoison,Deadly Poison,Green,Skill,Common
+Defend_Green,Defend_G,Green,Skill,Basic
+Deflect,Deflect,Green,Skill,Common
+DieDieDie,Die Die Die,Green,Attack,Rare
+Distraction,Distraction,Green,Skill,Uncommon
+DodgeAndRoll,Dodge and Roll,Green,Skill,Common
+Doppelganger,Doppelganger,Green,Skill,Rare
+EndlessAgony,Endless Agony,Green,Attack,Uncommon
+Envenom,Envenom,Green,Power,Rare
+EscapePlan,Escape Plan,Green,Skill,Uncommon
+Eviscerate,Eviscerate,Green,Attack,Uncommon
+Expertise,Expertise,Green,Skill,Uncommon
+Finisher,Finisher,Green,Attack,Uncommon
+Flechettes,Flechettes,Green,Attack,Uncommon
+FlyingKnee,Flying Knee,Green,Attack,Common
+Footwork,Footwork,Green,Power,Uncommon
+GlassKnife,Glass Knife,Green,Attack,Rare
+GrandFinale,Grand Finale,Green,Attack,Rare
+HeelHook,Heel Hook,Green,Attack,Uncommon
+InfiniteBlades,Infinite Blades,Green,Power,Uncommon
+LegSweep,Leg Sweep,Green,Skill,Uncommon
+Malaise,Malaise,Green,Skill,Rare
+MasterfulStab,Masterful Stab,Green,Attack,Uncommon
+Neutralize,Neutralize,Green,Attack,Basic
+Nightmare,Night Terror,Green,Skill,Rare
+NoxiousFumes,Noxious Fumes,Green,Power,Uncommon
+Outmaneuver,Outmaneuver,Green,Skill,Common
+PhantasmalKiller,Phantasmal Killer,Green,Skill,Rare
+PiercingWail,PiercingWail,Green,Skill,Common
+PoisonedStab,Poisoned Stab,Green,Attack,Common
+Predator,Predator,Green,Attack,Uncommon
+Prepared,Prepared,Green,Skill,Common
+QuickSlash,Quick Slash,Green,Attack,Common
+Reflex,Reflex,Green,Skill,Uncommon
+RiddleWithHoles,Riddle With Holes,Green,Attack,Uncommon
+Setup,Setup,Green,Skill,Uncommon
+Skewer,Skewer,Green,Attack,Uncommon
+Slice,Slice,Green,Attack,Common
+SneakyStrike,Underhanded Strike,Green,Attack,Common
+StormOfSteel,Storm of Steel,Green,Skill,Rare
+Strike_Green,Strike_G,Green,Attack,Basic
+SuckerPunch,Sucker Punch,Green,Attack,Common
+Survivor,Survivor,Green,Skill,Basic
+Tactician,Tactician,Green,Skill,Uncommon
+Terror,Terror,Green,Skill,Uncommon
+ToolsOfTheTrade,Tools of the Trade,Green,Power,Rare
+Unload,Unload,Green,Attack,Rare
+WellLaidPlans,Well Laid Plans,Green,Power,Uncommon
+WraithForm,Wraith Form v2,Green,Power,Rare
+Alpha,Alpha,Purple,Skill,Rare
+BattleHymn,BattleHymn,Purple,Power,Uncommon
+Blasphemy,Blasphemy,Purple,Skill,Rare
+BowlingBash,BowlingBash,Purple,Attack,Common
+Brilliance,Brilliance,Purple,Attack,Rare
+CarveReality,CarveReality,Purple,Attack,Uncommon
+Collect,Collect,Purple,Skill,Uncommon
+Conclude,Conclude,Purple,Attack,Uncommon
+ConjureBlade,ConjureBlade,Purple,Skill,Rare
+Consecrate,Consecrate,Purple,Attack,Common
+Crescendo,Crescendo,Purple,Skill,Common
+CrushJoints,CrushJoints,Purple,Attack,Common
+CutThroughFate,CutThroughFate,Purple,Attack,Common
+DeceiveReality,DeceiveReality,Purple,Skill,Uncommon
+Defend_Watcher,Defend_P,Purple,Skill,Basic
+DeusExMachina,DeusExMachina,Purple,Skill,Rare
+DevaForm,DevaForm,Purple,Power,Rare
+Devotion,Devotion,Purple,Power,Rare
+Discipline,Discipline,Purple,Power,Rare
+EmptyBody,EmptyBody,Purple,Skill,Common
+EmptyFist,EmptyFist,Purple,Attack,Common
+EmptyMind,EmptyMind,Purple,Skill,Uncommon
+Eruption,Eruption,Purple,Attack,Basic
+Establishment,Establishment,Purple,Power,Rare
+Evaluate,Evaluate,Purple,Skill,Common
+Fasting,Fasting2,Purple,Power,Uncommon
+FearNoEvil,FearNoEvil,Purple,Attack,Uncommon
+FlurryOfBlows,FlurryOfBlows,Purple,Attack,Common
+FlyingSleeves,FlyingSleeves,Purple,Attack,Common
+FollowUp,FollowUp,Purple,Attack,Common
+ForeignInfluence,ForeignInfluence,Purple,Skill,Uncommon
+Foresight,Wireheading,Purple,Power,Uncommon
+Halt,Halt,Purple,Skill,Common
+Indignation,Indignation,Purple,Skill,Uncommon
+InnerPeace,InnerPeace,Purple,Skill,Uncommon
+Judgement,Judgement,Purple,Skill,Rare
+JustLucky,JustLucky,Purple,Attack,Common
+LessonLearned,LessonLearned,Purple,Attack,Rare
+LikeWater,LikeWater,Purple,Power,Uncommon
+MasterReality,MasterReality,Purple,Power,Rare
+Meditate,Meditate,Purple,Skill,Uncommon
+MentalFortress,MentalFortress,Purple,Power,Uncommon
+Nirvana,Nirvana,Purple,Power,Uncommon
+Omniscience,Omniscience,Purple,Skill,Rare
+Perseverance,Perseverance,Purple,Skill,Uncommon
+Pray,Pray,Purple,Skill,Uncommon
+PressurePoints,PathToVictory,Purple,Skill,Common
+Prostrate,Prostrate,Purple,Skill,Common
+Protect,Protect,Purple,Skill,Common
+Ragnarok,Ragnarok,Purple,Attack,Rare
+ReachHeaven,ReachHeaven,Purple,Attack,Uncommon
+Rushdown,Adaptation,Purple,Power,Uncommon
+Sanctity,Sanctity,Purple,Skill,Uncommon
+SandsOfTime,SandsOfTime,Purple,Attack,Uncommon
+SashWhip,SashWhip,Purple,Attack,Common
+Scrawl,Scrawl,Purple,Skill,Rare
+SignatureMove,SignatureMove,Purple,Attack,Uncommon
+SimmeringFury,Vengeance,Purple,Skill,Uncommon
+SpiritShield,SpiritShield,Purple,Skill,Rare
+Strike_Purple,Strike_P,Purple,Attack,Basic
+Study,Study,Purple,Power,Uncommon
+Swivel,Swivel,Purple,Skill,Uncommon
+TalkToTheHand,TalkToTheHand,Purple,Attack,Uncommon
+Tantrum,Tantrum,Purple,Attack,Uncommon
+ThirdEye,ThirdEye,Purple,Skill,Common
+Tranquility,ClearTheMind,Purple,Skill,Common
+Unraveling,Unraveling,Purple,Skill,Rare
+Vault,Vault,Purple,Skill,Rare
+Vigilance,Vigilance,Purple,Skill,Basic
+Wallop,Wallop,Purple,Attack,Uncommon
+WaveOfTheHand,WaveOfTheHand,Purple,Skill,Uncommon
+Weave,Weave,Purple,Attack,Uncommon
+WheelKick,WheelKick,Purple,Attack,Uncommon
+WindmillStrike,WindmillStrike,Purple,Attack,Uncommon
+Wish,Wish,Purple,Skill,Rare
+Worship,Worship,Purple,Skill,Uncommon
+WreathOfFlame,WreathOfFlame,Purple,Skill,Uncommon
+Anger,Anger,Red,Attack,Common
+Armaments,Armaments,Red,Skill,Common
+Barricade,Barricade,Red,Power,Rare
+Bash,Bash,Red,Attack,Basic
+BattleTrance,Battle Trance,Red,Skill,Uncommon
+Berserk,Berserk,Red,Power,Rare
+BloodForBlood,Blood for Blood,Red,Attack,Uncommon
+Bloodletting,Bloodletting,Red,Skill,Uncommon
+Bludgeon,Bludgeon,Red,Attack,Rare
+BodySlam,Body Slam,Red,Attack,Common
+Brutality,Brutality,Red,Power,Rare
+BurningPact,Burning Pact,Red,Skill,Uncommon
+Carnage,Carnage,Red,Attack,Uncommon
+Clash,Clash,Red,Attack,Common
+Cleave,Cleave,Red,Attack,Common
+Clothesline,Clothesline,Red,Attack,Common
+Combust,Combust,Red,Power,Uncommon
+Corruption,Corruption,Red,Power,Rare
+DarkEmbrace,Dark Embrace,Red,Power,Uncommon
+Defend_Red,Defend_R,Red,Skill,Basic
+DemonForm,Demon Form,Red,Power,Rare
+Disarm,Disarm,Red,Skill,Uncommon
+DoubleTap,Double Tap,Red,Skill,Rare
+Dropkick,Dropkick,Red,Attack,Uncommon
+DualWield,Dual Wield,Red,Skill,Uncommon
+Entrench,Entrench,Red,Skill,Uncommon
+Evolve,Evolve,Red,Power,Uncommon
+Exhume,Exhume,Red,Skill,Rare
+Feed,Feed,Red,Attack,Rare
+FeelNoPain,Feel No Pain,Red,Power,Uncommon
+FiendFire,Fiend Fire,Red,Attack,Rare
+FireBreathing,Fire Breathing,Red,Power,Uncommon
+FlameBarrier,Flame Barrier,Red,Skill,Uncommon
+Flex,Flex,Red,Skill,Common
+GhostlyArmor,Ghostly Armor,Red,Skill,Uncommon
+Havoc,Havoc,Red,Skill,Common
+Headbutt,Headbutt,Red,Attack,Common
+HeavyBlade,Heavy Blade,Red,Attack,Common
+Hemokinesis,Hemokinesis,Red,Attack,Uncommon
+Immolate,Immolate,Red,Attack,Rare
+Impervious,Impervious,Red,Skill,Rare
+InfernalBlade,Infernal Blade,Red,Skill,Uncommon
+Inflame,Inflame,Red,Power,Uncommon
+Intimidate,Intimidate,Red,Skill,Uncommon
+IronWave,Iron Wave,Red,Attack,Common
+Juggernaut,Juggernaut,Red,Power,Rare
+LimitBreak,Limit Break,Red,Skill,Rare
+Metallicize,Metallicize,Red,Power,Uncommon
+Offering,Offering,Red,Skill,Rare
+PerfectedStrike,Perfected Strike,Red,Attack,Common
+PommelStrike,Pommel Strike,Red,Attack,Common
+PowerThrough,Power Through,Red,Skill,Uncommon
+Pummel,Pummel,Red,Attack,Uncommon
+Rage,Rage,Red,Skill,Uncommon
+Rampage,Rampage,Red,Attack,Uncommon
+Reaper,Reaper,Red,Attack,Rare
+RecklessCharge,Reckless Charge,Red,Attack,Uncommon
+Rupture,Rupture,Red,Power,Uncommon
+SearingBlow,Searing Blow,Red,Attack,Uncommon
+SecondWind,Second Wind,Red,Skill,Uncommon
+SeeingRed,Seeing Red,Red,Skill,Uncommon
+Sentinel,Sentinel,Red,Skill,Uncommon
+SeverSoul,Sever Soul,Red,Attack,Uncommon
+Shockwave,Shockwave,Red,Skill,Uncommon
+ShrugItOff,Shrug It Off,Red,Skill,Common
+SpotWeakness,Spot Weakness,Red,Skill,Uncommon
+Strike_Red,Strike_R,Red,Attack,Basic
+SwordBoomerang,Sword Boomerang,Red,Attack,Common
+ThunderClap,Thunderclap,Red,Attack,Common
+TrueGrit,True Grit,Red,Skill,Common
+TwinStrike,Twin Strike,Red,Attack,Common
+Uppercut,Uppercut,Red,Attack,Uncommon
+Warcry,Warcry,Red,Skill,Common
+Whirlwind,Whirlwind,Red,Attack,Uncommon
+WildStrike,Wild Strike,Red,Attack,Common
