@@ -3,7 +3,8 @@
 from __future__ import annotations
 
 import csv
-from dataclasses import dataclass
+import json
+from dataclasses import dataclass, field
 from pathlib import Path
 
 # Column names used to look up items. Change these if the CSV schema changes.
@@ -21,6 +22,8 @@ RELIC_NAME_COL = "name"
 RELIC_TIER_COL = "tier"
 
 GAME_RESOURCES_DIR = Path(__file__).resolve().parent.parent / "game_resources"
+IMAGES_DIR = GAME_RESOURCES_DIR / "images"
+WIKI_DATA_PATH = GAME_RESOURCES_DIR / "wiki_data.json"
 
 
 @dataclass(frozen=True)
@@ -30,12 +33,16 @@ class CardInfo:
     color: str
     card_type: str
     rarity: str
+    description: str = ""
+    image_path: str = ""
 
 
 @dataclass(frozen=True)
 class PotionInfo:
     id: str
     name: str
+    description: str = ""
+    image_path: str = ""
 
 
 @dataclass(frozen=True)
@@ -43,6 +50,9 @@ class RelicInfo:
     id: str
     name: str
     tier: str
+    description: str = ""
+    flavor: str = ""
+    image_path: str = ""
 
 
 def _load_csv(filename: str) -> list[dict[str, str]]:
@@ -51,41 +61,88 @@ def _load_csv(filename: str) -> list[dict[str, str]]:
         return list(csv.DictReader(f))
 
 
+def _load_wiki_data() -> dict:
+    """Load wiki_data.json if available, returning empty dict on failure."""
+    if not WIKI_DATA_PATH.exists():
+        return {}
+    try:
+        return json.loads(WIKI_DATA_PATH.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+
+
+def _resolve_image(relative: str) -> str:
+    """Resolve a relative image path to absolute, returning '' if not found."""
+    if not relative:
+        return ""
+    full = IMAGES_DIR / relative
+    return str(full) if full.exists() else ""
+
+
 def load_cards(path: Path | None = None) -> list[CardInfo]:
     rows = _load_csv("cards.csv") if path is None else _load_csv_path(path)
-    return [
-        CardInfo(
-            id=row[CARD_ID_COL],
-            name=row[CARD_NAME_COL],
-            color=row[CARD_COLOR_COL],
-            card_type=row[CARD_TYPE_COL],
-            rarity=row[CARD_RARITY_COL],
+    wiki = _load_wiki_data().get("cards", {})
+    # Build case-insensitive lookup for wiki data
+    wiki_lower = {k.lower(): v for k, v in wiki.items()}
+
+    result = []
+    for row in rows:
+        name = row[CARD_NAME_COL]
+        w = wiki_lower.get(name.lower(), {})
+        result.append(
+            CardInfo(
+                id=row[CARD_ID_COL],
+                name=name,
+                color=row[CARD_COLOR_COL],
+                card_type=row[CARD_TYPE_COL],
+                rarity=row[CARD_RARITY_COL],
+                description=w.get("description", ""),
+                image_path=_resolve_image(w.get("image", "")),
+            )
         )
-        for row in rows
-    ]
+    return result
 
 
 def load_potions(path: Path | None = None) -> list[PotionInfo]:
     rows = _load_csv("potions.csv") if path is None else _load_csv_path(path)
-    return [
-        PotionInfo(
-            id=row[POTION_ID_COL],
-            name=row[POTION_NAME_COL],
+    wiki = _load_wiki_data().get("potions", {})
+    wiki_lower = {k.lower(): v for k, v in wiki.items()}
+
+    result = []
+    for row in rows:
+        name = row[POTION_NAME_COL]
+        w = wiki_lower.get(name.lower(), {})
+        result.append(
+            PotionInfo(
+                id=row[POTION_ID_COL],
+                name=name,
+                description=w.get("description", ""),
+                image_path=_resolve_image(w.get("image", "")),
+            )
         )
-        for row in rows
-    ]
+    return result
 
 
 def load_relics(path: Path | None = None) -> list[RelicInfo]:
     rows = _load_csv("relics.csv") if path is None else _load_csv_path(path)
-    return [
-        RelicInfo(
-            id=row[RELIC_ID_COL],
-            name=row[RELIC_NAME_COL],
-            tier=row[RELIC_TIER_COL],
+    wiki = _load_wiki_data().get("relics", {})
+    wiki_lower = {k.lower(): v for k, v in wiki.items()}
+
+    result = []
+    for row in rows:
+        name = row[RELIC_NAME_COL]
+        w = wiki_lower.get(name.lower(), {})
+        result.append(
+            RelicInfo(
+                id=row[RELIC_ID_COL],
+                name=name,
+                tier=row[RELIC_TIER_COL],
+                description=w.get("description", ""),
+                flavor=w.get("flavor", ""),
+                image_path=_resolve_image(w.get("image", "")),
+            )
         )
-        for row in rows
-    ]
+    return result
 
 
 def _load_csv_path(path: Path) -> list[dict[str, str]]:
