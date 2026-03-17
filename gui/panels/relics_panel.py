@@ -21,8 +21,10 @@ from PySide6.QtWidgets import (
 
 from gui.game_data import GameData, RelicInfo
 from gui.save_model import SaveModel
+from gui.widgets.detail_strip import DetailStrip
+from gui.widgets.image_preview_dialog import ImagePreviewDialog
 
-ICON_SIZE = QSize(28, 28)
+ICON_SIZE = QSize(40, 40)
 
 
 def _relic_icon(relic: RelicInfo) -> QIcon:
@@ -61,6 +63,10 @@ class RelicsPanel(QWidget):
         self._relic_list = QListWidget()
         self._relic_list.setIconSize(ICON_SIZE)
         left_inner.addWidget(self._relic_list)
+
+        # Current relics detail strip
+        self._current_detail = DetailStrip(image_size=QSize(60, 60))
+        left_inner.addWidget(self._current_detail)
 
         self._remove_btn = QPushButton("Remove Selected")
         left_inner.addWidget(self._remove_btn)
@@ -107,7 +113,12 @@ class RelicsPanel(QWidget):
         self._avail_table.setSortingEnabled(True)
         self._avail_table.setIconSize(ICON_SIZE)
         self._avail_table.horizontalHeader().setStretchLastSection(True)
+        self._avail_table.verticalHeader().setDefaultSectionSize(46)
         right_inner.addWidget(self._avail_table)
+
+        # Available relics detail strip
+        self._avail_detail = DetailStrip(image_size=QSize(60, 60))
+        right_inner.addWidget(self._avail_detail)
 
         self._add_btn = QPushButton("Add Relic")
         right_inner.addWidget(self._add_btn)
@@ -124,6 +135,12 @@ class RelicsPanel(QWidget):
         self._add_btn.clicked.connect(self._on_add_relic)
         self._remove_btn.clicked.connect(self._on_remove_relic)
         self._model.data_changed.connect(self._refresh_relics)
+        self._avail_table.selectionModel().currentRowChanged.connect(
+            self._on_avail_selected
+        )
+        self._avail_table.doubleClicked.connect(self._on_avail_double_click)
+        self._relic_list.currentRowChanged.connect(self._on_current_selected)
+        self._relic_list.itemDoubleClicked.connect(self._on_current_double_click)
 
     def _populate_available(self, relics=None) -> None:
         self._avail_model.removeRows(0, self._avail_model.rowCount())
@@ -142,6 +159,7 @@ class RelicsPanel(QWidget):
         tier = self._tier_combo.currentData()
         filtered = self._game_data.filter_relics(tier=tier)
         self._populate_available(filtered)
+        self._avail_detail.clear()
 
     def _refresh_relics(self) -> None:
         self._updating = True
@@ -162,6 +180,63 @@ class RelicsPanel(QWidget):
                     item = QListWidgetItem(relic_name)
                 self._relic_list.addItem(item)
         self._updating = False
+        self._current_detail.clear()
+
+    def _lookup_relic(self, name: str) -> RelicInfo | None:
+        return (
+            self._game_data.relics_by_name.get(name)
+            or self._game_data.relics_by_id.get(name)
+        )
+
+    def _on_avail_selected(self, current, _previous) -> None:
+        if not current.isValid():
+            self._avail_detail.clear()
+            return
+        source_index = self._proxy_model.mapToSource(current)
+        relic_name = self._avail_model.item(source_index.row(), 0).text()
+        relic_info = self._lookup_relic(relic_name)
+        if relic_info:
+            self._avail_detail.set_relic(relic_info)
+        else:
+            self._avail_detail.clear()
+
+    def _on_current_selected(self, current_row: int) -> None:
+        if current_row < 0:
+            self._current_detail.clear()
+            return
+        item = self._relic_list.item(current_row)
+        if not item:
+            self._current_detail.clear()
+            return
+        relic_info = self._lookup_relic(item.text())
+        if relic_info:
+            self._current_detail.set_relic(relic_info)
+        else:
+            self._current_detail.clear()
+
+    def _on_avail_double_click(self, proxy_index) -> None:
+        source_index = self._proxy_model.mapToSource(proxy_index)
+        relic_name = self._avail_model.item(source_index.row(), 0).text()
+        relic_info = self._lookup_relic(relic_name)
+        if relic_info:
+            self._show_relic_preview(relic_info)
+
+    def _on_current_double_click(self, item) -> None:
+        relic_info = self._lookup_relic(item.text())
+        if relic_info:
+            self._show_relic_preview(relic_info)
+
+    def _show_relic_preview(self, relic: RelicInfo) -> None:
+        dlg = ImagePreviewDialog(
+            image_path=relic.image_path,
+            title=relic.name,
+            subtitle=relic.tier,
+            description=relic.description,
+            flavor=relic.flavor,
+            image_display_size=QSize(200, 200),
+            parent=self,
+        )
+        dlg.exec()
 
     def _on_add_relic(self) -> None:
         indexes = self._avail_table.selectionModel().selectedRows()

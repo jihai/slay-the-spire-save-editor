@@ -21,6 +21,8 @@ from PySide6.QtWidgets import (
 
 from gui.game_data import CardInfo, GameData
 from gui.save_model import SaveModel
+from gui.widgets.detail_strip import DetailStrip
+from gui.widgets.image_preview_dialog import ImagePreviewDialog
 
 ICON_SIZE = QSize(40, 40)
 
@@ -58,7 +60,12 @@ class CardsPanel(QWidget):
         self._deck_table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
         self._deck_table.setIconSize(ICON_SIZE)
         self._deck_table.horizontalHeader().setStretchLastSection(True)
+        self._deck_table.verticalHeader().setDefaultSectionSize(46)
         left_inner.addWidget(self._deck_table)
+
+        # Deck detail strip
+        self._deck_detail = DetailStrip(image_size=QSize(60, 77))
+        left_inner.addWidget(self._deck_detail)
 
         # Upgrade controls
         upgrade_row = QHBoxLayout()
@@ -123,7 +130,12 @@ class CardsPanel(QWidget):
         self._avail_table.setSortingEnabled(True)
         self._avail_table.setIconSize(ICON_SIZE)
         self._avail_table.horizontalHeader().setStretchLastSection(True)
+        self._avail_table.verticalHeader().setDefaultSectionSize(46)
         right_inner.addWidget(self._avail_table)
+
+        # Available cards detail strip
+        self._avail_detail = DetailStrip(image_size=QSize(60, 77))
+        right_inner.addWidget(self._avail_detail)
 
         self._add_btn = QPushButton("Add to Deck")
         right_inner.addWidget(self._add_btn)
@@ -142,6 +154,14 @@ class CardsPanel(QWidget):
         self._remove_btn.clicked.connect(self._on_remove_card)
         self._set_upgrade_btn.clicked.connect(self._on_set_upgrade)
         self._model.data_changed.connect(self._refresh_deck)
+        self._avail_table.selectionModel().currentRowChanged.connect(
+            self._on_avail_selected
+        )
+        self._avail_table.doubleClicked.connect(self._on_avail_double_click)
+        self._deck_table.selectionModel().currentRowChanged.connect(
+            self._on_deck_selected
+        )
+        self._deck_table.doubleClicked.connect(self._on_deck_double_click)
 
     def _make_card_row(self, card: CardInfo) -> list[QStandardItem]:
         name_item = QStandardItem(_card_icon(card), card.name)
@@ -166,6 +186,7 @@ class CardsPanel(QWidget):
         self._avail_model.removeRows(0, self._avail_model.rowCount())
         for card in filtered:
             self._avail_model.appendRow(self._make_card_row(card))
+        self._avail_detail.clear()
 
     def _refresh_deck(self) -> None:
         self._updating = True
@@ -188,6 +209,64 @@ class CardsPanel(QWidget):
                 upgrades_item.setEditable(False)
                 self._deck_table_model.appendRow([name_item, upgrades_item])
         self._updating = False
+        self._deck_detail.clear()
+
+    def _lookup_avail_card(self, proxy_index):
+        """Look up CardInfo from a proxy model index in the available table."""
+        source_index = self._proxy_model.mapToSource(proxy_index)
+        card_name = self._avail_model.item(source_index.row(), 0).text()
+        return (
+            self._game_data.cards_by_name.get(card_name)
+            or self._game_data.cards_by_id.get(card_name)
+        )
+
+    def _lookup_deck_card(self, row: int):
+        """Look up CardInfo from a row in the deck table."""
+        card_id = self._deck_table_model.item(row, 0).text()
+        return (
+            self._game_data.cards_by_name.get(card_id)
+            or self._game_data.cards_by_id.get(card_id)
+        )
+
+    def _on_avail_selected(self, current, _previous) -> None:
+        if not current.isValid():
+            self._avail_detail.clear()
+            return
+        card_info = self._lookup_avail_card(current)
+        if card_info:
+            self._avail_detail.set_card(card_info)
+        else:
+            self._avail_detail.clear()
+
+    def _on_deck_selected(self, current, _previous) -> None:
+        if not current.isValid():
+            self._deck_detail.clear()
+            return
+        card_info = self._lookup_deck_card(current.row())
+        if card_info:
+            self._deck_detail.set_card(card_info)
+        else:
+            self._deck_detail.clear()
+
+    def _on_avail_double_click(self, proxy_index) -> None:
+        card_info = self._lookup_avail_card(proxy_index)
+        if card_info:
+            self._show_card_preview(card_info)
+
+    def _on_deck_double_click(self, index) -> None:
+        card_info = self._lookup_deck_card(index.row())
+        if card_info:
+            self._show_card_preview(card_info)
+
+    def _show_card_preview(self, card: CardInfo) -> None:
+        dlg = ImagePreviewDialog(
+            image_path=card.image_path,
+            title=card.name,
+            subtitle=f"{card.color}  |  {card.card_type}  |  {card.rarity}",
+            description=card.description,
+            parent=self,
+        )
+        dlg.exec()
 
     def _on_add_card(self) -> None:
         indexes = self._avail_table.selectionModel().selectedRows()
