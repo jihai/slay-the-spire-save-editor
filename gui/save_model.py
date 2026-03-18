@@ -122,6 +122,14 @@ class SaveModel(QObject):
         self._set_int("floor_num", value)
 
     @property
+    def ascension_level(self) -> int:
+        return self._get_int("ascension_level")
+
+    @ascension_level.setter
+    def ascension_level(self, value: int) -> None:
+        self._set_int("ascension_level", value)
+
+    @property
     def potion_slots(self) -> int:
         return self._get_int("potion_slots", 3)
 

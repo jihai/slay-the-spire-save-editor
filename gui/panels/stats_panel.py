@@ -53,6 +53,9 @@ class StatsPanel(QWidget):
         prog_group = QGroupBox("Progression")
         prog_layout = QFormLayout(prog_group)
 
+        self._ascension_spin = self._make_spin(0, 20)
+        prog_layout.addRow("Ascension:", self._ascension_spin)
+
         self._act_spin = self._make_spin(1, 4)
         prog_layout.addRow("Act:", self._act_spin)
 
@@ -69,6 +72,7 @@ class StatsPanel(QWidget):
         self._gold_spin.valueChanged.connect(self._on_gold_changed)
         self._hp_spin.valueChanged.connect(self._on_hp_changed)
         self._max_hp_spin.valueChanged.connect(self._on_max_hp_changed)
+        self._ascension_spin.valueChanged.connect(self._on_ascension_changed)
         self._act_spin.valueChanged.connect(self._on_act_changed)
         self._floor_spin.valueChanged.connect(self._on_floor_changed)
         self._potion_slots_spin.valueChanged.connect(self._on_potion_slots_changed)
@@ -91,6 +95,7 @@ class StatsPanel(QWidget):
             self._gold_spin,
             self._hp_spin,
             self._max_hp_spin,
+            self._ascension_spin,
             self._act_spin,
             self._floor_spin,
             self._potion_slots_spin,
@@ -101,6 +106,7 @@ class StatsPanel(QWidget):
             self._gold_spin.setValue(self._model.gold)
             self._hp_spin.setValue(self._model.current_health)
             self._max_hp_spin.setValue(self._model.max_health)
+            self._ascension_spin.setValue(self._model.ascension_level)
             self._act_spin.setValue(self._model.act_num)
             self._floor_spin.setValue(self._model.floor_num)
             self._potion_slots_spin.setValue(self._model.potion_slots)
@@ -119,6 +125,10 @@ class StatsPanel(QWidget):
     def _on_max_hp_changed(self, value: int) -> None:
         if not self._updating:
             self._model.max_health = value
+
+    def _on_ascension_changed(self, value: int) -> None:
+        if not self._updating:
+            self._model.ascension_level = value
 
     def _on_act_changed(self, value: int) -> None:
         if not self._updating:
