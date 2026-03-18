@@ -17,6 +17,7 @@ from PySide6.QtWidgets import (
 from gui.game_data import GameData
 from gui.panels.cards_panel import CardsPanel
 from gui.panels.potions_panel import PotionsPanel
+from gui.panels.raw_json_panel import RawJsonPanel
 from gui.panels.relics_panel import RelicsPanel
 from gui.panels.stats_panel import StatsPanel
 from gui.save_io import DEFAULT_SAVE_DIR, create_backup, find_save_files, load_save, write_save
@@ -40,11 +41,13 @@ class MainWindow(QMainWindow):
         self._cards_panel = CardsPanel(self._model, self._game_data)
         self._potions_panel = PotionsPanel(self._model, self._game_data)
         self._relics_panel = RelicsPanel(self._model, self._game_data)
+        self._raw_json_panel = RawJsonPanel(self._model)
 
         self._tabs.addTab(self._stats_panel, "Stats")
         self._tabs.addTab(self._cards_panel, "Cards")
         self._tabs.addTab(self._potions_panel, "Potions")
         self._tabs.addTab(self._relics_panel, "Relics")
+        self._tabs.addTab(self._raw_json_panel, "Raw JSON")
         self.setCentralWidget(self._tabs)
 
         # -- Menu bar --
