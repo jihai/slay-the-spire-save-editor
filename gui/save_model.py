@@ -153,6 +153,15 @@ class SaveModel(QObject):
             self._dirty = True
             self.data_changed.emit()
 
+    def remove_cards(self, indices: list[int]) -> None:
+        """Remove multiple cards by index in a single operation."""
+        cards = self.cards
+        for i in sorted(indices, reverse=True):
+            if 0 <= i < len(cards):
+                cards.pop(i)
+        self._dirty = True
+        self.data_changed.emit()
+
     def set_card_upgrades(self, index: int, upgrades: int) -> None:
         cards = self.cards
         if 0 <= index < len(cards):

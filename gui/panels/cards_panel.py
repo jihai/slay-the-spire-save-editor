@@ -57,6 +57,7 @@ class CardsPanel(QWidget):
         self._deck_table = QTableView()
         self._deck_table.setModel(self._deck_table_model)
         self._deck_table.setSelectionBehavior(QAbstractItemView.SelectionBehavior.SelectRows)
+        self._deck_table.setSelectionMode(QAbstractItemView.SelectionMode.ExtendedSelection)
         self._deck_table.setEditTriggers(QAbstractItemView.EditTrigger.NoEditTriggers)
         self._deck_table.setIconSize(ICON_SIZE)
         self._deck_table.horizontalHeader().setStretchLastSection(True)
@@ -275,14 +276,14 @@ class CardsPanel(QWidget):
         proxy_index = indexes[0]
         source_index = self._proxy_model.mapToSource(proxy_index)
         card_name = self._avail_model.item(source_index.row(), 0).text()
-        self._model.add_card(card_name)
+        self._model.add_card(card_name, upgrades=1)
 
     def _on_remove_card(self) -> None:
         indexes = self._deck_table.selectionModel().selectedRows()
         if not indexes:
             return
-        row = indexes[0].row()
-        self._model.remove_card(row)
+        rows = [idx.row() for idx in indexes]
+        self._model.remove_cards(rows)
 
     def _on_set_upgrade(self) -> None:
         indexes = self._deck_table.selectionModel().selectedRows()
