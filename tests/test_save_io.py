@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 from sts_save_editor import encode_save
-from gui.save_io import create_backup, find_save_files, load_save, write_save
+from gui.save_io import find_save_files, load_save, write_save
 
 SAMPLE_DATA = {"gold": 99, "current_health": 72, "cards": [{"id": "Bash", "upgrades": 0, "misc": 0}]}
 
@@ -38,13 +38,3 @@ class TestLoadAndWriteSave:
         write_save(save_path, SAMPLE_DATA)
         loaded = load_save(save_path)
         assert loaded == SAMPLE_DATA
-
-
-class TestCreateBackup:
-    def test_creates_backup_file(self, tmp_path):
-        original = tmp_path / "test.autosave"
-        original.write_text("original content")
-        backup = create_backup(original)
-        assert backup.exists()
-        assert backup.read_text() == "original content"
-        assert ".bak." in backup.name

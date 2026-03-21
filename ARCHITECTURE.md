@@ -53,8 +53,6 @@ Files: `IRONCLAD.autosave`, `SILENT.autosave`, `DEFECT.autosave`, `WATCHER.autos
                │  files()      │
                │  load_save()  │──→ Reads file, calls decode_save()
                │  write_save() │──→ Calls encode_save(), writes file
-               │  create_      │──→ Timestamped .bak copy before overwriting
-               │  backup()     │
                └───────┬───────┘
                        │ uses
                        ▼
@@ -88,7 +86,7 @@ Files: `IRONCLAD.autosave`, `SILENT.autosave`, `DEFECT.autosave`, `WATCHER.autos
 The foundation. Provides `decode_save()` / `encode_save()` functions that the GUI imports directly. Also works standalone as a CLI: `python sts_save_editor.py decode|encode|edit <file>`.
 
 ### `gui/save_io.py` — File I/O
-Thin layer over the CLI tool. Handles file discovery (scanning the Steam directory), reading/writing save files, and creating timestamped backups. The GUI never calls `decode_save`/`encode_save` directly — it goes through this module.
+Thin layer over the CLI tool. Handles file discovery (scanning the Steam directory) and reading/writing save files. The GUI never calls `decode_save`/`encode_save` directly — it goes through this module.
 
 ### `gui/game_data.py` — Game reference data
 Loads the three CSV files into dataclasses (`CardInfo`, `PotionInfo`, `RelicInfo`) and provides lookup dicts and filter methods. Column names are defined as constants at the top of the file (e.g., `CARD_NAME_COL = "name"`) so they can be easily changed if the CSV schema changes.
@@ -117,7 +115,7 @@ Each panel is a self-contained `QWidget` that reads from and writes to the `Save
 | `relics_panel.py` | Equipped relics | Split view: relic list with icons (left) + searchable relic browser with icons, description + flavor tooltips (right) |
 
 ### `gui/main_window.py` — Main window
-Assembles everything: menu bar, tab widget with the 4 panels, status bar. Handles file open/save dialogs, backup creation, and the unsaved-changes confirmation on close.
+Assembles everything: menu bar, tab widget with the 4 panels, status bar. Handles file open/save dialogs and the unsaved-changes confirmation on close.
 
 ### `gui/app.py` + `gui/__main__.py` — Entry point
 `QApplication` setup. Run with `python -m gui`.
@@ -143,10 +141,9 @@ Example: user changes gold from 99 to 3000.
 ```
 1. User clicks File → Save (Ctrl+S)
 2. MainWindow._save() called
-3. create_backup() copies original file to .bak.{timestamp}
-4. write_save() calls encode_save(model.raw) → writes to file
-5. model.mark_clean() resets dirty flag, emits data_changed
-6. Title bar "*" disappears
+3. write_save() calls encode_save(model.raw) → writes to file
+4. model.mark_clean() resets dirty flag, emits data_changed
+5. Title bar "*" disappears
 ```
 
 ## Key Design Decisions
@@ -156,9 +153,6 @@ The save JSON has ~80 fields. Typing them all would be premature and fragile. By
 
 **Why a single `data_changed` signal?**
 Simplicity. All panels refresh from the same signal. If a future panel needs to react only to specific changes, the model can be extended with fine-grained signals without breaking existing panels.
-
-**Why backup before every save?**
-Save files are active game state — a corrupted file means a lost run. Backups are cheap (~7-10 KB) and provide an easy undo. Backups are timestamped so multiple saves don't overwrite each other.
 
 **Why `_updating` guard in panels?**
 Prevents signal loops. When the model emits `data_changed`, panels refresh their widgets, which would normally trigger the widget's own change signal (e.g., `valueChanged` on a `QSpinBox`), which would write back to the model. The `_updating` flag breaks this cycle.

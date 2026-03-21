@@ -26,7 +26,7 @@ Save location (macOS): `~/Library/Application Support/Steam/steamapps/common/Sla
 | Layer | File(s) | Purpose |
 |-------|---------|---------|
 | Codec | `sts_save_editor.py` | XOR + Base64 encode/decode; also works as a standalone CLI (`decode`/`encode`/`edit`) |
-| File I/O | `gui/save_io.py` | `load_save`, `write_save`, `create_backup` (timestamped `.bak.*` copies) |
+| File I/O | `gui/save_io.py` | `load_save`, `write_save` |
 | Data model | `gui/save_model.py` | QObject wrapping the raw save dict. Typed properties for ~10 fields (gold, HP, cards, potions, relics, etc.). Emits `data_changed` signal on mutation. Dirty tracking for unsaved state. ~80 other save-file fields pass through untouched. |
 | Game data | `gui/game_data.py` | Loads `cards.csv`, `potions.csv`, `relics.csv` + `wiki_data.json` into frozen dataclasses (`CardInfo`, `PotionInfo`, `RelicInfo`). Dual-index dicts: `*_by_name` (display name) and `*_by_id` (internal save-file ID). |
 | Main window | `gui/main_window.py` | Menu bar + QTabWidget with 4 panels + status bar |

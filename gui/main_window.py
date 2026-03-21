@@ -20,7 +20,7 @@ from gui.panels.potions_panel import PotionsPanel
 from gui.panels.raw_json_panel import RawJsonPanel
 from gui.panels.relics_panel import RelicsPanel
 from gui.panels.stats_panel import StatsPanel
-from gui.save_io import DEFAULT_SAVE_DIR, create_backup, find_save_files, load_save, write_save
+from gui.save_io import DEFAULT_SAVE_DIR, find_save_files, load_save, write_save
 from gui.save_model import SaveModel
 
 APP_TITLE = "Slay the Spire Save Editor"
@@ -150,9 +150,6 @@ class MainWindow(QMainWindow):
 
     def _write_to(self, path: Path) -> None:
         try:
-            if path.exists():
-                backup = create_backup(path)
-                self._status_bar.showMessage(f"Backup: {backup.name}")
             write_save(path, self._model.raw)
             self._model.mark_clean()
             self._status_bar.showMessage(f"Saved: {path}")

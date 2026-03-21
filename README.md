@@ -9,7 +9,6 @@ A desktop GUI application for editing [Slay the Spire](https://store.steampowere
 - **Potions** -- Swap potions in each slot from a dropdown with icons and descriptions
 - **Relics** -- Add or remove relics with image previews and wiki descriptions
 - **Raw JSON** -- View and manually edit the underlying save data for advanced users
-- Automatic timestamped backups on every save
 - Supports all four characters: Ironclad, Silent, Defect, Watcher
 
 ## Installation
