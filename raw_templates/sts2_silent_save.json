@@ -23,7 +23,7 @@
         {"floor_added_to_deck": 1, "id": "CARD.DEFEND_SILENT"},
         {"floor_added_to_deck": 1, "id": "CARD.NEUTRALIZE"},
         {"floor_added_to_deck": 1, "id": "CARD.SURVIVOR"},
-        {"floor_added_to_deck": 3, "id": "CARD.DASH"},
+        {"current_upgrade_level": 1, "floor_added_to_deck": 3, "id": "CARD.DASH"},
         {"floor_added_to_deck": 5, "id": "CARD.BOUNCING_FLASK"}
       ],
       "discovered_cards": [],

@@ -49,5 +49,5 @@ def sts2_config() -> GameConfig:
         file_filter="Save Files (*.save);;All Files (*)",
         game_resources_dir=_PROJECT_ROOT / "game_resources_sts2",
         encrypted=False,
-        has_card_upgrades=False,
+        has_card_upgrades=True,
     )

@@ -68,7 +68,7 @@ class TestSTS2Config:
 
     def test_has_card_upgrades(self):
         cfg = sts2_config()
-        assert cfg.has_card_upgrades is False
+        assert cfg.has_card_upgrades is True
 
     def test_game_resources_dir_name(self):
         cfg = sts2_config()

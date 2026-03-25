@@ -151,10 +151,29 @@ class TestCardOperations:
         model.remove_cards([0, 2])
         assert len(model.cards) == initial - 2
 
-    def test_set_card_upgrades_is_noop(self, model):
-        """STS2 cards have no upgrades field — this should not crash."""
-        model.set_card_upgrades(0, 5)
-        assert "upgrades" not in model.cards[0]
+    def test_set_card_upgrades(self, model):
+        """STS2 cards use current_upgrade_level for upgrades."""
+        model.set_card_upgrades(0, 2)
+        assert model.cards[0]["current_upgrade_level"] == 2
+        assert model.dirty is True
+
+    def test_set_card_upgrades_zero_removes_key(self, model):
+        """Setting upgrades to 0 removes the current_upgrade_level key."""
+        # Card at index 7 (CARD.DASH) has current_upgrade_level=1 in fixture
+        model.set_card_upgrades(7, 0)
+        assert "current_upgrade_level" not in model.cards[7]
+
+    def test_add_card_with_upgrades(self, model):
+        initial = len(model.cards)
+        model.add_card("CARD.TEST", upgrades=1)
+        added = model.cards[-1]
+        assert added["current_upgrade_level"] == 1
+
+    def test_existing_upgrade_level_preserved(self, model):
+        """The fixture has CARD.DASH at index 7 with current_upgrade_level=1."""
+        dash = model.cards[7]
+        assert dash["id"] == "CARD.DASH"
+        assert dash["current_upgrade_level"] == 1
 
 
 class TestRelicOperations:

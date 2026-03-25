@@ -224,7 +224,9 @@ class CardsPanel(QWidget):
                 name_item.setEditable(False)
 
                 if self._has_upgrades:
-                    upgrades_item = QStandardItem(str(card.get("upgrades", 0)))
+                    # STS1 uses "upgrades", STS2 uses "current_upgrade_level"
+                    upg = card.get("upgrades") or card.get("current_upgrade_level", 0)
+                    upgrades_item = QStandardItem(str(upg))
                     upgrades_item.setEditable(False)
                     self._deck_table_model.appendRow([name_item, upgrades_item])
                 else:

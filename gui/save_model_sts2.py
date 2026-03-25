@@ -163,8 +163,10 @@ class SaveModelSTS2(QObject):
         self.data_changed.emit()
 
     def add_card(self, card_id: str, upgrades: int = 0) -> None:
-        """Add a card. The upgrades param is accepted for API compat but ignored."""
-        self.cards.append({"id": card_id, "floor_added_to_deck": 0})
+        entry = {"id": card_id, "floor_added_to_deck": 0}
+        if upgrades:
+            entry["current_upgrade_level"] = upgrades
+        self.cards.append(entry)
         self._dirty = True
         self.data_changed.emit()
 
@@ -184,8 +186,14 @@ class SaveModelSTS2(QObject):
         self.data_changed.emit()
 
     def set_card_upgrades(self, index: int, upgrades: int) -> None:
-        """No-op for STS2 — cards don't have an upgrades field."""
-        pass
+        cards = self.cards
+        if 0 <= index < len(cards):
+            if upgrades:
+                cards[index]["current_upgrade_level"] = upgrades
+            else:
+                cards[index].pop("current_upgrade_level", None)
+            self._dirty = True
+            self.data_changed.emit()
 
     @property
     def potions(self) -> list[str]:
