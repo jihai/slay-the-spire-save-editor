@@ -6,15 +6,18 @@ from pathlib import Path
 
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import (
+    QComboBox,
     QFileDialog,
+    QLabel,
     QMainWindow,
     QMessageBox,
     QStatusBar,
     QTabWidget,
+    QToolBar,
     QWidget,
 )
 
-from gui.game_config import GameConfig, sts1_config
+from gui.game_config import GameConfig, sts1_config, sts2_config
 from gui.game_data import GameData
 from gui.panels.cards_panel import CardsPanel
 from gui.panels.potions_panel import PotionsPanel
@@ -24,16 +27,20 @@ from gui.panels.stats_panel import StatsPanel
 from gui.save_io import find_save_files, load_save, write_save
 from gui.save_model import SaveModel
 from gui.save_model_sts2 import SaveModelSTS2
+from gui.settings import set_steam_user_id
+from gui.steam import detect_steam_users
 
 
 class MainWindow(QMainWindow):
     def __init__(
         self,
         config: GameConfig | None = None,
+        steam_user_id: str | None = None,
         parent: QWidget | None = None,
     ) -> None:
         super().__init__(parent)
         self._config = config or sts1_config()
+        self._steam_user_id = steam_user_id
         self.setWindowTitle(self._config.app_title)
         self.resize(1000, 700)
 
@@ -43,6 +50,10 @@ class MainWindow(QMainWindow):
             self._model = SaveModelSTS2(self)
         else:
             self._model = SaveModel(self)
+
+        # -- Steam user toolbar (STS2 only) --
+        if self._config.game_version == 2:
+            self._build_steam_toolbar()
 
         # -- Tab widget --
         self._tabs = QTabWidget()
@@ -97,6 +108,29 @@ class MainWindow(QMainWindow):
         # -- Model signals --
         self._model.data_changed.connect(self._update_title)
 
+    def _build_steam_toolbar(self) -> None:
+        toolbar = QToolBar("Steam User")
+        toolbar.setMovable(False)
+        toolbar.addWidget(QLabel("  Steam User ID: "))
+        self._steam_user_combo = QComboBox()
+        self._steam_user_combo.setMinimumWidth(140)
+        users = detect_steam_users()
+        for uid in users:
+            self._steam_user_combo.addItem(uid, uid)
+        if self._steam_user_id and self._steam_user_id in users:
+            self._steam_user_combo.setCurrentText(self._steam_user_id)
+        self._steam_user_combo.currentTextChanged.connect(self._on_steam_user_changed)
+        toolbar.addWidget(self._steam_user_combo)
+        self.addToolBar(toolbar)
+
+    def _on_steam_user_changed(self, user_id: str) -> None:
+        if not user_id or user_id == self._steam_user_id:
+            return
+        self._steam_user_id = user_id
+        set_steam_user_id(user_id)
+        self._config = sts2_config(steam_user_id=user_id)
+        self._status_bar.showMessage(f"Switched to Steam user {user_id}")
+
     def _update_title(self) -> None:
         title = self._config.app_title
         if not self._model.is_loaded:
@@ -130,11 +164,13 @@ class MainWindow(QMainWindow):
     def _upload_file(self) -> None:
         save_dir = self._config.save_dir
         start_dir = str(save_dir) if save_dir.is_dir() else ""
+        # Use non-native dialog to avoid macOS greying out .save files
         path, _ = QFileDialog.getOpenFileName(
             self,
             "Open Save File",
             start_dir,
             self._config.file_filter,
+            options=QFileDialog.Option.DontUseNativeDialog,
         )
         if path:
             self._load_file(Path(path))

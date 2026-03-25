@@ -74,6 +74,16 @@ class TestSTS2Config:
         cfg = sts2_config()
         assert cfg.game_resources_dir.name == "game_resources_sts2"
 
+    def test_save_dir_with_steam_user_id(self):
+        cfg = sts2_config(steam_user_id="12345")
+        assert "12345" in str(cfg.save_dir)
+        assert "2868840" in str(cfg.save_dir)
+        assert str(cfg.save_dir).endswith("saves")
+
+    def test_save_dir_without_steam_user_id(self):
+        cfg = sts2_config()
+        assert str(cfg.save_dir).endswith("userdata")
+
     def test_is_gameconfig_instance(self):
         assert isinstance(sts1_config(), GameConfig)
         assert isinstance(sts2_config(), GameConfig)

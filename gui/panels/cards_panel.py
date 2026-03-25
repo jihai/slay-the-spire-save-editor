@@ -13,7 +13,6 @@ from PySide6.QtWidgets import (
     QLabel,
     QLineEdit,
     QPushButton,
-    QSpinBox,
     QTableView,
     QVBoxLayout,
     QWidget,
@@ -77,16 +76,13 @@ class CardsPanel(QWidget):
         self._deck_detail = DetailStrip(image_size=QSize(60, 77))
         left_inner.addWidget(self._deck_detail)
 
-        # Upgrade controls (STS1 only)
+        # Upgrade buttons
         if self._has_upgrades:
             upgrade_row = QHBoxLayout()
-            upgrade_row.addWidget(QLabel("Upgrades:"))
-            self._upgrade_spin = QSpinBox()
-            self._upgrade_spin.setMinimum(0)
-            self._upgrade_spin.setMaximum(100)
-            upgrade_row.addWidget(self._upgrade_spin)
-            self._set_upgrade_btn = QPushButton("Set")
-            upgrade_row.addWidget(self._set_upgrade_btn)
+            self._upgrade_selected_btn = QPushButton("Upgrade Selected")
+            self._upgrade_all_btn = QPushButton("Upgrade All")
+            upgrade_row.addWidget(self._upgrade_selected_btn)
+            upgrade_row.addWidget(self._upgrade_all_btn)
             left_inner.addLayout(upgrade_row)
 
         self._remove_btn = QPushButton("Remove Selected")
@@ -168,7 +164,8 @@ class CardsPanel(QWidget):
         self._add_btn.clicked.connect(self._on_add_card)
         self._remove_btn.clicked.connect(self._on_remove_card)
         if self._has_upgrades:
-            self._set_upgrade_btn.clicked.connect(self._on_set_upgrade)
+            self._upgrade_selected_btn.clicked.connect(self._on_upgrade_selected)
+            self._upgrade_all_btn.clicked.connect(self._on_upgrade_all)
         self._model.data_changed.connect(self._refresh_deck)
         self._avail_table.selectionModel().currentRowChanged.connect(
             self._on_avail_selected
@@ -300,7 +297,7 @@ class CardsPanel(QWidget):
         if not card_info:
             return
         # Use the card's internal ID for the save file
-        self._model.add_card(card_info.id, upgrades=1 if self._has_upgrades else 0)
+        self._model.add_card(card_info.id)
 
     def _on_remove_card(self) -> None:
         indexes = self._deck_table.selectionModel().selectedRows()
@@ -309,9 +306,23 @@ class CardsPanel(QWidget):
         rows = [idx.row() for idx in indexes]
         self._model.remove_cards(rows)
 
-    def _on_set_upgrade(self) -> None:
+    def _card_upgrade_level(self, idx: int) -> int:
+        """Return the current upgrade level of a card by deck index."""
+        card = self._model.cards[idx]
+        return card.get("upgrades") or card.get("current_upgrade_level", 0)
+
+    def _on_upgrade_selected(self) -> None:
         indexes = self._deck_table.selectionModel().selectedRows()
         if not indexes:
             return
-        row = indexes[0].row()
-        self._model.set_card_upgrades(row, self._upgrade_spin.value())
+        for idx in indexes:
+            row = idx.row()
+            if self._card_upgrade_level(row) < 1:
+                self._model.set_card_upgrades(row, 1)
+
+    def _on_upgrade_all(self) -> None:
+        if not self._model.is_loaded:
+            return
+        for i in range(len(self._model.cards)):
+            if self._card_upgrade_level(i) < 1:
+                self._model.set_card_upgrades(i, 1)
