@@ -1,0 +1,60 @@
+{
+  "acts": [
+    {
+      "id": "ACT.OVERGROWTH",
+      "rooms": {}
+    }
+  ],
+  "ascension": 0,
+  "current_act_index": 0,
+  "extra_fields": {},
+  "modifiers": [],
+  "platform_type": "steam",
+  "players": [
+    {
+      "base_orb_slot_count": 0,
+      "character_id": "CHARACTER.SILENT",
+      "current_hp": 28,
+      "deck": [
+        {"floor_added_to_deck": 1, "id": "CARD.STRIKE_SILENT"},
+        {"floor_added_to_deck": 1, "id": "CARD.STRIKE_SILENT"},
+        {"floor_added_to_deck": 1, "id": "CARD.STRIKE_SILENT"},
+        {"floor_added_to_deck": 1, "id": "CARD.DEFEND_SILENT"},
+        {"floor_added_to_deck": 1, "id": "CARD.DEFEND_SILENT"},
+        {"floor_added_to_deck": 1, "id": "CARD.NEUTRALIZE"},
+        {"floor_added_to_deck": 1, "id": "CARD.SURVIVOR"},
+        {"floor_added_to_deck": 3, "id": "CARD.DASH"},
+        {"floor_added_to_deck": 5, "id": "CARD.BOUNCING_FLASK"}
+      ],
+      "discovered_cards": [],
+      "discovered_enemies": [],
+      "discovered_relics": [],
+      "extra_fields": {},
+      "gold": 264,
+      "max_energy": 3,
+      "max_hp": 70,
+      "max_potion_slot_count": 3,
+      "net_id": "test_net_id",
+      "potions": [
+        {"id": "POTION.CLARITY", "slot_index": 0},
+        {"id": "POTION.LUCKY_TONIC", "slot_index": 1}
+      ],
+      "relic_grab_bag": {},
+      "relics": [
+        {"floor_added_to_deck": 1, "id": "RELIC.RING_OF_THE_SNAKE"},
+        {"floor_added_to_deck": 1, "id": "RELIC.LARGE_CAPSULE"},
+        {"floor_added_to_deck": 1, "id": "RELIC.BELLOWS"}
+      ],
+      "rng": {},
+      "unlock_state": {}
+    }
+  ],
+  "rng": {"seed": "TESTSEED"},
+  "run_time": 600000,
+  "save_time": 1700000000,
+  "schema_version": 14,
+  "shared_relic_grab_bag": {},
+  "start_time": 1699999000,
+  "visited_map_coords": [],
+  "win_time": 0
+}

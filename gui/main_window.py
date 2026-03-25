@@ -14,31 +14,42 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
+from gui.game_config import GameConfig, sts1_config
 from gui.game_data import GameData
 from gui.panels.cards_panel import CardsPanel
 from gui.panels.potions_panel import PotionsPanel
 from gui.panels.raw_json_panel import RawJsonPanel
 from gui.panels.relics_panel import RelicsPanel
 from gui.panels.stats_panel import StatsPanel
-from gui.save_io import DEFAULT_SAVE_DIR, find_save_files, load_save, write_save
+from gui.save_io import find_save_files, load_save, write_save
 from gui.save_model import SaveModel
-
-APP_TITLE = "Slay the Spire Save Editor"
+from gui.save_model_sts2 import SaveModelSTS2
 
 
 class MainWindow(QMainWindow):
-    def __init__(self, parent: QWidget | None = None) -> None:
+    def __init__(
+        self,
+        config: GameConfig | None = None,
+        parent: QWidget | None = None,
+    ) -> None:
         super().__init__(parent)
-        self.setWindowTitle(APP_TITLE)
+        self._config = config or sts1_config()
+        self.setWindowTitle(self._config.app_title)
         self.resize(1000, 700)
 
-        self._game_data = GameData()
-        self._model = SaveModel(self)
+        self._game_data = GameData(resources_dir=self._config.game_resources_dir)
+
+        if self._config.game_version == 2:
+            self._model = SaveModelSTS2(self)
+        else:
+            self._model = SaveModel(self)
 
         # -- Tab widget --
         self._tabs = QTabWidget()
         self._stats_panel = StatsPanel(self._model)
-        self._cards_panel = CardsPanel(self._model, self._game_data)
+        self._cards_panel = CardsPanel(
+            self._model, self._game_data, config=self._config
+        )
         self._potions_panel = PotionsPanel(self._model, self._game_data)
         self._relics_panel = RelicsPanel(self._model, self._game_data)
         self._raw_json_panel = RawJsonPanel(self._model)
@@ -87,10 +98,11 @@ class MainWindow(QMainWindow):
         self._model.data_changed.connect(self._update_title)
 
     def _update_title(self) -> None:
+        title = self._config.app_title
         if not self._model.is_loaded:
-            self.setWindowTitle(APP_TITLE)
+            self.setWindowTitle(title)
             return
-        parts = [APP_TITLE]
+        parts = [title]
         if self._model.file_path:
             parts.append(f"— {Path(self._model.file_path).name}")
         parts.append(f"[{self._model.character}]")
@@ -99,13 +111,11 @@ class MainWindow(QMainWindow):
         self.setWindowTitle(" ".join(parts))
 
     def _open_save_dir(self) -> None:
-        saves = find_save_files()
+        saves = find_save_files(config=self._config)
         if not saves:
-            # Fall back to file dialog if no saves found
             self._upload_file()
             return
 
-        # Let user pick from found save files
         names = [p.name for p in saves]
         path_map = {p.name: p for p in saves}
 
@@ -118,16 +128,20 @@ class MainWindow(QMainWindow):
             self._load_file(path_map[name])
 
     def _upload_file(self) -> None:
-        start_dir = str(DEFAULT_SAVE_DIR) if DEFAULT_SAVE_DIR.is_dir() else ""
+        save_dir = self._config.save_dir
+        start_dir = str(save_dir) if save_dir.is_dir() else ""
         path, _ = QFileDialog.getOpenFileName(
-            self, "Open Save File", start_dir, "Save Files (*.autosave);;All Files (*)"
+            self,
+            "Open Save File",
+            start_dir,
+            self._config.file_filter,
         )
         if path:
             self._load_file(Path(path))
 
     def _load_file(self, path: Path) -> None:
         try:
-            data = load_save(path)
+            data = load_save(path, config=self._config)
             self._model.load(data, file_path=str(path))
             self._status_bar.showMessage(f"Loaded: {path}")
         except Exception as e:
@@ -140,9 +154,12 @@ class MainWindow(QMainWindow):
         self._write_to(Path(self._model.file_path))
 
     def _save_as(self) -> None:
-        start_dir = self._model.file_path or str(DEFAULT_SAVE_DIR)
+        start_dir = self._model.file_path or str(self._config.save_dir)
         path, _ = QFileDialog.getSaveFileName(
-            self, "Save As", start_dir, "Save Files (*.autosave);;All Files (*)"
+            self,
+            "Save As",
+            start_dir,
+            self._config.file_filter,
         )
         if path:
             self._model.file_path = path
@@ -150,7 +167,7 @@ class MainWindow(QMainWindow):
 
     def _write_to(self, path: Path) -> None:
         try:
-            write_save(path, self._model.raw)
+            write_save(path, self._model.raw, config=self._config)
             self._model.mark_clean()
             self._status_bar.showMessage(f"Saved: {path}")
         except Exception as e:

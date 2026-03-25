@@ -19,8 +19,8 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
+from gui.game_config import GameConfig
 from gui.game_data import CardInfo, GameData
-from gui.save_model import SaveModel
 from gui.widgets.detail_strip import DetailStrip
 from gui.widgets.image_preview_dialog import ImagePreviewDialog
 
@@ -37,11 +37,17 @@ class CardsPanel(QWidget):
     """Deck editor with card browser, search, and filters."""
 
     def __init__(
-        self, model: SaveModel, game_data: GameData, parent: QWidget | None = None
+        self,
+        model,
+        game_data: GameData,
+        config: GameConfig | None = None,
+        parent: QWidget | None = None,
     ) -> None:
         super().__init__(parent)
         self._model = model
         self._game_data = game_data
+        self._config = config
+        self._has_upgrades = config.has_card_upgrades if config else True
         self._updating = False
 
         layout = QHBoxLayout(self)
@@ -52,7 +58,10 @@ class CardsPanel(QWidget):
         left_inner = QVBoxLayout(left_group)
 
         self._deck_table_model = QStandardItemModel()
-        self._deck_table_model.setHorizontalHeaderLabels(["Card", "Upgrades"])
+        if self._has_upgrades:
+            self._deck_table_model.setHorizontalHeaderLabels(["Card", "Upgrades"])
+        else:
+            self._deck_table_model.setHorizontalHeaderLabels(["Card"])
 
         self._deck_table = QTableView()
         self._deck_table.setModel(self._deck_table_model)
@@ -68,16 +77,17 @@ class CardsPanel(QWidget):
         self._deck_detail = DetailStrip(image_size=QSize(60, 77))
         left_inner.addWidget(self._deck_detail)
 
-        # Upgrade controls
-        upgrade_row = QHBoxLayout()
-        upgrade_row.addWidget(QLabel("Upgrades:"))
-        self._upgrade_spin = QSpinBox()
-        self._upgrade_spin.setMinimum(0)
-        self._upgrade_spin.setMaximum(100)
-        upgrade_row.addWidget(self._upgrade_spin)
-        self._set_upgrade_btn = QPushButton("Set")
-        upgrade_row.addWidget(self._set_upgrade_btn)
-        left_inner.addLayout(upgrade_row)
+        # Upgrade controls (STS1 only)
+        if self._has_upgrades:
+            upgrade_row = QHBoxLayout()
+            upgrade_row.addWidget(QLabel("Upgrades:"))
+            self._upgrade_spin = QSpinBox()
+            self._upgrade_spin.setMinimum(0)
+            self._upgrade_spin.setMaximum(100)
+            upgrade_row.addWidget(self._upgrade_spin)
+            self._set_upgrade_btn = QPushButton("Set")
+            upgrade_row.addWidget(self._set_upgrade_btn)
+            left_inner.addLayout(upgrade_row)
 
         self._remove_btn = QPushButton("Remove Selected")
         left_inner.addWidget(self._remove_btn)
@@ -100,7 +110,8 @@ class CardsPanel(QWidget):
 
         # Filter dropdowns
         filter_row = QHBoxLayout()
-        filter_row.addWidget(QLabel("Color:"))
+        color_label = "Character:" if config and config.game_version == 2 else "Color:"
+        filter_row.addWidget(QLabel(color_label))
         self._color_combo = QComboBox()
         self._color_combo.addItem("All", None)
         for color in game_data.card_colors():
@@ -117,7 +128,10 @@ class CardsPanel(QWidget):
 
         # Available cards table
         self._avail_model = QStandardItemModel()
-        self._avail_model.setHorizontalHeaderLabels(["Name", "Color", "Type", "Rarity"])
+        avail_color_header = "Character" if config and config.game_version == 2 else "Color"
+        self._avail_model.setHorizontalHeaderLabels(
+            ["Name", avail_color_header, "Type", "Rarity"]
+        )
 
         self._proxy_model = QSortFilterProxyModel()
         self._proxy_model.setSourceModel(self._avail_model)
@@ -153,7 +167,8 @@ class CardsPanel(QWidget):
         self._type_combo.currentIndexChanged.connect(self._apply_filters)
         self._add_btn.clicked.connect(self._on_add_card)
         self._remove_btn.clicked.connect(self._on_remove_card)
-        self._set_upgrade_btn.clicked.connect(self._on_set_upgrade)
+        if self._has_upgrades:
+            self._set_upgrade_btn.clicked.connect(self._on_set_upgrade)
         self._model.data_changed.connect(self._refresh_deck)
         self._avail_table.selectionModel().currentRowChanged.connect(
             self._on_avail_selected
@@ -201,14 +216,19 @@ class CardsPanel(QWidget):
                 )
                 icon = _card_icon(card_info) if card_info else QIcon()
                 tooltip = card_info.description if card_info else ""
+                display_name = card_info.name if card_info else card_id
 
-                name_item = QStandardItem(icon, card_id)
+                name_item = QStandardItem(icon, display_name)
                 if tooltip:
                     name_item.setToolTip(tooltip)
-                upgrades_item = QStandardItem(str(card.get("upgrades", 0)))
                 name_item.setEditable(False)
-                upgrades_item.setEditable(False)
-                self._deck_table_model.appendRow([name_item, upgrades_item])
+
+                if self._has_upgrades:
+                    upgrades_item = QStandardItem(str(card.get("upgrades", 0)))
+                    upgrades_item.setEditable(False)
+                    self._deck_table_model.appendRow([name_item, upgrades_item])
+                else:
+                    self._deck_table_model.appendRow([name_item])
         self._updating = False
         self._deck_detail.clear()
 
@@ -223,10 +243,10 @@ class CardsPanel(QWidget):
 
     def _lookup_deck_card(self, row: int):
         """Look up CardInfo from a row in the deck table."""
-        card_id = self._deck_table_model.item(row, 0).text()
+        display_name = self._deck_table_model.item(row, 0).text()
         return (
-            self._game_data.cards_by_name.get(card_id)
-            or self._game_data.cards_by_id.get(card_id)
+            self._game_data.cards_by_name.get(display_name)
+            or self._game_data.cards_by_id.get(display_name)
         )
 
     def _on_avail_selected(self, current, _previous) -> None:
@@ -274,9 +294,11 @@ class CardsPanel(QWidget):
         if not indexes:
             return
         proxy_index = indexes[0]
-        source_index = self._proxy_model.mapToSource(proxy_index)
-        card_name = self._avail_model.item(source_index.row(), 0).text()
-        self._model.add_card(card_name, upgrades=1)
+        card_info = self._lookup_avail_card(proxy_index)
+        if not card_info:
+            return
+        # Use the card's internal ID for the save file
+        self._model.add_card(card_info.id, upgrades=1 if self._has_upgrades else 0)
 
     def _on_remove_card(self) -> None:
         indexes = self._deck_table.selectionModel().selectedRows()

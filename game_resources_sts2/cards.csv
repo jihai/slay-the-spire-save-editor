@@ -1,0 +1,577 @@
+id,name,color,type,rarity
+CARD.BASH,Bash,Ironclad,Attack,Basic
+CARD.DEFEND_IRONCLAD,Defend (Ironclad),Ironclad,Skill,Basic
+CARD.STRIKE_IRONCLAD,Strike (Ironclad),Ironclad,Attack,Basic
+CARD.ANGER,Anger,Ironclad,Attack,Common
+CARD.ARMAMENTS,Armaments,Ironclad,Skill,Common
+CARD.BLOOD_WALL,Blood Wall,Ironclad,Skill,Common
+CARD.BLOODLETTING,Bloodletting,Ironclad,Skill,Common
+CARD.BODY_SLAM,Body Slam,Ironclad,Attack,Common
+CARD.BREAKTHROUGH,Breakthrough,Ironclad,Attack,Common
+CARD.CINDER,Cinder,Ironclad,Attack,Common
+CARD.HAVOC,Havoc,Ironclad,Skill,Common
+CARD.HEADBUTT,Headbutt,Ironclad,Attack,Common
+CARD.IRON_WAVE,Iron Wave,Ironclad,Attack,Common
+CARD.MOLTEN_FIST,Molten Fist,Ironclad,Attack,Common
+CARD.PERFECTED_STRIKE,Perfected Strike,Ironclad,Attack,Common
+CARD.POMMEL_STRIKE,Pommel Strike,Ironclad,Attack,Common
+CARD.SETUP_STRIKE,Setup Strike,Ironclad,Attack,Common
+CARD.SHRUG_IT_OFF,Shrug It Off,Ironclad,Skill,Common
+CARD.SWORD_BOOMERANG,Sword Boomerang,Ironclad,Attack,Common
+CARD.THUNDERCLAP,Thunderclap,Ironclad,Attack,Common
+CARD.TREMBLE,Tremble,Ironclad,Skill,Common
+CARD.TRUE_GRIT,True Grit,Ironclad,Skill,Common
+CARD.TWIN_STRIKE,Twin Strike,Ironclad,Attack,Common
+CARD.ASHEN_STRIKE,Ashen Strike,Ironclad,Attack,Uncommon
+CARD.BATTLE_TRANCE,Battle Trance,Ironclad,Skill,Uncommon
+CARD.BLUDGEON,Bludgeon,Ironclad,Attack,Uncommon
+CARD.BULLY,Bully,Ironclad,Attack,Uncommon
+CARD.BURNING_PACT,Burning Pact,Ironclad,Skill,Uncommon
+CARD.DEMONIC_SHIELD,Demonic Shield,Ironclad,Skill,Uncommon
+CARD.DISMANTLE,Dismantle,Ironclad,Attack,Uncommon
+CARD.DOMINATE,Dominate,Ironclad,Skill,Uncommon
+CARD.DRUM_OF_BATTLE,Drum of Battle,Ironclad,Power,Uncommon
+CARD.EVIL_EYE,Evil Eye,Ironclad,Skill,Uncommon
+CARD.EXPECT_A_FIGHT,Expect a Fight,Ironclad,Skill,Uncommon
+CARD.FEEL_NO_PAIN,Feel No Pain,Ironclad,Power,Uncommon
+CARD.FIGHT_ME!,Fight Me!,Ironclad,Attack,Uncommon
+CARD.FLAME_BARRIER,Flame Barrier,Ironclad,Skill,Uncommon
+CARD.FORGOTTEN_RITUAL,Forgotten Ritual,Ironclad,Skill,Uncommon
+CARD.GRAPPLE,Grapple,Ironclad,Attack,Uncommon
+CARD.HEMOKINESIS,Hemokinesis,Ironclad,Attack,Uncommon
+CARD.HOWL_FROM_BEYOND,Howl from Beyond,Ironclad,Attack,Uncommon
+CARD.INFERNAL_BLADE,Infernal Blade,Ironclad,Skill,Uncommon
+CARD.INFERNO,Inferno,Ironclad,Power,Uncommon
+CARD.INFLAME,Inflame,Ironclad,Power,Uncommon
+CARD.JUGGLING,Juggling,Ironclad,Power,Uncommon
+CARD.PILLAGE,Pillage,Ironclad,Attack,Uncommon
+CARD.RAGE,Rage,Ironclad,Skill,Uncommon
+CARD.RAMPAGE,Rampage,Ironclad,Attack,Uncommon
+CARD.RUPTURE,Rupture,Ironclad,Power,Uncommon
+CARD.SECOND_WIND,Second Wind,Ironclad,Skill,Uncommon
+CARD.SPITE,Spite,Ironclad,Attack,Uncommon
+CARD.STAMPEDE,Stampede,Ironclad,Power,Uncommon
+CARD.STOMP,Stomp,Ironclad,Attack,Uncommon
+CARD.STONE_ARMOR,Stone Armor,Ironclad,Power,Uncommon
+CARD.TAUNT,Taunt,Ironclad,Skill,Uncommon
+CARD.UNRELENTING,Unrelenting,Ironclad,Attack,Uncommon
+CARD.UPPERCUT,Uppercut,Ironclad,Attack,Uncommon
+CARD.VICIOUS,Vicious,Ironclad,Power,Uncommon
+CARD.WHIRLWIND,Whirlwind,Ironclad,Attack,Uncommon
+CARD.AGGRESSION,Aggression,Ironclad,Power,Rare
+CARD.BARRICADE,Barricade,Ironclad,Power,Rare
+CARD.BRAND,Brand,Ironclad,Skill,Rare
+CARD.CASCADE,Cascade,Ironclad,Skill,Rare
+CARD.COLOSSUS,Colossus,Ironclad,Skill,Rare
+CARD.CONFLAGRATION,Conflagration,Ironclad,Attack,Rare
+CARD.CRIMSON_MANTLE,Crimson Mantle,Ironclad,Power,Rare
+CARD.CRUELTY,Cruelty,Ironclad,Power,Rare
+CARD.DARK_EMBRACE,Dark Embrace,Ironclad,Power,Rare
+CARD.DEMON_FORM,Demon Form,Ironclad,Power,Rare
+CARD.FEED,Feed,Ironclad,Attack,Rare
+CARD.FIEND_FIRE,Fiend Fire,Ironclad,Attack,Rare
+CARD.HELLRAISER,Hellraiser,Ironclad,Power,Rare
+CARD.IMPERVIOUS,Impervious,Ironclad,Skill,Rare
+CARD.JUGGERNAUT,Juggernaut,Ironclad,Power,Rare
+CARD.MANGLE,Mangle,Ironclad,Attack,Rare
+CARD.OFFERING,Offering,Ironclad,Skill,Rare
+CARD.ONE_TWO_PUNCH,One-Two Punch,Ironclad,Skill,Rare
+CARD.PACTS_END,Pact's End,Ironclad,Attack,Rare
+CARD.PRIMAL_FORCE,Primal Force,Ironclad,Skill,Rare
+CARD.PYRE,Pyre,Ironclad,Power,Rare
+CARD.STOKE,Stoke,Ironclad,Skill,Rare
+CARD.TANK,Tank,Ironclad,Power,Rare
+CARD.TEAR_ASUNDER,Tear Asunder,Ironclad,Attack,Rare
+CARD.THRASH,Thrash,Ironclad,Attack,Rare
+CARD.UNMOVABLE,Unmovable,Ironclad,Power,Rare
+CARD.BREAK,Break,Ironclad,Attack,Ancient
+CARD.CORRUPTION,Corruption,Ironclad,Power,Ancient
+CARD.CLASH,Clash,Ironclad,Attack,Event
+CARD.DUAL_WIELD,Dual Wield,Ironclad,Skill,Event
+CARD.ENTRENCH,Entrench,Ironclad,Skill,Event
+CARD.DEFEND_SILENT,Defend (Silent),Silent,Skill,Basic
+CARD.NEUTRALIZE,Neutralize,Silent,Attack,Basic
+CARD.STRIKE_SILENT,Strike (Silent),Silent,Attack,Basic
+CARD.SURVIVOR,Survivor,Silent,Skill,Basic
+CARD.ACROBATICS,Acrobatics,Silent,Skill,Common
+CARD.ANTICIPATE,Anticipate,Silent,Skill,Common
+CARD.BACKFLIP,Backflip,Silent,Skill,Common
+CARD.BLADE_DANCE,Blade Dance,Silent,Skill,Common
+CARD.CLOAK_AND_DAGGER,Cloak and Dagger,Silent,Skill,Common
+CARD.DAGGER_SPRAY,Dagger Spray,Silent,Attack,Common
+CARD.DAGGER_THROW,Dagger Throw,Silent,Attack,Common
+CARD.DEADLY_POISON,Deadly Poison,Silent,Skill,Common
+CARD.DEFLECT,Deflect,Silent,Skill,Common
+CARD.DODGE_AND_ROLL,Dodge and Roll,Silent,Skill,Common
+CARD.FLICK_FLACK,Flick-Flack,Silent,Attack,Common
+CARD.LEADING_STRIKE,Leading Strike,Silent,Attack,Common
+CARD.PIERCING_WAIL,Piercing Wail,Silent,Skill,Common
+CARD.POISONED_STAB,Poisoned Stab,Silent,Attack,Common
+CARD.PREPARED,Prepared,Silent,Skill,Common
+CARD.RICOCHET,Ricochet,Silent,Attack,Common
+CARD.SLICE,Slice,Silent,Attack,Common
+CARD.SNAKEBITE,Snakebite,Silent,Skill,Common
+CARD.SUCKER_PUNCH,Sucker Punch,Silent,Attack,Common
+CARD.UNTOUCHABLE,Untouchable,Silent,Skill,Common
+CARD.ACCURACY,Accuracy,Silent,Power,Uncommon
+CARD.BACKSTAB,Backstab,Silent,Attack,Uncommon
+CARD.BLUR,Blur,Silent,Skill,Uncommon
+CARD.BOUNCING_FLASK,Bouncing Flask,Silent,Skill,Uncommon
+CARD.BUBBLE_BUBBLE,Bubble Bubble,Silent,Skill,Uncommon
+CARD.CALCULATED_GAMBLE,Calculated Gamble,Silent,Skill,Uncommon
+CARD.DASH,Dash,Silent,Attack,Uncommon
+CARD.ESCAPE_PLAN,Escape Plan,Silent,Skill,Uncommon
+CARD.EXPERTISE,Expertise,Silent,Skill,Uncommon
+CARD.EXPOSE,Expose,Silent,Skill,Uncommon
+CARD.FINISHER,Finisher,Silent,Attack,Uncommon
+CARD.FLANKING,Flanking,Silent,Skill,Uncommon
+CARD.FLECHETTES,Flechettes,Silent,Attack,Uncommon
+CARD.FOLLOW_THROUGH,Follow Through,Silent,Attack,Uncommon
+CARD.FOOTWORK,Footwork,Silent,Power,Uncommon
+CARD.HAND_TRICK,Hand Trick,Silent,Skill,Uncommon
+CARD.HAZE,Haze,Silent,Skill,Uncommon
+CARD.HIDDEN_DAGGERS,Hidden Daggers,Silent,Skill,Uncommon
+CARD.INFINITE_BLADES,Infinite Blades,Silent,Power,Uncommon
+CARD.LEG_SWEEP,Leg Sweep,Silent,Skill,Uncommon
+CARD.MEMENTO_MORI,Memento Mori,Silent,Attack,Uncommon
+CARD.MIRAGE,Mirage,Silent,Skill,Uncommon
+CARD.NOXIOUS_FUMES,Noxious Fumes,Silent,Power,Uncommon
+CARD.OUTBREAK,Outbreak,Silent,Power,Uncommon
+CARD.PHANTOM_BLADES,Phantom Blades,Silent,Power,Uncommon
+CARD.PINPOINT,Pinpoint,Silent,Attack,Uncommon
+CARD.POUNCE,Pounce,Silent,Attack,Uncommon
+CARD.PRECISE_CUT,Precise Cut,Silent,Attack,Uncommon
+CARD.PREDATOR,Predator,Silent,Attack,Uncommon
+CARD.REFLEX,Reflex,Silent,Skill,Uncommon
+CARD.SKEWER,Skewer,Silent,Attack,Uncommon
+CARD.SPEEDSTER,Speedster,Silent,Power,Uncommon
+CARD.STRANGLE,Strangle,Silent,Attack,Uncommon
+CARD.TACTICIAN,Tactician,Silent,Skill,Uncommon
+CARD.UP_MY_SLEEVE,Up My Sleeve,Silent,Skill,Uncommon
+CARD.WELL_LAID_PLANS,Well-Laid Plans,Silent,Power,Uncommon
+CARD.ABRASIVE,Abrasive,Silent,Power,Rare
+CARD.ACCELERANT,Accelerant,Silent,Power,Rare
+CARD.ADRENALINE,Adrenaline,Silent,Skill,Rare
+CARD.AFTERIMAGE,Afterimage,Silent,Power,Rare
+CARD.ASSASSINATE,Assassinate,Silent,Attack,Rare
+CARD.BLADE_OF_INK,Blade of Ink,Silent,Skill,Rare
+CARD.BULLET_TIME,Bullet Time,Silent,Skill,Rare
+CARD.BURST,Burst,Silent,Skill,Rare
+CARD.CORROSIVE_WAVE,Corrosive Wave,Silent,Skill,Rare
+CARD.ECHOING_SLASH,Echoing Slash,Silent,Attack,Rare
+CARD.ENVENOM,Envenom,Silent,Power,Rare
+CARD.FAN_OF_KNIVES,Fan of Knives,Silent,Power,Rare
+CARD.GRAND_FINALE,Grand Finale,Silent,Attack,Rare
+CARD.KNIFE_TRAP,Knife Trap,Silent,Skill,Rare
+CARD.MALAISE,Malaise,Silent,Skill,Rare
+CARD.MASTER_PLANNER,Master Planner,Silent,Power,Rare
+CARD.MURDER,Murder,Silent,Attack,Rare
+CARD.NIGHTMARE,Nightmare,Silent,Skill,Rare
+CARD.SERPENT_FORM,Serpent Form,Silent,Power,Rare
+CARD.SHADOW_STEP,Shadow Step,Silent,Skill,Rare
+CARD.SHADOWMELD,Shadowmeld,Silent,Skill,Rare
+CARD.SNEAKY,Sneaky,Silent,Power,Rare
+CARD.STORM_OF_STEEL,Storm of Steel,Silent,Skill,Rare
+CARD.THE_HUNT,The Hunt,Silent,Attack,Rare
+CARD.TOOLS_OF_THE_TRADE,Tools of the Trade,Silent,Power,Rare
+CARD.TRACKING,Tracking,Silent,Power,Rare
+CARD.SUPPRESS,Suppress,Silent,Attack,Ancient
+CARD.WRAITH_FORM,Wraith Form,Silent,Power,Ancient
+CARD.CALTROPS,Caltrops,Silent,Power,Event
+CARD.DISTRACTION,Distraction,Silent,Skill,Event
+CARD.OUTMANEUVER,Outmaneuver,Silent,Skill,Event
+CARD.DEFEND_REGENT,Defend (Regent),Regent,Skill,Basic
+CARD.FALLING_STAR,Falling Star,Regent,Attack,Basic
+CARD.STRIKE_REGENT,Strike (Regent),Regent,Attack,Basic
+CARD.VENERATE,Venerate,Regent,Skill,Basic
+CARD.ASTRAL_PULSE,Astral Pulse,Regent,Attack,Common
+CARD.BEGONE!,BEGONE!,Regent,Attack,Common
+CARD.CELESTIAL_MIGHT,Celestial Might,Regent,Attack,Common
+CARD.CLOAK_OF_STARS,Cloak of Stars,Regent,Skill,Common
+CARD.COLLISION_COURSE,Collision Course,Regent,Attack,Common
+CARD.COSMIC_INDIFFERENCE,Cosmic Indifference,Regent,Skill,Common
+CARD.CRESCENT_SPEAR,Crescent Spear,Regent,Attack,Common
+CARD.CRUSH_UNDER,Crush Under,Regent,Attack,Common
+CARD.GATHER_LIGHT,Gather Light,Regent,Skill,Common
+CARD.GLITTERSTREAM,Glitterstream,Regent,Skill,Common
+CARD.GLOW,Glow,Regent,Skill,Common
+CARD.GUIDING_STAR,Guiding Star,Regent,Attack,Common
+CARD.HIDDEN_CACHE,Hidden Cache,Regent,Skill,Common
+CARD.KNOW_THY_PLACE,Know Thy Place,Regent,Skill,Common
+CARD.PATTER,Patter,Regent,Skill,Common
+CARD.PHOTON_CUT,Photon Cut,Regent,Attack,Common
+CARD.REFINE_BLADE,Refine Blade,Regent,Skill,Common
+CARD.SOLAR_STRIKE,Solar Strike,Regent,Attack,Common
+CARD.SPOILS_OF_BATTLE,Spoils of Battle,Regent,Skill,Common
+CARD.WROUGHT_IN_WAR,Wrought in War,Regent,Attack,Common
+CARD.ALIGNMENT,Alignment,Regent,Skill,Uncommon
+CARD.BLACK_HOLE,Black Hole,Regent,Power,Uncommon
+CARD.BULWARK,Bulwark,Regent,Skill,Uncommon
+CARD.CHARGE!!,CHARGE!!,Regent,Skill,Uncommon
+CARD.CHILD_OF_THE_STARS,Child of the Stars,Regent,Power,Uncommon
+CARD.CONQUEROR,Conqueror,Regent,Skill,Uncommon
+CARD.CONVERGENCE,Convergence,Regent,Skill,Uncommon
+CARD.DEVASTATE,Devastate,Regent,Attack,Uncommon
+CARD.FURNACE,Furnace,Regent,Power,Uncommon
+CARD.GAMMA_BLAST,Gamma Blast,Regent,Attack,Uncommon
+CARD.GLIMMER,Glimmer,Regent,Skill,Uncommon
+CARD.HEGEMONY,Hegemony,Regent,Attack,Uncommon
+CARD.KINGLY_KICK,Kingly Kick,Regent,Attack,Uncommon
+CARD.KINGLY_PUNCH,Kingly Punch,Regent,Attack,Uncommon
+CARD.KNOCKOUT_BLOW,Knockout Blow,Regent,Attack,Uncommon
+CARD.LARGESSE,Largesse,Regent,Skill,Uncommon
+CARD.LUNAR_BLAST,Lunar Blast,Regent,Attack,Uncommon
+CARD.MANIFEST_AUTHORITY,Manifest Authority,Regent,Skill,Uncommon
+CARD.MONOLOGUE,Monologue,Regent,Skill,Uncommon
+CARD.ORBIT,Orbit,Regent,Power,Uncommon
+CARD.PALE_BLUE_DOT,Pale Blue Dot,Regent,Power,Uncommon
+CARD.PARRY,Parry,Regent,Power,Uncommon
+CARD.PARTICLE_WALL,Particle Wall,Regent,Skill,Uncommon
+CARD.PILLAR_OF_CREATION,Pillar of Creation,Regent,Power,Uncommon
+CARD.PROPHESIZE,Prophesize,Regent,Skill,Uncommon
+CARD.QUASAR,Quasar,Regent,Skill,Uncommon
+CARD.RADIATE,Radiate,Regent,Attack,Uncommon
+CARD.REFLECT,Reflect,Regent,Skill,Uncommon
+CARD.RESONANCE,Resonance,Regent,Skill,Uncommon
+CARD.ROYAL_GAMBLE,Royal Gamble,Regent,Skill,Uncommon
+CARD.SHINING_STRIKE,Shining Strike,Regent,Attack,Uncommon
+CARD.SPECTRUM_SHIFT,Spectrum Shift,Regent,Power,Uncommon
+CARD.STARDUST,Stardust,Regent,Attack,Uncommon
+CARD.SUMMON_FORTH,Summon Forth,Regent,Skill,Uncommon
+CARD.SUPERMASSIVE,Supermassive,Regent,Attack,Uncommon
+CARD.TERRAFORMING,Terraforming,Regent,Skill,Uncommon
+CARD.ARSENAL,Arsenal,Regent,Power,Rare
+CARD.BEAT_INTO_SHAPE,Beat into Shape,Regent,Attack,Rare
+CARD.BIG_BANG,Big Bang,Regent,Skill,Rare
+CARD.BOMBARDMENT,Bombardment,Regent,Attack,Rare
+CARD.BUNDLE_OF_JOY,Bundle of Joy,Regent,Skill,Rare
+CARD.COMET,Comet,Regent,Attack,Rare
+CARD.CRASH_LANDING,Crash Landing,Regent,Attack,Rare
+"CARD.DECISIONS,_DECISIONS","Decisions, Decisions",Regent,Skill,Rare
+CARD.DYING_STAR,Dying Star,Regent,Attack,Rare
+CARD.FOREGONE_CONCLUSION,Foregone Conclusion,Regent,Skill,Rare
+CARD.GUARDS!!!,GUARDS!!!,Regent,Skill,Rare
+CARD.GENESIS,Genesis,Regent,Power,Rare
+CARD.HAMMER_TIME,Hammer Time,Regent,Power,Rare
+CARD.HEAVENLY_DRILL,Heavenly Drill,Regent,Attack,Rare
+CARD.HEIRLOOM_HAMMER,Heirloom Hammer,Regent,Attack,Rare
+CARD.I_AM_INVINCIBLE,I Am Invincible,Regent,Skill,Rare
+CARD.MAKE_IT_SO,Make It So,Regent,Attack,Rare
+CARD.MONARCHS_GAZE,Monarch's Gaze,Regent,Power,Rare
+CARD.NEUTRON_AEGIS,Neutron Aegis,Regent,Power,Rare
+CARD.ROYALTIES,Royalties,Regent,Power,Rare
+CARD.SEEKING_EDGE,Seeking Edge,Regent,Power,Rare
+CARD.SEVEN_STARS,Seven Stars,Regent,Attack,Rare
+CARD.SWORD_SAGE,Sword Sage,Regent,Power,Rare
+CARD.THE_SMITH,The Smith,Regent,Skill,Rare
+CARD.TYRANNY,Tyranny,Regent,Power,Rare
+CARD.VOID_FORM,Void Form,Regent,Power,Rare
+CARD.METEOR_SHOWER,Meteor Shower,Regent,Attack,Ancient
+CARD.THE_SEALED_THRONE,The Sealed Throne,Regent,Power,Ancient
+CARD.BODYGUARD,Bodyguard,Necrobinder,Skill,Basic
+CARD.DEFEND_NECROBINDER,Defend (Necrobinder),Necrobinder,Skill,Basic
+CARD.STRIKE_NECROBINDER,Strike (Necrobinder),Necrobinder,Attack,Basic
+CARD.UNLEASH,Unleash,Necrobinder,Attack,Basic
+CARD.AFTERLIFE,Afterlife,Necrobinder,Skill,Common
+CARD.BLIGHT_STRIKE,Blight Strike,Necrobinder,Attack,Common
+CARD.DEFILE,Defile,Necrobinder,Attack,Common
+CARD.DEFY,Defy,Necrobinder,Skill,Common
+CARD.DRAIN_POWER,Drain Power,Necrobinder,Attack,Common
+CARD.FEAR,Fear,Necrobinder,Attack,Common
+CARD.FLATTEN,Flatten,Necrobinder,Attack,Common
+CARD.GRAVE_WARDEN,Grave Warden,Necrobinder,Skill,Common
+CARD.GRAVEBLAST,Graveblast,Necrobinder,Attack,Common
+CARD.INVOKE,Invoke,Necrobinder,Skill,Common
+CARD.NEGATIVE_PULSE,Negative Pulse,Necrobinder,Skill,Common
+CARD.POKE,Poke,Necrobinder,Attack,Common
+CARD.PULL_AGGRO,Pull Aggro,Necrobinder,Skill,Common
+CARD.REAP,Reap,Necrobinder,Attack,Common
+CARD.REAVE,Reave,Necrobinder,Attack,Common
+CARD.SCOURGE,Scourge,Necrobinder,Skill,Common
+CARD.SCULPTING_STRIKE,Sculpting Strike,Necrobinder,Attack,Common
+CARD.SNAP,Snap,Necrobinder,Attack,Common
+CARD.SOW,Sow,Necrobinder,Attack,Common
+CARD.WISP,Wisp,Necrobinder,Skill,Common
+CARD.BONE_SHARDS,Bone Shards,Necrobinder,Attack,Uncommon
+CARD.BORROWED_TIME,Borrowed Time,Necrobinder,Skill,Uncommon
+CARD.BURY,Bury,Necrobinder,Attack,Uncommon
+CARD.CALCIFY,Calcify,Necrobinder,Power,Uncommon
+CARD.CAPTURE_SPIRIT,Capture Spirit,Necrobinder,Skill,Uncommon
+CARD.CLEANSE,Cleanse,Necrobinder,Skill,Uncommon
+CARD.COUNTDOWN,Countdown,Necrobinder,Power,Uncommon
+CARD.DANSE_MACABRE,Danse Macabre,Necrobinder,Power,Uncommon
+CARD.DEATH_MARCH,Death March,Necrobinder,Attack,Uncommon
+CARD.DEATHS_DOOR,Death's Door,Necrobinder,Skill,Uncommon
+CARD.DEATHBRINGER,Deathbringer,Necrobinder,Skill,Uncommon
+CARD.DEBILITATE,Debilitate,Necrobinder,Attack,Uncommon
+CARD.DELAY,Delay,Necrobinder,Skill,Uncommon
+CARD.DIRGE,Dirge,Necrobinder,Skill,Uncommon
+CARD.DREDGE,Dredge,Necrobinder,Skill,Uncommon
+CARD.ENFEEBLING_TOUCH,Enfeebling Touch,Necrobinder,Skill,Uncommon
+CARD.FETCH,Fetch,Necrobinder,Attack,Uncommon
+CARD.FRIENDSHIP,Friendship,Necrobinder,Power,Uncommon
+CARD.HAUNT,Haunt,Necrobinder,Power,Uncommon
+CARD.HIGH_FIVE,High Five,Necrobinder,Attack,Uncommon
+CARD.LEGION_OF_BONE,Legion of Bone,Necrobinder,Skill,Uncommon
+CARD.LETHALITY,Lethality,Necrobinder,Power,Uncommon
+CARD.MELANCHOLY,Melancholy,Necrobinder,Skill,Uncommon
+CARD.NO_ESCAPE,No Escape,Necrobinder,Skill,Uncommon
+CARD.PAGESTORM,Pagestorm,Necrobinder,Power,Uncommon
+CARD.PARSE,Parse,Necrobinder,Skill,Uncommon
+CARD.PULL_FROM_BELOW,Pull from Below,Necrobinder,Attack,Uncommon
+CARD.PUTREFY,Putrefy,Necrobinder,Skill,Uncommon
+CARD.RATTLE,Rattle,Necrobinder,Attack,Uncommon
+CARD.RIGHT_HAND_HAND,Right Hand Hand,Necrobinder,Attack,Uncommon
+CARD.SEVERANCE,Severance,Necrobinder,Attack,Uncommon
+CARD.SHROUD,Shroud,Necrobinder,Power,Uncommon
+CARD.SIC_EM,Sic 'Em,Necrobinder,Attack,Uncommon
+CARD.SLEIGHT_OF_FLESH,Sleight of Flesh,Necrobinder,Power,Uncommon
+CARD.SPUR,Spur,Necrobinder,Skill,Uncommon
+CARD.VEILPIERCER,Veilpiercer,Necrobinder,Attack,Uncommon
+CARD.BANSHEES_CRY,Banshee's Cry,Necrobinder,Attack,Rare
+CARD.CALL_OF_THE_VOID,Call of the Void,Necrobinder,Power,Rare
+CARD.DEMESNE,Demesne,Necrobinder,Power,Rare
+CARD.DEVOUR_LIFE,Devour Life,Necrobinder,Power,Rare
+CARD.EIDOLON,Eidolon,Necrobinder,Skill,Rare
+CARD.END_OF_DAYS,End of Days,Necrobinder,Skill,Rare
+CARD.ERADICATE,Eradicate,Necrobinder,Attack,Rare
+CARD.GLIMPSE_BEYOND,Glimpse Beyond,Necrobinder,Skill,Rare
+CARD.HANG,Hang,Necrobinder,Attack,Rare
+CARD.MISERY,Misery,Necrobinder,Attack,Rare
+CARD.NECRO_MASTERY,Necro Mastery,Necrobinder,Power,Rare
+CARD.NEUROSURGE,Neurosurge,Necrobinder,Power,Rare
+CARD.OBLIVION,Oblivion,Necrobinder,Skill,Rare
+CARD.REANIMATE,Reanimate,Necrobinder,Skill,Rare
+CARD.REAPER_FORM,Reaper Form,Necrobinder,Power,Rare
+CARD.SACRIFICE,Sacrifice,Necrobinder,Skill,Rare
+CARD.SEANCE,Seance,Necrobinder,Skill,Rare
+CARD.SENTRY_MODE,Sentry Mode,Necrobinder,Power,Rare
+CARD.SHARED_FATE,Shared Fate,Necrobinder,Skill,Rare
+CARD.SOUL_STORM,Soul Storm,Necrobinder,Attack,Rare
+CARD.SPIRIT_OF_ASH,Spirit of Ash,Necrobinder,Power,Rare
+CARD.SQUEEZE,Squeeze,Necrobinder,Attack,Rare
+CARD.THE_SCYTHE,The Scythe,Necrobinder,Attack,Rare
+CARD.TIMES_UP,Time's Up,Necrobinder,Attack,Rare
+CARD.TRANSFIGURE,Transfigure,Necrobinder,Skill,Rare
+CARD.UNDEATH,Undeath,Necrobinder,Skill,Rare
+CARD.FORBIDDEN_GRIMOIRE,Forbidden Grimoire,Necrobinder,Power,Ancient
+CARD.PROTECTOR,Protector,Necrobinder,Attack,Ancient
+CARD.DEFEND_DEFECT,Defend (Defect),Defect,Skill,Basic
+CARD.DUALCAST,Dualcast,Defect,Skill,Basic
+CARD.STRIKE_DEFECT,Strike (Defect),Defect,Attack,Basic
+CARD.ZAP,Zap,Defect,Skill,Basic
+CARD.BALL_LIGHTNING,Ball Lightning,Defect,Attack,Common
+CARD.BARRAGE,Barrage,Defect,Attack,Common
+CARD.BEAM_CELL,Beam Cell,Defect,Attack,Common
+CARD.BOOST_AWAY,Boost Away,Defect,Skill,Common
+CARD.CHARGE_BATTERY,Charge Battery,Defect,Skill,Common
+CARD.CLAW,Claw,Defect,Attack,Common
+CARD.COLD_SNAP,Cold Snap,Defect,Attack,Common
+CARD.COMPILE_DRIVER,Compile Driver,Defect,Attack,Common
+CARD.COOLHEADED,Coolheaded,Defect,Skill,Common
+CARD.FOCUSED_STRIKE,Focused Strike,Defect,Attack,Common
+CARD.GO_FOR_THE_EYES,Go for the Eyes,Defect,Attack,Common
+CARD.GUNK_UP,Gunk Up,Defect,Attack,Common
+CARD.HOLOGRAM,Hologram,Defect,Skill,Common
+CARD.HOTFIX,Hotfix,Defect,Skill,Common
+CARD.LEAP,Leap,Defect,Skill,Common
+CARD.LIGHTNING_ROD,Lightning Rod,Defect,Skill,Common
+CARD.MOMENTUM_STRIKE,Momentum Strike,Defect,Attack,Common
+CARD.SWEEPING_BEAM,Sweeping Beam,Defect,Attack,Common
+CARD.TURBO,TURBO,Defect,Skill,Common
+CARD.UPROAR,Uproar,Defect,Attack,Common
+CARD.BOOT_SEQUENCE,Boot Sequence,Defect,Skill,Uncommon
+CARD.BULK_UP,Bulk Up,Defect,Power,Uncommon
+CARD.CAPACITOR,Capacitor,Defect,Power,Uncommon
+CARD.CHAOS,Chaos,Defect,Skill,Uncommon
+CARD.CHILL,Chill,Defect,Skill,Uncommon
+CARD.COMPACT,Compact,Defect,Skill,Uncommon
+CARD.DARKNESS,Darkness,Defect,Skill,Uncommon
+CARD.DOUBLE_ENERGY,Double Energy,Defect,Skill,Uncommon
+CARD.ENERGY_SURGE,Energy Surge,Defect,Skill,Uncommon
+CARD.FTL,FTL,Defect,Attack,Uncommon
+CARD.FERAL,Feral,Defect,Power,Uncommon
+CARD.FIGHT_THROUGH,Fight Through,Defect,Skill,Uncommon
+CARD.FUSION,Fusion,Defect,Skill,Uncommon
+CARD.GLACIER,Glacier,Defect,Skill,Uncommon
+CARD.GLASSWORK,Glasswork,Defect,Skill,Uncommon
+CARD.HAILSTORM,Hailstorm,Defect,Power,Uncommon
+CARD.ITERATION,Iteration,Defect,Power,Uncommon
+CARD.LOOP,Loop,Defect,Power,Uncommon
+CARD.NULL,Null,Defect,Attack,Uncommon
+CARD.OVERCLOCK,Overclock,Defect,Skill,Uncommon
+CARD.REFRACT,Refract,Defect,Attack,Uncommon
+CARD.RIP_AND_TEAR,Rip and Tear,Defect,Attack,Uncommon
+CARD.ROCKET_PUNCH,Rocket Punch,Defect,Attack,Uncommon
+CARD.SCAVENGE,Scavenge,Defect,Skill,Uncommon
+CARD.SCRAPE,Scrape,Defect,Attack,Uncommon
+CARD.SHADOW_SHIELD,Shadow Shield,Defect,Skill,Uncommon
+CARD.SKIM,Skim,Defect,Skill,Uncommon
+CARD.SMOKESTACK,Smokestack,Defect,Power,Uncommon
+CARD.STORM,Storm,Defect,Power,Uncommon
+CARD.SUBROUTINE,Subroutine,Defect,Power,Uncommon
+CARD.SUNDER,Sunder,Defect,Attack,Uncommon
+CARD.SYNCHRONIZE,Synchronize,Defect,Skill,Uncommon
+CARD.SYNTHESIS,Synthesis,Defect,Attack,Uncommon
+CARD.TEMPEST,Tempest,Defect,Skill,Uncommon
+CARD.TESLA_COIL,Tesla Coil,Defect,Attack,Uncommon
+CARD.THUNDER,Thunder,Defect,Power,Uncommon
+CARD.WHITE_NOISE,White Noise,Defect,Skill,Uncommon
+CARD.ADAPTIVE_STRIKE,Adaptive Strike,Defect,Attack,Rare
+CARD.ALL_FOR_ONE,All for One,Defect,Attack,Rare
+CARD.BUFFER,Buffer,Defect,Power,Rare
+CARD.CONSUMING_SHADOW,Consuming Shadow,Defect,Power,Rare
+CARD.COOLANT,Coolant,Defect,Power,Rare
+CARD.CREATIVE_AI,Creative AI,Defect,Power,Rare
+CARD.DEFRAGMENT,Defragment,Defect,Power,Rare
+CARD.ECHO_FORM,Echo Form,Defect,Power,Rare
+CARD.FLAK_CANNON,Flak Cannon,Defect,Attack,Rare
+CARD.GENETIC_ALGORITHM,Genetic Algorithm,Defect,Skill,Rare
+CARD.HELIX_DRILL,Helix Drill,Defect,Attack,Rare
+CARD.HYPERBEAM,Hyperbeam,Defect,Attack,Rare
+CARD.ICE_LANCE,Ice Lance,Defect,Attack,Rare
+CARD.IGNITION,Ignition,Defect,Skill,Rare
+CARD.MACHINE_LEARNING,Machine Learning,Defect,Power,Rare
+CARD.METEOR_STRIKE,Meteor Strike,Defect,Attack,Rare
+CARD.MODDED,Modded,Defect,Skill,Rare
+CARD.MULTI_CAST,Multi-Cast,Defect,Skill,Rare
+CARD.RAINBOW,Rainbow,Defect,Skill,Rare
+CARD.REBOOT,Reboot,Defect,Skill,Rare
+CARD.SHATTER,Shatter,Defect,Attack,Rare
+CARD.SIGNAL_BOOST,Signal Boost,Defect,Skill,Rare
+CARD.SPINNER,Spinner,Defect,Power,Rare
+CARD.SUPERCRITICAL,Supercritical,Defect,Skill,Rare
+CARD.TRASH_TO_TREASURE,Trash to Treasure,Defect,Power,Rare
+CARD.VOLTAIC,Voltaic,Defect,Skill,Rare
+CARD.BIASED_COGNITION,Biased Cognition,Defect,Power,Ancient
+CARD.QUADCAST,Quadcast,Defect,Skill,Ancient
+CARD.HELLO_WORLD,Hello World,Defect,Power,Event
+CARD.REBOUND,Rebound,Defect,Attack,Event
+CARD.STACK,Stack,Defect,Skill,Event
+CARD.AUTOMATION,Automation,Colorless,Power,Uncommon
+CARD.BELIEVE_IN_YOU,Believe in You,Colorless,Skill,Uncommon
+CARD.CATASTROPHE,Catastrophe,Colorless,Skill,Uncommon
+CARD.COORDINATE,Coordinate,Colorless,Skill,Uncommon
+CARD.DARK_SHACKLES,Dark Shackles,Colorless,Skill,Uncommon
+CARD.DISCOVERY,Discovery,Colorless,Skill,Uncommon
+CARD.DRAMATIC_ENTRANCE,Dramatic Entrance,Colorless,Attack,Uncommon
+CARD.EQUILIBRIUM,Equilibrium,Colorless,Skill,Uncommon
+CARD.FASTEN,Fasten,Colorless,Power,Uncommon
+CARD.FINESSE,Finesse,Colorless,Skill,Uncommon
+CARD.FISTICUFFS,Fisticuffs,Colorless,Attack,Uncommon
+CARD.FLASH_OF_STEEL,Flash of Steel,Colorless,Attack,Uncommon
+CARD.GANG_UP,Gang Up,Colorless,Attack,Uncommon
+CARD.HUDDLE_UP,Huddle Up,Colorless,Skill,Uncommon
+CARD.IMPATIENCE,Impatience,Colorless,Skill,Uncommon
+CARD.INTERCEPT,Intercept,Colorless,Skill,Uncommon
+CARD.JACK_OF_ALL_TRADES,Jack of All Trades,Colorless,Skill,Uncommon
+CARD.LIFT,Lift,Colorless,Skill,Uncommon
+CARD.MIND_BLAST,Mind Blast,Colorless,Attack,Uncommon
+CARD.OMNISLICE,Omnislice,Colorless,Attack,Uncommon
+CARD.PANACHE,Panache,Colorless,Power,Uncommon
+CARD.PANIC_BUTTON,Panic Button,Colorless,Skill,Uncommon
+CARD.PREP_TIME,Prep Time,Colorless,Power,Uncommon
+CARD.PRODUCTION,Production,Colorless,Skill,Uncommon
+CARD.PROLONG,Prolong,Colorless,Skill,Uncommon
+CARD.PROWESS,Prowess,Colorless,Power,Uncommon
+CARD.PURITY,Purity,Colorless,Skill,Uncommon
+CARD.RESTLESSNESS,Restlessness,Colorless,Skill,Uncommon
+CARD.SEEKER_STRIKE,Seeker Strike,Colorless,Attack,Uncommon
+CARD.SHOCKWAVE,Shockwave,Colorless,Skill,Uncommon
+CARD.SPLASH,Splash,Colorless,Skill,Uncommon
+CARD.STRATAGEM,Stratagem,Colorless,Power,Uncommon
+CARD.TAG_TEAM,Tag Team,Colorless,Attack,Uncommon
+CARD.THE_BOMB,The Bomb,Colorless,Skill,Uncommon
+CARD.THINKING_AHEAD,Thinking Ahead,Colorless,Skill,Uncommon
+CARD.THRUMMING_HATCHET,Thrumming Hatchet,Colorless,Attack,Uncommon
+CARD.ULTIMATE_DEFEND,Ultimate Defend,Colorless,Skill,Uncommon
+CARD.ULTIMATE_STRIKE,Ultimate Strike,Colorless,Attack,Uncommon
+CARD.VOLLEY,Volley,Colorless,Attack,Uncommon
+CARD.ALCHEMIZE,Alchemize,Colorless,Skill,Rare
+CARD.ANOINTED,Anointed,Colorless,Skill,Rare
+CARD.BEACON_OF_HOPE,Beacon of Hope,Colorless,Power,Rare
+CARD.BEAT_DOWN,Beat Down,Colorless,Skill,Rare
+CARD.BOLAS,Bolas,Colorless,Attack,Rare
+CARD.CALAMITY,Calamity,Colorless,Power,Rare
+CARD.ENTROPY,Entropy,Colorless,Power,Rare
+CARD.ETERNAL_ARMOR,Eternal Armor,Colorless,Power,Rare
+CARD.GOLD_AXE,Gold Axe,Colorless,Attack,Rare
+CARD.HAND_OF_GREED,Hand of Greed,Colorless,Attack,Rare
+CARD.HIDDEN_GEM,Hidden Gem,Colorless,Skill,Rare
+CARD.JACKPOT,Jackpot,Colorless,Attack,Rare
+CARD.KNOCKDOWN,Knockdown,Colorless,Attack,Rare
+CARD.MASTER_OF_STRATEGY,Master of Strategy,Colorless,Skill,Rare
+CARD.MAYHEM,Mayhem,Colorless,Power,Rare
+CARD.MIMIC,Mimic,Colorless,Skill,Rare
+CARD.NOSTALGIA,Nostalgia,Colorless,Power,Rare
+CARD.RALLY,Rally,Colorless,Skill,Rare
+CARD.REND,Rend,Colorless,Attack,Rare
+CARD.ROLLING_BOULDER,Rolling Boulder,Colorless,Power,Rare
+CARD.SALVO,Salvo,Colorless,Attack,Rare
+CARD.SCRAWL,Scrawl,Colorless,Skill,Rare
+CARD.SECRET_TECHNIQUE,Secret Technique,Colorless,Skill,Rare
+CARD.SECRET_WEAPON,Secret Weapon,Colorless,Skill,Rare
+CARD.THE_GAMBIT,The Gambit,Colorless,Skill,Rare
+CARD.APOTHEOSIS,Apotheosis,Colorless,Skill,Ancient
+CARD.APPARITION,Apparition,Colorless,Skill,Ancient
+CARD.BRIGHTEST_FLAME,Brightest Flame,Colorless,Skill,Ancient
+CARD.MAUL,Maul,Colorless,Attack,Ancient
+CARD.NEOWS_FURY,Neow's Fury,Colorless,Attack,Ancient
+CARD.RELAX,Relax,Colorless,Skill,Ancient
+CARD.WHISTLE,Whistle,Colorless,Attack,Ancient
+CARD.WISH,Wish,Colorless,Skill,Ancient
+CARD.BECKON,Beckon,Colorless,Status,Status
+CARD.BURN,Burn,Colorless,Status,Status
+CARD.DAZED,Dazed,Colorless,Status,Status
+CARD.DEBRIS,Debris,Colorless,Status,Status
+CARD.DISINTEGRATION,Disintegration,Colorless,Status,Status
+CARD.FRANTIC_ESCAPE,Frantic Escape,Colorless,Status,Status
+CARD.INFECTION,Infection,Colorless,Status,Status
+CARD.MIND_ROT,Mind Rot,Colorless,Status,Status
+CARD.SLIMED,Slimed,Colorless,Status,Status
+CARD.SLOTH,Sloth,Colorless,Status,Status
+CARD.SOOT,Soot,Colorless,Status,Status
+CARD.TOXIC,Toxic,Colorless,Status,Status
+CARD.VOID,Void,Colorless,Status,Status
+CARD.WASTE_AWAY,Waste Away,Colorless,Status,Status
+CARD.WOUND,Wound,Colorless,Status,Status
+CARD.ASCENDERS_BANE,Ascender's Bane,Colorless,Curse,Curse
+CARD.BAD_LUCK,Bad Luck,Colorless,Curse,Curse
+CARD.CLUMSY,Clumsy,Colorless,Curse,Curse
+CARD.CURSE_OF_THE_BELL,Curse of the Bell,Colorless,Curse,Curse
+CARD.DEBT,Debt,Colorless,Curse,Curse
+CARD.DECAY,Decay,Colorless,Curse,Curse
+CARD.DOUBT,Doubt,Colorless,Curse,Curse
+CARD.ENTHRALLED,Enthralled,Colorless,Curse,Curse
+CARD.FOLLY,Folly,Colorless,Curse,Curse
+CARD.GREED,Greed,Colorless,Curse,Curse
+CARD.GUILTY,Guilty,Colorless,Curse,Curse
+CARD.INJURY,Injury,Colorless,Curse,Curse
+CARD.NORMALITY,Normality,Colorless,Curse,Curse
+CARD.POOR_SLEEP,Poor Sleep,Colorless,Curse,Curse
+CARD.REGRET,Regret,Colorless,Curse,Curse
+CARD.SHAME,Shame,Colorless,Curse,Curse
+CARD.SPORE_MIND,Spore Mind,Colorless,Curse,Curse
+CARD.WRITHE,Writhe,Colorless,Curse,Curse
+CARD.BYRDONIS_EGG,Byrdonis Egg,Colorless,Quest,Quest
+CARD.LANTERN_KEY,Lantern Key,Colorless,Quest,Quest
+CARD.SPOILS_MAP,Spoils Map,Colorless,Quest,Quest
+CARD.FUEL,Fuel,Colorless,Skill,Token
+CARD.GIANT_ROCK,Giant Rock,Colorless,Attack,Token
+CARD.LUMINESCE,Luminesce,Colorless,Skill,Token
+CARD.MINION_DIVE_BOMB,Minion Dive Bomb,Colorless,Attack,Token
+CARD.MINION_SACRIFICE,Minion Sacrifice,Colorless,Skill,Token
+CARD.MINION_STRIKE,Minion Strike,Colorless,Attack,Token
+CARD.SHIV,Shiv,Colorless,Attack,Token
+CARD.SOUL,Soul,Colorless,Skill,Token
+CARD.SOVEREIGN_BLADE,Sovereign Blade,Colorless,Attack,Token
+CARD.SWEEPING_GAZE,Sweeping Gaze,Colorless,Attack,Token
+CARD.BYRD_SWOOP,Byrd Swoop,Colorless,Attack,Event
+CARD.ENLIGHTENMENT,Enlightenment,Colorless,Skill,Event
+CARD.EXTERMINATE,Exterminate,Colorless,Attack,Event
+CARD.FEEDING_FRENZY,Feeding Frenzy,Colorless,Skill,Event
+CARD.MAD_SCIENCE,Mad Science,Colorless,Skill,Event
+CARD.METAMORPHOSIS,Metamorphosis,Colorless,Skill,Event
+CARD.PECK,Peck,Colorless,Attack,Event
+CARD.SQUASH,Squash,Colorless,Attack,Event
+CARD.TORIC_TOUGHNESS,Toric Toughness,Colorless,Skill,Event

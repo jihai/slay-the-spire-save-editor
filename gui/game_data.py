@@ -55,33 +55,35 @@ class RelicInfo:
     image_path: str = ""
 
 
-def _load_csv(filename: str) -> list[dict[str, str]]:
-    path = GAME_RESOURCES_DIR / filename
+def _load_csv(filename: str, resources_dir: Path | None = None) -> list[dict[str, str]]:
+    path = (resources_dir or GAME_RESOURCES_DIR) / filename
     with open(path, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f))
 
 
-def _load_wiki_data() -> dict:
+def _load_wiki_data(resources_dir: Path | None = None) -> dict:
     """Load wiki_data.json if available, returning empty dict on failure."""
-    if not WIKI_DATA_PATH.exists():
+    wiki_path = (resources_dir or GAME_RESOURCES_DIR) / "wiki_data.json"
+    if not wiki_path.exists():
         return {}
     try:
-        return json.loads(WIKI_DATA_PATH.read_text(encoding="utf-8"))
+        return json.loads(wiki_path.read_text(encoding="utf-8"))
     except (json.JSONDecodeError, OSError):
         return {}
 
 
-def _resolve_image(relative: str) -> str:
+def _resolve_image(relative: str, resources_dir: Path | None = None) -> str:
     """Resolve a relative image path to absolute, returning '' if not found."""
     if not relative:
         return ""
-    full = IMAGES_DIR / relative
+    images_dir = (resources_dir or GAME_RESOURCES_DIR) / "images"
+    full = images_dir / relative
     return str(full) if full.exists() else ""
 
 
-def load_cards(path: Path | None = None) -> list[CardInfo]:
-    rows = _load_csv("cards.csv") if path is None else _load_csv_path(path)
-    wiki = _load_wiki_data().get("cards", {})
+def load_cards(path: Path | None = None, resources_dir: Path | None = None) -> list[CardInfo]:
+    rows = _load_csv("cards.csv", resources_dir) if path is None else _load_csv_path(path)
+    wiki = _load_wiki_data(resources_dir).get("cards", {})
     # Build case-insensitive lookup for wiki data
     wiki_lower = {k.lower(): v for k, v in wiki.items()}
 
@@ -99,15 +101,15 @@ def load_cards(path: Path | None = None) -> list[CardInfo]:
                 card_type=row[CARD_TYPE_COL],
                 rarity=row[CARD_RARITY_COL],
                 description=w.get("description", ""),
-                image_path=_resolve_image(w.get("image", "")),
+                image_path=_resolve_image(w.get("image", ""), resources_dir),
             )
         )
     return result
 
 
-def load_potions(path: Path | None = None) -> list[PotionInfo]:
-    rows = _load_csv("potions.csv") if path is None else _load_csv_path(path)
-    wiki = _load_wiki_data().get("potions", {})
+def load_potions(path: Path | None = None, resources_dir: Path | None = None) -> list[PotionInfo]:
+    rows = _load_csv("potions.csv", resources_dir) if path is None else _load_csv_path(path)
+    wiki = _load_wiki_data(resources_dir).get("potions", {})
     wiki_lower = {k.lower(): v for k, v in wiki.items()}
 
     result = []
@@ -120,15 +122,15 @@ def load_potions(path: Path | None = None) -> list[PotionInfo]:
                 id=raw_id,  # Always use raw CSV id for save-file lookups
                 name=name,
                 description=w.get("description", ""),
-                image_path=_resolve_image(w.get("image", "")),
+                image_path=_resolve_image(w.get("image", ""), resources_dir),
             )
         )
     return result
 
 
-def load_relics(path: Path | None = None) -> list[RelicInfo]:
-    rows = _load_csv("relics.csv") if path is None else _load_csv_path(path)
-    wiki = _load_wiki_data().get("relics", {})
+def load_relics(path: Path | None = None, resources_dir: Path | None = None) -> list[RelicInfo]:
+    rows = _load_csv("relics.csv", resources_dir) if path is None else _load_csv_path(path)
+    wiki = _load_wiki_data(resources_dir).get("relics", {})
     wiki_lower = {k.lower(): v for k, v in wiki.items()}
 
     result = []
@@ -143,7 +145,7 @@ def load_relics(path: Path | None = None) -> list[RelicInfo]:
                 tier=row[RELIC_TIER_COL],
                 description=w.get("description", ""),
                 flavor=w.get("flavor", ""),
-                image_path=_resolve_image(w.get("image", "")),
+                image_path=_resolve_image(w.get("image", ""), resources_dir),
             )
         )
     return result
@@ -155,12 +157,12 @@ def _load_csv_path(path: Path) -> list[dict[str, str]]:
 
 
 class GameData:
-    """Singleton-style container for all game resource data."""
+    """Container for all game resource data."""
 
-    def __init__(self) -> None:
-        self.cards = load_cards()
-        self.potions = load_potions()
-        self.relics = load_relics()
+    def __init__(self, resources_dir: Path | None = None) -> None:
+        self.cards = load_cards(resources_dir=resources_dir)
+        self.potions = load_potions(resources_dir=resources_dir)
+        self.relics = load_relics(resources_dir=resources_dir)
 
         self.cards_by_name: dict[str, CardInfo] = {c.name: c for c in self.cards}
         # Also index by CSV id column for save-file ID lookups (save files may

@@ -1,0 +1,4004 @@
+{
+  "cards": {
+    "Bash": {
+      "description": "Deal 8 damage. Apply 2 Vulnerable .",
+      "image": "cards/StS2_Ironclad-Bash.png"
+    },
+    "Defend (Ironclad)": {
+      "description": "Gain 5 Block .",
+      "image": "cards/StS2_Ironclad-Defend.png"
+    },
+    "Strike (Ironclad)": {
+      "description": "Deal 6 damage.",
+      "image": "cards/StS2_Ironclad-Strike.png"
+    },
+    "Anger": {
+      "description": "Deal 6 damage. Add a copy of this card into your Discard Pile.",
+      "image": "cards/StS2_Ironclad-Anger.png"
+    },
+    "Armaments": {
+      "description": "Gain 5 Block . Upgrade a card in your Hand.",
+      "image": "cards/StS2_Ironclad-Armaments.png"
+    },
+    "Blood Wall": {
+      "description": "Lose 2 HP. Gain 16 Block .",
+      "image": "cards/StS2_Ironclad-BloodWall.png"
+    },
+    "Bloodletting": {
+      "description": "Lose 3 HP. Gain .",
+      "image": "cards/StS2_Ironclad-Bloodletting.png"
+    },
+    "Body Slam": {
+      "description": "Deal damage equal to your Block .",
+      "image": "cards/StS2_Ironclad-BodySlam.png"
+    },
+    "Breakthrough": {
+      "description": "Lose 1 HP. Deal 9 damage to ALL enemies.",
+      "image": "cards/StS2_Ironclad-Breakthrough.png"
+    },
+    "Cinder": {
+      "description": "Deal 17 damage. Exhaust the top card of your Draw Pile.",
+      "image": "cards/StS2_Ironclad-Cinder.png"
+    },
+    "Havoc": {
+      "description": "Play the top card of your Draw Pile and Exhaust it.",
+      "image": "cards/StS2_Ironclad-Havoc.png"
+    },
+    "Headbutt": {
+      "description": "Deal 9 damage. Put a card from your Discard Pile on top of your Draw Pile.",
+      "image": "cards/StS2_Ironclad-Headbutt.png"
+    },
+    "Iron Wave": {
+      "description": "Gain 5 Block . Deal 5 damage.",
+      "image": "cards/StS2_Ironclad-IronWave.png"
+    },
+    "Molten Fist": {
+      "description": "Deal 10 damage. Double the enemy's Vulnerable . Exhaust .",
+      "image": "cards/StS2_Ironclad-MoltenFist.png"
+    },
+    "Perfected Strike": {
+      "description": "Deal 6 damage. Deals 2 additional damage for ALL your cards containing “Strike”.",
+      "image": "cards/StS2_Ironclad-PerfectedStrike.png"
+    },
+    "Pommel Strike": {
+      "description": "Deal 9 damage. Draw 1 card.",
+      "image": "cards/StS2_Ironclad-PommelStrike.png"
+    },
+    "Setup Strike": {
+      "description": "Deal 7 damage. Gain 2 Strength this turn.",
+      "image": "cards/StS2_Ironclad-SetupStrike.png"
+    },
+    "Shrug It Off": {
+      "description": "Gain 8 Block . Draw 1 card.",
+      "image": "cards/StS2_Ironclad-ShrugItOff.png"
+    },
+    "Sword Boomerang": {
+      "description": "Deal 3 damage to a random enemy 3 times.",
+      "image": "cards/StS2_Ironclad-SwordBoomerang.png"
+    },
+    "Thunderclap": {
+      "description": "Deal 4 damage and apply 1 Vulnerable to ALL enemies.",
+      "image": "cards/StS2_Ironclad-Thunderclap.png"
+    },
+    "Tremble": {
+      "description": "Apply 2 Vulnerable .",
+      "image": "cards/StS2_Ironclad-Tremble.png"
+    },
+    "True Grit": {
+      "description": "Gain 7 Block . Exhaust 1 card at random.",
+      "image": "cards/StS2_Ironclad-TrueGrit.png"
+    },
+    "Twin Strike": {
+      "description": "Deal 5 damage twice.",
+      "image": "cards/StS2_Ironclad-TwinStrike.png"
+    },
+    "Ashen Strike": {
+      "description": "Deal 6 damage. Deals 3 additional damage for each card in your Exhaust Pile.",
+      "image": "cards/StS2_Ironclad-AshenStrike.png"
+    },
+    "Battle Trance": {
+      "description": "Draw 3 cards. You cannot draw additional cards this turn.",
+      "image": "cards/StS2_Ironclad-BattleTrance.png"
+    },
+    "Bludgeon": {
+      "description": "Deal 32 damage.",
+      "image": "cards/StS2_Ironclad-Bludgeon.png"
+    },
+    "Bully": {
+      "description": "Deal 4 damage. Deals 2 additional damage for each Vulnerable on the enemy.",
+      "image": "cards/StS2_Ironclad-Bully.png"
+    },
+    "Burning Pact": {
+      "description": "Exhaust 1 card. Draw 2 cards.",
+      "image": "cards/StS2_Ironclad-BurningPact.png"
+    },
+    "Demonic Shield": {
+      "description": "Lose 1 HP. Give another player Block equal to your Block . Exhaust .",
+      "image": "cards/StS2_Ironclad-DemonicShield.png"
+    },
+    "Dismantle": {
+      "description": "Deal 8 damage. If the enemy is Vulnerable , hits twice.",
+      "image": "cards/StS2_Ironclad-Dismantle.png"
+    },
+    "Dominate": {
+      "description": "Gain 1 Strength for each Vulnerable on the enemy. Exhaust .",
+      "image": "cards/StS2_Ironclad-Dominate.png"
+    },
+    "Drum of Battle": {
+      "description": "Draw 2 cards. At the start of your turn, Exhaust the top card of your Draw Pile.",
+      "image": "cards/StS2_Ironclad-DrumofBattle.png"
+    },
+    "Evil Eye": {
+      "description": "Gain 8 Block . Gain another 8 Block if you have Exhausted a card this turn.",
+      "image": "cards/StS2_Ironclad-EvilEye.png"
+    },
+    "Expect a Fight": {
+      "description": "Gain for each Attack in your Hand.",
+      "image": "cards/StS2_Ironclad-ExpectaFight.png"
+    },
+    "Feel No Pain": {
+      "description": "Whenever a card is Exhausted , gain 3 Block .",
+      "image": "cards/StS2_Ironclad-FeelNoPain.png"
+    },
+    "Fight Me!": {
+      "description": "Deal 5 damage twice. Gain 2 Strength . The enemy gains 1 Strength .",
+      "image": "cards/StS2_Ironclad-FightMe.png"
+    },
+    "Flame Barrier": {
+      "description": "Gain 12 Block . Whenever you are attacked this turn, deal 4 damage back.",
+      "image": "cards/StS2_Ironclad-FlameBarrier.png"
+    },
+    "Forgotten Ritual": {
+      "description": "If you Exhausted a card this turn, gain .",
+      "image": "cards/StS2_Ironclad-ForgottenRitual.png"
+    },
+    "Grapple": {
+      "description": "Deal 7 damage. Whenever you gain Block this turn, deal 5 damage to the enemy.",
+      "image": "cards/StS2_Ironclad-Grapple.png"
+    },
+    "Hemokinesis": {
+      "description": "Lose 2 HP. Deal 14 damage.",
+      "image": "cards/StS2_Ironclad-Hemokinesis.png"
+    },
+    "Howl from Beyond": {
+      "description": "Deal 16 damage to ALL enemies. At the start of your turn, plays from the Exhaust Pile.",
+      "image": "cards/StS2_Ironclad-HowlfromBeyond.png"
+    },
+    "Infernal Blade": {
+      "description": "Add a random Attack into your Hand. It's free to play this turn. Exhaust .",
+      "image": "cards/StS2_Ironclad-InfernalBlade.png"
+    },
+    "Inferno": {
+      "description": "At the start of your turn, lose 1 HP. Whenever you lose HP on your turn, deal 6 damage to ALL enemies.",
+      "image": "cards/StS2_Ironclad-Inferno.png"
+    },
+    "Inflame": {
+      "description": "Gain 2 Strength .",
+      "image": "cards/StS2_Ironclad-Inflame.png"
+    },
+    "Juggling": {
+      "description": "Add a copy of the third Attack you play each turn into your Hand.",
+      "image": "cards/StS2_Ironclad-Juggling.png"
+    },
+    "Pillage": {
+      "description": "Deal 6 damage. Draw cards until you draw a non-Attack card.",
+      "image": "cards/StS2_Ironclad-Pillage.png"
+    },
+    "Rage": {
+      "description": "Whenever you play an Attack this turn, gain 3 Block .",
+      "image": "cards/StS2_Ironclad-Rage.png"
+    },
+    "Rampage": {
+      "description": "Deal 9 damage. Increase this card's damage by 5 this combat.",
+      "image": "cards/StS2_Ironclad-Rampage.png"
+    },
+    "Rupture": {
+      "description": "Whenever you lose HP on your turn, gain 1 Strength .",
+      "image": "cards/StS2_Ironclad-Rupture.png"
+    },
+    "Second Wind": {
+      "description": "Exhaust all non-Attack cards in your Hand. Gain 5 Block for each card Exhausted .",
+      "image": "cards/StS2_Ironclad-SecondWind.png"
+    },
+    "Spite": {
+      "description": "Deal 6 damage. If you lost HP this turn, draw 1 card.",
+      "image": "cards/StS2_Ironclad-Spite.png"
+    },
+    "Stampede": {
+      "description": "At the end of your turn, 1 random Attack in your Hand is played against a random enemy.",
+      "image": "cards/StS2_Ironclad-Stampede.png"
+    },
+    "Stomp": {
+      "description": "Deal 12 damage to ALL enemies. Costs 1 less for each Attack played this turn.",
+      "image": "cards/StS2_Ironclad-Stomp.png"
+    },
+    "Stone Armor": {
+      "description": "Gain 4 Plating .",
+      "image": "cards/StS2_Ironclad-StoneArmor.png"
+    },
+    "Taunt": {
+      "description": "Gain 7 Block . Apply 1 Vulnerable .",
+      "image": "cards/StS2_Ironclad-Taunt.png"
+    },
+    "Unrelenting": {
+      "description": "Deal 12 damage. The next Attack you play costs 0 .",
+      "image": "cards/StS2_Ironclad-Unrelenting.png"
+    },
+    "Uppercut": {
+      "description": "Deal 13 damage. Apply 1 Weak . Apply 1 Vulnerable .",
+      "image": "cards/StS2_Ironclad-Uppercut.png"
+    },
+    "Vicious": {
+      "description": "Whenever you apply Vulnerable , draw 1 card.",
+      "image": "cards/StS2_Ironclad-Vicious.png"
+    },
+    "Whirlwind": {
+      "description": "Deal 5 damage to ALL enemies X times.",
+      "image": "cards/StS2_Ironclad-Whirlwind.png"
+    },
+    "Aggression": {
+      "description": "At the start of your turn, put a random Attack from your Discard Pile into your Hand and Upgrade it.",
+      "image": "cards/StS2_Ironclad-Aggression.png"
+    },
+    "Barricade": {
+      "description": "Block is not removed at the start of your turn.",
+      "image": "cards/StS2_Ironclad-Barricade.png"
+    },
+    "Brand": {
+      "description": "Lose 1 HP. Exhaust 1 card. Gain 1 Strength .",
+      "image": "cards/StS2_Ironclad-Brand.png"
+    },
+    "Cascade": {
+      "description": "Play the top X cards of your Draw Pile.",
+      "image": "cards/StS2_Ironclad-Cascade.png"
+    },
+    "Colossus": {
+      "description": "Gain 5 Block . You receive 50% less damage from Vulnerable enemies this turn.",
+      "image": "cards/StS2_Ironclad-Colossus.png"
+    },
+    "Conflagration": {
+      "description": "Deal 8 damage to ALL enemies. Deals 2 additional damage for each other Attack you've played this turn.",
+      "image": "cards/StS2_Ironclad-Conflagration.png"
+    },
+    "Crimson Mantle": {
+      "description": "At the start of your turn, lose 1 HP and gain 8 Block .",
+      "image": "cards/StS2_Ironclad-CrimsonMantle.png"
+    },
+    "Cruelty": {
+      "description": "Vulnerable enemies take an additional 25% damage.",
+      "image": "cards/StS2_Ironclad-Cruelty.png"
+    },
+    "Dark Embrace": {
+      "description": "Whenever a card is Exhausted , draw 1 card.",
+      "image": "cards/StS2_Ironclad-DarkEmbrace.png"
+    },
+    "Demon Form": {
+      "description": "At the start of your turn, gain 2 Strength .",
+      "image": "cards/StS2_Ironclad-DemonForm.png"
+    },
+    "Feed": {
+      "description": "Deal 10 damage. If Fatal , raise your Max HP by 3. Exhaust .",
+      "image": "cards/StS2_Ironclad-Feed.png"
+    },
+    "Fiend Fire": {
+      "description": "Exhaust your Hand. Deal 7 damage for each card Exhausted . Exhaust .",
+      "image": "cards/StS2_Ironclad-FiendFire.png"
+    },
+    "Hellraiser": {
+      "description": "Whenever you draw a card containing “Strike”, it is played against a random enemy.",
+      "image": "cards/StS2_Ironclad-Hellraiser.png"
+    },
+    "Impervious": {
+      "description": "Gain 30 Block . Exhaust .",
+      "image": "cards/StS2_Ironclad-Impervious.png"
+    },
+    "Juggernaut": {
+      "description": "Whenever you gain Block , deal 5 damage to a random enemy.",
+      "image": "cards/StS2_Ironclad-Juggernaut.png"
+    },
+    "Mangle": {
+      "description": "Deal 15 damage. Enemy loses 10 Strength this turn.",
+      "image": "cards/StS2_Ironclad-Mangle.png"
+    },
+    "Offering": {
+      "description": "Lose 6 HP. Gain . Draw 3 cards. Exhaust .",
+      "image": "cards/StS2_Ironclad-Offering.png"
+    },
+    "One-Two Punch": {
+      "description": "This turn, your next Attack is played an extra time.",
+      "image": "cards/StS2_Ironclad-One-TwoPunch.png"
+    },
+    "Pact's End": {
+      "description": "Can only be played if you have 3 or more cards in your Exhaust Pile. Deal 17 damage to ALL enemies.",
+      "image": "cards/StS2_Ironclad-PactsEnd.png"
+    },
+    "Primal Force": {
+      "description": "Transform all Attacks in your Hand into Giant Rock .",
+      "image": "cards/StS2_Ironclad-PrimalForce.png"
+    },
+    "Pyre": {
+      "description": "Gain at the start of each turn.",
+      "image": "cards/StS2_Ironclad-Pyre.png"
+    },
+    "Stoke": {
+      "description": "Exhaust your Hand. Draw a card for each card Exhausted . Exhaust .",
+      "image": "cards/StS2_Ironclad-Stoke.png"
+    },
+    "Tank": {
+      "description": "Take double damage from enemies. Allies take half damage from enemies.",
+      "image": "cards/StS2_Ironclad-Tank.png"
+    },
+    "Tear Asunder": {
+      "description": "Deal 5 damage. Hits an additional time for each time you lost HP this combat.",
+      "image": "cards/StS2_Ironclad-TearAsunder.png"
+    },
+    "Thrash": {
+      "description": "Deal 4 damage twice. Exhaust a random Attack in your Hand and add its damage to this card.",
+      "image": "cards/StS2_Ironclad-Thrash.png"
+    },
+    "Unmovable": {
+      "description": "The first time you gain Block from a card each turn, double the amount gained.",
+      "image": "cards/StS2_Ironclad-Unmovable.png"
+    },
+    "Break": {
+      "description": "Deal 20 damage. Apply 5 Vulnerable .",
+      "image": "cards/StS2_Ironclad-Break.png"
+    },
+    "Corruption": {
+      "description": "Skills cost 0 . Whenever you play a Skill, Exhaust it.",
+      "image": "cards/StS2_Ironclad-Corruption.png"
+    },
+    "Clash": {
+      "description": "Can only be played if every card in your Hand is an Attack. Deal 14 damage.",
+      "image": "cards/StS2_Ironclad-Clash.png"
+    },
+    "Dual Wield": {
+      "description": "Choose an Attack or Power card. Add a copy of that card into your Hand.",
+      "image": "cards/StS2_Ironclad-DualWield.png"
+    },
+    "Entrench": {
+      "description": "Double your Block .",
+      "image": "cards/StS2_Ironclad-Entrench.png"
+    },
+    "Defend (Silent)": {
+      "description": "Gain 5 Block .",
+      "image": "cards/StS2_Silent-Defend.png"
+    },
+    "Neutralize": {
+      "description": "Deal 3 damage. Apply 1 Weak .",
+      "image": "cards/StS2_Silent-Neutralize.png"
+    },
+    "Strike (Silent)": {
+      "description": "Deal 6 damage.",
+      "image": "cards/StS2_Silent-Strike.png"
+    },
+    "Survivor": {
+      "description": "Gain 8 Block . Discard 1 card.",
+      "image": "cards/StS2_Silent-Survivor.png"
+    },
+    "Acrobatics": {
+      "description": "Draw 3 cards. Discard 1 card.",
+      "image": "cards/StS2_Silent-Acrobatics.png"
+    },
+    "Anticipate": {
+      "description": "Gain 3 Dexterity this turn.",
+      "image": "cards/StS2_Silent-Anticipate.png"
+    },
+    "Backflip": {
+      "description": "Gain 5 Block . Draw 2 cards.",
+      "image": "cards/StS2_Silent-Backflip.png"
+    },
+    "Blade Dance": {
+      "description": "Add 3 Shivs into your Hand. Exhaust .",
+      "image": "cards/StS2_Silent-BladeDance.png"
+    },
+    "Cloak and Dagger": {
+      "description": "Gain 6 Block . Add 1 Shiv into your Hand.",
+      "image": "cards/StS2_Silent-CloakandDagger.png"
+    },
+    "Dagger Spray": {
+      "description": "Deal 4 damage to ALL enemies twice.",
+      "image": "cards/StS2_Silent-DaggerSpray.png"
+    },
+    "Dagger Throw": {
+      "description": "Deal 9 damage. Draw 1 card. Discard 1 card.",
+      "image": "cards/StS2_Silent-DaggerThrow.png"
+    },
+    "Deadly Poison": {
+      "description": "Apply 5 Poison .",
+      "image": "cards/StS2_Silent-DeadlyPoison.png"
+    },
+    "Deflect": {
+      "description": "Gain 4 Block .",
+      "image": "cards/StS2_Silent-Deflect.png"
+    },
+    "Dodge and Roll": {
+      "description": "Gain 4 Block . Next turn, gain 4 Block .",
+      "image": "cards/StS2_Silent-DodgeandRoll.png"
+    },
+    "Flick-Flack": {
+      "description": "Sly . Deal 7 damage to ALL enemies.",
+      "image": "cards/StS2_Silent-Flick-Flack.png"
+    },
+    "Leading Strike": {
+      "description": "Deal 7 damage. Add 1 Shiv into your Hand.",
+      "image": "cards/StS2_Silent-LeadingStrike.png"
+    },
+    "Piercing Wail": {
+      "description": "ALL enemies lose 6 Strength this turn. Exhaust .",
+      "image": "cards/StS2_Silent-PiercingWail.png"
+    },
+    "Poisoned Stab": {
+      "description": "Deal 6 damage. Apply 3 Poison .",
+      "image": "cards/StS2_Silent-PoisonedStab.png"
+    },
+    "Prepared": {
+      "description": "Draw 1 card. Discard 1 card.",
+      "image": "cards/StS2_Silent-Prepared.png"
+    },
+    "Ricochet": {
+      "description": "Sly . Deal 3 damage to a random enemy 4 times.",
+      "image": "cards/StS2_Silent-Ricochet.png"
+    },
+    "Slice": {
+      "description": "Deal 6 damage.",
+      "image": "cards/StS2_Silent-Slice.png"
+    },
+    "Snakebite": {
+      "description": "Retain. Apply 7 Poison .",
+      "image": "cards/StS2_Silent-Snakebite.png"
+    },
+    "Sucker Punch": {
+      "description": "Deal 8 damage. Apply 1 Weak .",
+      "image": "cards/StS2_Silent-SuckerPunch.png"
+    },
+    "Untouchable": {
+      "description": "Sly . Gain 9 Block .",
+      "image": "cards/StS2_Silent-Untouchable.png"
+    },
+    "Accuracy": {
+      "description": "Shivs deal 4 additional damage.",
+      "image": "cards/StS2_Silent-Accuracy.png"
+    },
+    "Backstab": {
+      "description": "Innate . Deal 11 damage. Exhaust .",
+      "image": "cards/StS2_Silent-Backstab.png"
+    },
+    "Blur": {
+      "description": "Gain 5 Block . Block is not removed at the start of your next turn.",
+      "image": "cards/StS2_Silent-Blur.png"
+    },
+    "Bouncing Flask": {
+      "description": "Apply 3 Poison to a random enemy 3 times.",
+      "image": "cards/StS2_Silent-BouncingFlask.png"
+    },
+    "Bubble Bubble": {
+      "description": "If the enemy has Poison , apply 9 Poison .",
+      "image": "cards/StS2_Silent-BubbleBubble.png"
+    },
+    "Calculated Gamble": {
+      "description": "Discard your Hand, then draw that many cards. Exhaust .",
+      "image": "cards/StS2_Silent-CalculatedGamble.png"
+    },
+    "Dash": {
+      "description": "Gain 10 Block . Deal 10 damage.",
+      "image": "cards/StS2_Silent-Dash.png"
+    },
+    "Escape Plan": {
+      "description": "Draw 1 card. If you draw a Skill, gain 3 Block .",
+      "image": "cards/StS2_Silent-EscapePlan.png"
+    },
+    "Expertise": {
+      "description": "Draw cards until you have 6 in your Hand.",
+      "image": "cards/StS2_Silent-Expertise.png"
+    },
+    "Expose": {
+      "description": "Remove all Artifact and Block from the enemy. Apply 2 Vulnerable . Exhaust .",
+      "image": "cards/StS2_Silent-Expose.png"
+    },
+    "Finisher": {
+      "description": "Deal 6 damage for each Attack already played this turn.",
+      "image": "cards/StS2_Silent-Finisher.png"
+    },
+    "Flanking": {
+      "description": "The enemy takes double damage from other players this turn.",
+      "image": "cards/StS2_Silent-Flanking.png"
+    },
+    "Flechettes": {
+      "description": "Deal 5 damage for each Skill in your Hand.",
+      "image": "cards/StS2_Silent-Flechettes.png"
+    },
+    "Follow Through": {
+      "description": "Deal 6 damage to ALL enemies. If the last card you played this turn was a Skill, apply 1 Weak to ALL enemies.",
+      "image": "cards/StS2_Silent-FollowThrough.png"
+    },
+    "Footwork": {
+      "description": "Gain 2 Dexterity .",
+      "image": "cards/StS2_Silent-Footwork.png"
+    },
+    "Hand Trick": {
+      "description": "Gain 7 Block . Add Sly to a Skill in your Hand this turn.",
+      "image": "cards/StS2_Silent-HandTrick.png"
+    },
+    "Haze": {
+      "description": "Sly . Apply 4 Poison to ALL enemies.",
+      "image": "cards/StS2_Silent-Haze.png"
+    },
+    "Hidden Daggers": {
+      "description": "Discard 2 cards. Add 2 Shivs into your Hand.",
+      "image": "cards/StS2_Silent-HiddenDaggers.png"
+    },
+    "Infinite Blades": {
+      "description": "At the start of your turn, add 1 Shiv into your Hand.",
+      "image": "cards/StS2_Silent-InfiniteBlades.png"
+    },
+    "Leg Sweep": {
+      "description": "Apply 2 Weak . Gain 11 Block .",
+      "image": "cards/StS2_Silent-LegSweep.png"
+    },
+    "Memento Mori": {
+      "description": "Deal 8 damage. Deals 4 additional damage for each card discarded this turn.",
+      "image": "cards/StS2_Silent-MementoMori.png"
+    },
+    "Mirage": {
+      "description": "Gain Block equal to Poison on ALL enemies. Exhaust .",
+      "image": "cards/StS2_Silent-Mirage.png"
+    },
+    "Noxious Fumes": {
+      "description": "At the start of your turn, apply 2 Poison to ALL enemies.",
+      "image": "cards/StS2_Silent-NoxiousFumes.png"
+    },
+    "Outbreak": {
+      "description": "Every 3 times you apply Poison , deal 11 damage to ALL enemies.",
+      "image": "cards/StS2_Silent-Outbreak.png"
+    },
+    "Phantom Blades": {
+      "description": "Shivs gain Retain. The first Shiv you play each turn deals 9 additional damage.",
+      "image": "cards/StS2_Silent-PhantomBlades.png"
+    },
+    "Pinpoint": {
+      "description": "Deal 17 damage. Costs 1 less for each Skill played this turn.",
+      "image": "cards/StS2_Silent-Pinpoint.png"
+    },
+    "Pounce": {
+      "description": "Deal 12 damage. The next Skill you play costs 0 .",
+      "image": "cards/StS2_Silent-Pounce.png"
+    },
+    "Precise Cut": {
+      "description": "Deal 13 damage. Deals 2 less damage for each other card in your Hand.",
+      "image": "cards/StS2_Silent-PreciseCut.png"
+    },
+    "Predator": {
+      "description": "Deal 15 damage. Next turn, draw 2 cards.",
+      "image": "cards/StS2_Silent-Predator.png"
+    },
+    "Reflex": {
+      "description": "Sly . Draw 2 cards.",
+      "image": "cards/StS2_Silent-Reflex.png"
+    },
+    "Skewer": {
+      "description": "Deal 7 damage X times.",
+      "image": "cards/StS2_Silent-Skewer.png"
+    },
+    "Speedster": {
+      "description": "Whenever you draw a card during your turn, deal 2 damage to ALL enemies.",
+      "image": "cards/StS2_Silent-Speedster.png"
+    },
+    "Strangle": {
+      "description": "Deal 8 damage. Whenever you play a card this turn, the enemy loses 2 HP.",
+      "image": "cards/StS2_Silent-Strangle.png"
+    },
+    "Tactician": {
+      "description": "Sly . Gain .",
+      "image": "cards/StS2_Silent-Tactician.png"
+    },
+    "Up My Sleeve": {
+      "description": "Add 3 Shivs into your Hand. Reduce this card's cost by 1.",
+      "image": "cards/StS2_Silent-UpMySleeve.png"
+    },
+    "Well-Laid Plans": {
+      "description": "At the end of your turn, Retain up to 1 card.",
+      "image": "cards/StS2_Silent-Well-LaidPlans.png"
+    },
+    "Abrasive": {
+      "description": "Sly . Gain 1 Dexterity . Gain 4 Thorns .",
+      "image": "cards/StS2_Silent-Abrasive.png"
+    },
+    "Accelerant": {
+      "description": "Poison is triggered 1 additional time.",
+      "image": "cards/StS2_Silent-Accelerant.png"
+    },
+    "Adrenaline": {
+      "description": "Gain . Draw 2 cards. Exhaust .",
+      "image": "cards/StS2_Silent-Adrenaline.png"
+    },
+    "Afterimage": {
+      "description": "Whenever you play a card, gain 1 Block .",
+      "image": "cards/StS2_Silent-Afterimage.png"
+    },
+    "Assassinate": {
+      "description": "Innate . Deal 10 damage. Apply 1 Vulnerable . Exhaust .",
+      "image": "cards/StS2_Silent-Assassinate.png"
+    },
+    "Blade of Ink": {
+      "description": "This turn, whenever you play an Attack, gain 2 Strength this turn.",
+      "image": "cards/StS2_Silent-BladeofInk.png"
+    },
+    "Bullet Time": {
+      "description": "You cannot draw additional cards this turn. ALL cards in your Hand are free to play this turn.",
+      "image": "cards/StS2_Silent-BulletTime.png"
+    },
+    "Burst": {
+      "description": "This turn, your next Skill is played an extra time.",
+      "image": "cards/StS2_Silent-Burst.png"
+    },
+    "Corrosive Wave": {
+      "description": "Whenever you draw a card this turn, apply 3 Poison to ALL enemies.",
+      "image": "cards/StS2_Silent-CorrosiveWave.png"
+    },
+    "Echoing Slash": {
+      "description": "Deal 10 damage to ALL enemies. Repeat this effect for each enemy killed.",
+      "image": "cards/StS2_Silent-EchoingSlash.png"
+    },
+    "Envenom": {
+      "description": "Whenever an Attack deals unblocked damage, apply 1 Poison .",
+      "image": "cards/StS2_Silent-Envenom.png"
+    },
+    "Fan of Knives": {
+      "description": "Shivs now hit ALL enemies. Add 4 Shivs into your Hand.",
+      "image": "cards/StS2_Silent-FanofKnives.png"
+    },
+    "Grand Finale": {
+      "description": "Can only be played if there are no cards in your Draw Pile. Deal 50 damage to ALL enemies.",
+      "image": "cards/StS2_Silent-GrandFinale.png"
+    },
+    "Knife Trap": {
+      "description": "Play every Shiv in your Exhaust Pile on the enemy.",
+      "image": "cards/StS2_Silent-KnifeTrap.png"
+    },
+    "Malaise": {
+      "description": "Enemy loses X Strength . Apply X Weak . Exhaust .",
+      "image": "cards/StS2_Silent-Malaise.png"
+    },
+    "Master Planner": {
+      "description": "When you play a Skill, it gains Sly .",
+      "image": "cards/StS2_Silent-MasterPlanner.png"
+    },
+    "Murder": {
+      "description": "Deal 1 damage. Deals 1 additional damage for each card drawn this combat.",
+      "image": "cards/StS2_Silent-Murder.png"
+    },
+    "Nightmare": {
+      "description": "Choose a card. Next turn, add 3 copies of that card into your Hand. Exhaust .",
+      "image": "cards/StS2_Silent-Nightmare.png"
+    },
+    "Serpent Form": {
+      "description": "Whenever you play a card, deal 4 damage to a random enemy.",
+      "image": "cards/StS2_Silent-SerpentForm.png"
+    },
+    "Shadow Step": {
+      "description": "Discard your Hand. Next turn, Attacks deal double damage.",
+      "image": "cards/StS2_Silent-ShadowStep.png"
+    },
+    "Shadowmeld": {
+      "description": "Double your Block gain this turn.",
+      "image": "cards/StS2_Silent-Shadowmeld.png"
+    },
+    "Sneaky": {
+      "description": "Sly . Whenever another player attacks an enemy, gain 1 Block .",
+      "image": "cards/StS2_Silent-Sneaky.png"
+    },
+    "Storm of Steel": {
+      "description": "Discard your Hand. Add 1 Shiv into your Hand for each card discarded.",
+      "image": "cards/StS2_Silent-StormofSteel.png"
+    },
+    "The Hunt": {
+      "description": "Deal 10 damage. If Fatal, gain an additional card reward. Exhaust .",
+      "image": "cards/StS2_Silent-TheHunt.png"
+    },
+    "Tools of the Trade": {
+      "description": "At the start of your turn, draw 1 card and discard 1 card.",
+      "image": "cards/StS2_Silent-ToolsoftheTrade.png"
+    },
+    "Tracking": {
+      "description": "Weak enemies take double damage from Attacks.",
+      "image": "cards/StS2_Silent-Tracking.png"
+    },
+    "Suppress": {
+      "description": "Innate . Deal 11 damage. Apply 3 Weak .",
+      "image": "cards/StS2_Silent-Suppress.png"
+    },
+    "Wraith Form": {
+      "description": "Gain 2 Intangible . At the start of your turn, lose 1 Dexterity .",
+      "image": "cards/StS2_Silent-WraithForm.png"
+    },
+    "Caltrops": {
+      "description": "Whenever you are attacked, deal 3 damage back.",
+      "image": "cards/StS2_Silent-Caltrops.png"
+    },
+    "Distraction": {
+      "description": "Add a random Skill into your Hand. It's free to play this turn. Exhaust .",
+      "image": "cards/StS2_Silent-Distraction.png"
+    },
+    "Outmaneuver": {
+      "description": "Next turn, gain .",
+      "image": "cards/StS2_Silent-Outmaneuver.png"
+    },
+    "Defend (Regent)": {
+      "description": "Gain 5 Block .",
+      "image": "cards/StS2_Regent-Defend.png"
+    },
+    "Falling Star": {
+      "description": "Deal 7 damage. Apply 1 Weak . Apply 1 Vulnerable .",
+      "image": "cards/StS2_Regent-FallingStar.png"
+    },
+    "Strike (Regent)": {
+      "description": "Deal 6 damage.",
+      "image": "cards/StS2_Regent-Strike.png"
+    },
+    "Venerate": {
+      "description": "Gain .",
+      "image": "cards/StS2_Regent-Venerate.png"
+    },
+    "Astral Pulse": {
+      "description": "Deal 14 damage to ALL enemies.",
+      "image": "cards/StS2_Regent-AstralPulse.png"
+    },
+    "BEGONE!": {
+      "description": "Deal 4 damage. Choose a card in your Hand to Transform into Minion Dive Bomb .",
+      "image": "cards/StS2_Regent-BEGONE.png"
+    },
+    "Celestial Might": {
+      "description": "Deal 6 damage 3 times.",
+      "image": "cards/StS2_Regent-CelestialMight.png"
+    },
+    "Cloak of Stars": {
+      "description": "Gain 7 Block .",
+      "image": "cards/StS2_Regent-CloakofStars.png"
+    },
+    "Collision Course": {
+      "description": "Deal 9 damage. Add a Debris into your Hand.",
+      "image": "cards/StS2_Regent-CollisionCourse.png"
+    },
+    "Cosmic Indifference": {
+      "description": "Gain 6 Block . Put a card from your Discard Pile on top of your Draw Pile.",
+      "image": "cards/StS2_Regent-CosmicIndifference.png"
+    },
+    "Crescent Spear": {
+      "description": "Deal 6 damage. Deals 2 additional damage for ALL your cards that have a cost.",
+      "image": "cards/StS2_Regent-CrescentSpear.png"
+    },
+    "Crush Under": {
+      "description": "Deal 7 damage to ALL enemies. All enemies lose 1 Strength this turn.",
+      "image": "cards/StS2_Regent-CrushUnder.png"
+    },
+    "Gather Light": {
+      "description": "Gain 7 Block . Gain .",
+      "image": "cards/StS2_Regent-GatherLight.png"
+    },
+    "Glitterstream": {
+      "description": "Gain 11 Block . Next turn, gain 4 Block .",
+      "image": "cards/StS2_Regent-Glitterstream.png"
+    },
+    "Glow": {
+      "description": "Gain . Draw 2 cards.",
+      "image": "cards/StS2_Regent-Glow.png"
+    },
+    "Guiding Star": {
+      "description": "Deal 12 damage. Next turn, draw 2 cards.",
+      "image": "cards/StS2_Regent-GuidingStar.png"
+    },
+    "Hidden Cache": {
+      "description": "Gain . Next turn, gain .",
+      "image": "cards/StS2_Regent-HiddenCache.png"
+    },
+    "Know Thy Place": {
+      "description": "Apply 1 Weak . Apply 1 Vulnerable . Exhaust .",
+      "image": "cards/StS2_Regent-KnowThyPlace.png"
+    },
+    "Patter": {
+      "description": "Gain 8 Block . Gain 2 Vigor .",
+      "image": "cards/StS2_Regent-Patter.png"
+    },
+    "Photon Cut": {
+      "description": "Deal 10 damage. Draw 1 card. Put 1 card from your Hand on top of your Draw Pile.",
+      "image": "cards/StS2_Regent-PhotonCut.png"
+    },
+    "Refine Blade": {
+      "description": "Forge 6. Next turn, gain .",
+      "image": "cards/StS2_Regent-RefineBlade.png"
+    },
+    "Solar Strike": {
+      "description": "Deal 8 damage. Gain .",
+      "image": "cards/StS2_Regent-SolarStrike.png"
+    },
+    "Spoils of Battle": {
+      "description": "Forge 10.",
+      "image": "cards/StS2_Regent-SpoilsofBattle.png"
+    },
+    "Wrought in War": {
+      "description": "Deal 7 damage. Forge 5.",
+      "image": "cards/StS2_Regent-WroughtinWar.png"
+    },
+    "Alignment": {
+      "description": "Gain .",
+      "image": "cards/StS2_Regent-Alignment.png"
+    },
+    "Black Hole": {
+      "description": "Whenever you spend or gain , deal 3 damage to ALL enemies.",
+      "image": "cards/StS2_Regent-BlackHole.png"
+    },
+    "Bulwark": {
+      "description": "Gain 13 Block . Forge 10.",
+      "image": "cards/StS2_Regent-Bulwark.png"
+    },
+    "CHARGE!!": {
+      "description": "Choose 2 cards in your Draw Pile to Transform into Minion Strikes .",
+      "image": "cards/StS2_Regent-CHARGE.png"
+    },
+    "Child of the Stars": {
+      "description": "Whenever you spend , gain 2 Block for each spent.",
+      "image": "cards/StS2_Regent-ChildoftheStars.png"
+    },
+    "Conqueror": {
+      "description": "Forge 3. Sovereign Blade deals double damage to the enemy this turn.",
+      "image": "cards/StS2_Regent-Conqueror.png"
+    },
+    "Convergence": {
+      "description": "Next turn, gain and . Retain your Hand this turn.",
+      "image": "cards/StS2_Regent-Convergence.png"
+    },
+    "Devastate": {
+      "description": "Deal 30 damage.",
+      "image": "cards/StS2_Regent-Devastate.png"
+    },
+    "Furnace": {
+      "description": "At the start of your turn, Forge 4.",
+      "image": "cards/StS2_Regent-Furnace.png"
+    },
+    "Gamma Blast": {
+      "description": "Deal 13 damage. Apply 2 Weak . Apply 2 Vulnerable .",
+      "image": "cards/StS2_Regent-GammaBlast.png"
+    },
+    "Glimmer": {
+      "description": "Draw 3 cards. Put 1 card from your Hand on top of your Draw Pile.",
+      "image": "cards/StS2_Regent-Glimmer.png"
+    },
+    "Hegemony": {
+      "description": "Deal 15 damage. Next turn, gain .",
+      "image": "cards/StS2_Regent-Hegemony.png"
+    },
+    "Kingly Kick": {
+      "description": "Deal 24 damage. Whenever you draw this card, reduce its cost by 1.",
+      "image": "cards/StS2_Regent-KinglyKick.png"
+    },
+    "Kingly Punch": {
+      "description": "Deal 8 damage. Whenever you draw this card, increase its damage by 3 this combat.",
+      "image": "cards/StS2_Regent-KinglyPunch.png"
+    },
+    "Knockout Blow": {
+      "description": "Deal 30 damage. If this kills an enemy, gain .",
+      "image": "cards/StS2_Regent-KnockoutBlow.png"
+    },
+    "Largesse": {
+      "description": "Another player adds 1 random Colorless card to their Hand.",
+      "image": "cards/StS2_Regent-Largesse.png"
+    },
+    "Lunar Blast": {
+      "description": "Deal 4 damage for each Skill already played this turn.",
+      "image": "cards/StS2_Regent-LunarBlast.png"
+    },
+    "Manifest Authority": {
+      "description": "Gain 7 Block . Add 1 random Colorless card into your Hand.",
+      "image": "cards/StS2_Regent-ManifestAuthority.png"
+    },
+    "Monologue": {
+      "description": "Whenever you play a card this turn, gain 1 Strength this turn.",
+      "image": "cards/StS2_Regent-Monologue.png"
+    },
+    "Orbit": {
+      "description": "Every 4 you spend, gain .",
+      "image": "cards/StS2_Regent-Orbit.png"
+    },
+    "Pale Blue Dot": {
+      "description": "If you play 5 or more cards in a turn, draw 1 card at the start of your next turn.",
+      "image": "cards/StS2_Regent-PaleBlueDot.png"
+    },
+    "Parry": {
+      "description": "Whenever you play Sovereign Blade , gain 6 Block .",
+      "image": "cards/StS2_Regent-Parry.png"
+    },
+    "Particle Wall": {
+      "description": "Gain 9 Block . Return this card to your Hand.",
+      "image": "cards/StS2_Regent-ParticleWall.png"
+    },
+    "Pillar of Creation": {
+      "description": "Whenever you create a card, gain 3 Block .",
+      "image": "cards/StS2_Regent-PillarofCreation.png"
+    },
+    "Prophesize": {
+      "description": "Draw 6 cards.",
+      "image": "cards/StS2_Regent-Prophesize.png"
+    },
+    "Quasar": {
+      "description": "Choose 1 of 3 random Colorless cards to add into your Hand.",
+      "image": "cards/StS2_Regent-Quasar.png"
+    },
+    "Radiate": {
+      "description": "Deal 3 damage to ALL enemies for each gained this turn.",
+      "image": "cards/StS2_Regent-Radiate.png"
+    },
+    "Reflect": {
+      "description": "Gain 17 Block . Blocked attack damage is reflected to your attacker this turn.",
+      "image": "cards/StS2_Regent-Reflect.png"
+    },
+    "Resonance": {
+      "description": "Gain 1 Strength . ALL enemies lose 1 Strength .",
+      "image": "cards/StS2_Regent-Resonance.png"
+    },
+    "Royal Gamble": {
+      "description": "Gain 9 . Exhaust .",
+      "image": "cards/StS2_Regent-RoyalGamble.png"
+    },
+    "Shining Strike": {
+      "description": "Deal 8 damage. Gain . Put this card on top of your Draw Pile.",
+      "image": "cards/StS2_Regent-ShiningStrike.png"
+    },
+    "Spectrum Shift": {
+      "description": "At the start of your turn, add 1 random Colorless card into your Hand.",
+      "image": "cards/StS2_Regent-SpectrumShift.png"
+    },
+    "Stardust": {
+      "description": "Deal 5 damage to a random enemy X times.",
+      "image": "cards/StS2_Regent-Stardust.png"
+    },
+    "Summon Forth": {
+      "description": "Forge 8. Put Sovereign Blade into your Hand from anywhere.",
+      "image": "cards/StS2_Regent-SummonForth.png"
+    },
+    "Supermassive": {
+      "description": "Deal 5 damage. Deals 3 additional damage for each card you created this combat.",
+      "image": "cards/StS2_Regent-Supermassive.png"
+    },
+    "Terraforming": {
+      "description": "Gain 6 Vigor .",
+      "image": "cards/StS2_Regent-Terraforming.png"
+    },
+    "Arsenal": {
+      "description": "Whenever you play a Colorless card, gain 1 Strength .",
+      "image": "cards/StS2_Regent-Arsenal.png"
+    },
+    "Beat into Shape": {
+      "description": "Deal 5 damage. Forge 5. Forges an additional 5 for every other time you've hit the enemy this turn.",
+      "image": "cards/StS2_Regent-BeatintoShape.png"
+    },
+    "Big Bang": {
+      "description": "Draw 1 card. Gain . Gain . Forge 5. Exhaust .",
+      "image": "cards/StS2_Regent-BigBang.png"
+    },
+    "Bombardment": {
+      "description": "Deal 18 damage. At the start of your turn, plays from the Exhaust Pile. Exhaust .",
+      "image": "cards/StS2_Regent-Bombardment.png"
+    },
+    "Bundle of Joy": {
+      "description": "Add 3 random Colorless cards into your Hand. Exhaust .",
+      "image": "cards/StS2_Regent-BundleofJoy.png"
+    },
+    "Comet": {
+      "description": "Deal 33 damage. Apply 3 Weak . Apply 3 Vulnerable .",
+      "image": "cards/StS2_Regent-Comet.png"
+    },
+    "Crash Landing": {
+      "description": "Deal 21 damage to ALL enemies. Fill your Hand with Debris .",
+      "image": "cards/StS2_Regent-CrashLanding.png"
+    },
+    "Decisions, Decisions": {
+      "description": "Draw 3 cards. Choose a Skill in your Hand and play it 3 times. Exhaust .",
+      "image": "cards/StS2_Regent-DecisionsDecisions.png"
+    },
+    "Dying Star": {
+      "description": "Ethereal. Deal 9 damage to ALL enemies. ALL enemies lose 9 Strength this turn.",
+      "image": "cards/StS2_Regent-DyingStar.png"
+    },
+    "Foregone Conclusion": {
+      "description": "Next turn, put 2 cards from your Draw Pile into your Hand.",
+      "image": "cards/StS2_Regent-ForegoneConclusion.png"
+    },
+    "GUARDS!!!": {
+      "description": "Transform any number of cards in your Hand into Minion Sacrifice . Exhaust .",
+      "image": "cards/StS2_Regent-GUARDS.png"
+    },
+    "Genesis": {
+      "description": "At the start of your turn, gain .",
+      "image": "cards/StS2_Regent-Genesis.png"
+    },
+    "Hammer Time": {
+      "description": "Whenever you Forge , all allies Forge as well.",
+      "image": "cards/StS2_Regent-HammerTime.png"
+    },
+    "Heavenly Drill": {
+      "description": "Deal 8 damage X times. Double X if it's 4 or more.",
+      "image": "cards/StS2_Regent-HeavenlyDrill.png"
+    },
+    "Heirloom Hammer": {
+      "description": "Deal 17 damage. Choose a Colorless card in your Hand. Add a copy of that card into your Hand.",
+      "image": "cards/StS2_Regent-HeirloomHammer.png"
+    },
+    "I Am Invincible": {
+      "description": "Gain 9 Block . At the end of your turn, if this is on top of your Draw Pile, play it.",
+      "image": "cards/StS2_Regent-IAmInvincible.png"
+    },
+    "Make It So": {
+      "description": "Deal 6 damage. Every 3 Skills you play in a turn, put this into your Hand.",
+      "image": "cards/StS2_Regent-MakeItSo.png"
+    },
+    "Monarch's Gaze": {
+      "description": "Whenever you attack an enemy, it loses 1 Strength this turn.",
+      "image": "cards/StS2_Regent-MonarchsGaze.png"
+    },
+    "Neutron Aegis": {
+      "description": "Gain 8 Plating .",
+      "image": "cards/StS2_Regent-NeutronAegis.png"
+    },
+    "Royalties": {
+      "description": "At the end of combat, gain 30 Gold.",
+      "image": "cards/StS2_Regent-Royalties.png"
+    },
+    "Seeking Edge": {
+      "description": "Forge 7. Sovereign Blade now deals damage to ALL enemies.",
+      "image": "cards/StS2_Regent-SeekingEdge.png"
+    },
+    "Seven Stars": {
+      "description": "Deal 7 damage to ALL enemies 7 times.",
+      "image": "cards/StS2_Regent-SevenStars.png"
+    },
+    "Sword Sage": {
+      "description": "Increase the cost of Sovereign Blade by 1. Sovereign Blade now hits an additional time.",
+      "image": "cards/StS2_Regent-SwordSage.png"
+    },
+    "The Smith": {
+      "description": "Forge 30.",
+      "image": "cards/StS2_Regent-TheSmith.png"
+    },
+    "Tyranny": {
+      "description": "At the start of your turn, draw 1 card and Exhaust 1 card from your Hand.",
+      "image": "cards/StS2_Regent-Tyranny.png"
+    },
+    "Void Form": {
+      "description": "End your turn. The first 2 cards you play each turn are free to play.",
+      "image": "cards/StS2_Regent-VoidForm.png"
+    },
+    "Meteor Shower": {
+      "description": "Deal 14 damage to ALL enemies. Apply 2 Weak and Vulnerable to ALL enemies.",
+      "image": "cards/StS2_Regent-MeteorShower.png"
+    },
+    "The Sealed Throne": {
+      "description": "Whenever you play a card, gain .",
+      "image": "cards/StS2_Regent-TheSealedThrone.png"
+    },
+    "Bodyguard": {
+      "description": "Summon 5.",
+      "image": "cards/StS2_Necrobinder-Bodyguard.png"
+    },
+    "Defend (Necrobinder)": {
+      "description": "Gain 5 Block .",
+      "image": "cards/StS2_Necrobinder-Defend.png"
+    },
+    "Strike (Necrobinder)": {
+      "description": "Deal 6 damage.",
+      "image": "cards/StS2_Necrobinder-Strike.png"
+    },
+    "Unleash": {
+      "description": "Osty deals 6 damage. Deals additional damage equal to Osty's current HP.",
+      "image": "cards/StS2_Necrobinder-Unleash.png"
+    },
+    "Afterlife": {
+      "description": "Summon 6. Exhaust .",
+      "image": "cards/StS2_Necrobinder-Afterlife.png"
+    },
+    "Blight Strike": {
+      "description": "Deal 8 damage. Apply Doom equal to damage dealt.",
+      "image": "cards/StS2_Necrobinder-BlightStrike.png"
+    },
+    "Defile": {
+      "description": "Ethereal . Deal 13 damage.",
+      "image": "cards/StS2_Necrobinder-Defile.png"
+    },
+    "Defy": {
+      "description": "Ethereal . Gain 6 Block . Apply 1 Weak .",
+      "image": "cards/StS2_Necrobinder-Defy.png"
+    },
+    "Drain Power": {
+      "description": "Deal 10 damage. Upgrade 2 random cards in your Discard Pile.",
+      "image": "cards/StS2_Necrobinder-DrainPower.png"
+    },
+    "Fear": {
+      "description": "Ethereal . Deal 7 damage. Apply 1 Vulnerable .",
+      "image": "cards/StS2_Necrobinder-Fear.png"
+    },
+    "Flatten": {
+      "description": "Osty deals 12 damage. This card costs 0 if Osty has attacked this turn.",
+      "image": "cards/StS2_Necrobinder-Flatten.png"
+    },
+    "Grave Warden": {
+      "description": "Gain 8 Block . Add a Soul into your Draw Pile.",
+      "image": "cards/StS2_Necrobinder-GraveWarden.png"
+    },
+    "Graveblast": {
+      "description": "Deal 4 damage. Put a card from your Discard Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Necrobinder-Graveblast.png"
+    },
+    "Invoke": {
+      "description": "Next turn, Summon 2 and gain .",
+      "image": "cards/StS2_Necrobinder-Invoke.png"
+    },
+    "Negative Pulse": {
+      "description": "Gain 5 Block . Apply 7 Doom to ALL enemies.",
+      "image": "cards/StS2_Necrobinder-NegativePulse.png"
+    },
+    "Poke": {
+      "description": "Osty deals 6 damage.",
+      "image": "cards/StS2_Necrobinder-Poke.png"
+    },
+    "Pull Aggro": {
+      "description": "Summon 4. Gain 7 Block .",
+      "image": "cards/StS2_Necrobinder-PullAggro.png"
+    },
+    "Reap": {
+      "description": "Retain . Deal 27 damage.",
+      "image": "cards/StS2_Necrobinder-Reap.png"
+    },
+    "Reave": {
+      "description": "Deal 9 damage. Add a Soul into your Draw Pile.",
+      "image": "cards/StS2_Necrobinder-Reave.png"
+    },
+    "Scourge": {
+      "description": "Apply 13 Doom . Draw 1 card.",
+      "image": "cards/StS2_Necrobinder-Scourge.png"
+    },
+    "Sculpting Strike": {
+      "description": "Deal 8 damage. Add Ethereal to a card in your Hand.",
+      "image": "cards/StS2_Necrobinder-SculptingStrike.png"
+    },
+    "Snap": {
+      "description": "Osty deals 7 damage. Add Retain to a card in your Hand.",
+      "image": "cards/StS2_Necrobinder-Snap.png"
+    },
+    "Sow": {
+      "description": "Retain . Deal 8 damage to ALL enemies.",
+      "image": "cards/StS2_Necrobinder-Sow.png"
+    },
+    "Wisp": {
+      "description": "Gain . Exhaust .",
+      "image": "cards/StS2_Necrobinder-Wisp.png"
+    },
+    "Bone Shards": {
+      "description": "If Osty is alive, he deals 9 damage to ALL enemies and you gain 9 Block . Osty dies.",
+      "image": "cards/StS2_Necrobinder-BoneShards.png"
+    },
+    "Borrowed Time": {
+      "description": "Apply 3 Doom to yourself. Gain .",
+      "image": "cards/StS2_Necrobinder-BorrowedTime.png"
+    },
+    "Bury": {
+      "description": "Deal 52 damage.",
+      "image": "cards/StS2_Necrobinder-Bury.png"
+    },
+    "Calcify": {
+      "description": "Osty's attacks deal 4 additional damage.",
+      "image": "cards/StS2_Necrobinder-Calcify.png"
+    },
+    "Capture Spirit": {
+      "description": "Enemy loses 3 HP. Add 3 Souls into your Draw Pile.",
+      "image": "cards/StS2_Necrobinder-CaptureSpirit.png"
+    },
+    "Cleanse": {
+      "description": "Summon 3. Exhaust 1 card from your Draw Pile.",
+      "image": "cards/StS2_Necrobinder-Cleanse.png"
+    },
+    "Countdown": {
+      "description": "At the start of your turn, apply 6 Doom to a random enemy.",
+      "image": "cards/StS2_Necrobinder-Countdown.png"
+    },
+    "Danse Macabre": {
+      "description": "Whenever you play a card that costs or more, gain 3 Block .",
+      "image": "cards/StS2_Necrobinder-DanseMacabre.png"
+    },
+    "Death March": {
+      "description": "Deal 8 damage. Deals 3 additional damage for each card drawn during your turn.",
+      "image": "cards/StS2_Necrobinder-DeathMarch.png"
+    },
+    "Death's Door": {
+      "description": "Gain 6 Block . If you applied Doom this turn, gain Block 2 additional times.",
+      "image": "cards/StS2_Necrobinder-DeathsDoor.png"
+    },
+    "Deathbringer": {
+      "description": "Apply 21 Doom and 1 Weak to ALL enemies.",
+      "image": "cards/StS2_Necrobinder-Deathbringer.png"
+    },
+    "Debilitate": {
+      "description": "Deal 7 damage. Vulnerable and Weak are twice as effective against the enemy for the next 3 turns.",
+      "image": "cards/StS2_Necrobinder-Debilitate.png"
+    },
+    "Delay": {
+      "description": "Gain 11 Block . Next turn, gain .",
+      "image": "cards/StS2_Necrobinder-Delay.png"
+    },
+    "Dirge": {
+      "description": "Summon 3 X times. Add X Souls into your Draw Pile.",
+      "image": "cards/StS2_Necrobinder-Dirge.png"
+    },
+    "Dredge": {
+      "description": "Put 3 cards from your Discard Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Necrobinder-Dredge.png"
+    },
+    "Enfeebling Touch": {
+      "description": "Ethereal . Enemy loses 8 Strength this turn.",
+      "image": "cards/StS2_Necrobinder-EnfeeblingTouch.png"
+    },
+    "Fetch": {
+      "description": "Osty deals 3 damage. If this is the first time this card has been played this turn, draw 1 card.",
+      "image": "cards/StS2_Necrobinder-Fetch.png"
+    },
+    "Friendship": {
+      "description": "Lose 2 Strength . Gain at the start of each turn.",
+      "image": "cards/StS2_Necrobinder-Friendship.png"
+    },
+    "Haunt": {
+      "description": "Whenever you play a Soul , a random enemy loses 6 HP.",
+      "image": "cards/StS2_Necrobinder-Haunt.png"
+    },
+    "High Five": {
+      "description": "Osty deals 11 damage and applies 2 Vulnerable to ALL enemies.",
+      "image": "cards/StS2_Necrobinder-HighFive.png"
+    },
+    "Legion of Bone": {
+      "description": "ALL players Summon 6. Exhaust .",
+      "image": "cards/StS2_Necrobinder-LegionofBone.png"
+    },
+    "Lethality": {
+      "description": "Ethereal . The first Attack each turn deals 50% additional damage.",
+      "image": "cards/StS2_Necrobinder-Lethality.png"
+    },
+    "Melancholy": {
+      "description": "Gain 13 Block . Reduce this card's cost by whenever ANYONE dies.",
+      "image": "cards/StS2_Necrobinder-Melancholy.png"
+    },
+    "No Escape": {
+      "description": "Apply 10 Doom , plus an additional 5 Doom for every 10 Doom already on this enemy.",
+      "image": "cards/StS2_Necrobinder-NoEscape.png"
+    },
+    "Pagestorm": {
+      "description": "Whenever you draw an Ethereal card, draw 1 card.",
+      "image": "cards/StS2_Necrobinder-Pagestorm.png"
+    },
+    "Parse": {
+      "description": "Ethereal . Draw 3 cards.",
+      "image": "cards/StS2_Necrobinder-Parse.png"
+    },
+    "Pull from Below": {
+      "description": "Deal 5 damage for each Ethereal card played this combat.",
+      "image": "cards/StS2_Necrobinder-PullfromBelow.png"
+    },
+    "Putrefy": {
+      "description": "Apply 2 Weak . Apply 2 Vulnerable . Exhaust .",
+      "image": "cards/StS2_Necrobinder-Putrefy.png"
+    },
+    "Rattle": {
+      "description": "Osty deals 7 damage. Hits an additional time for each other time he has attacked this turn.",
+      "image": "cards/StS2_Necrobinder-Rattle.png"
+    },
+    "Right Hand Hand": {
+      "description": "Osty deals 4 damage. Whenever you play a card that costs or more, return this to your Hand from the Discard Pile.",
+      "image": "cards/StS2_Necrobinder-RightHandHand.png"
+    },
+    "Severance": {
+      "description": "Deal 13 damage. Add a Soul into your Draw Pile, Hand, and Discard Pile.",
+      "image": "cards/StS2_Necrobinder-Severance.png"
+    },
+    "Shroud": {
+      "description": "Whenever you apply Doom , gain 2 Block .",
+      "image": "cards/StS2_Necrobinder-Shroud.png"
+    },
+    "Sic 'Em": {
+      "description": "Osty deals 5 damage. Whenever Osty hits this enemy this turn, Summon 2.",
+      "image": "cards/StS2_Necrobinder-SicEm.png"
+    },
+    "Sleight of Flesh": {
+      "description": "Whenever you apply a debuff to an enemy, they take 9 damage.",
+      "image": "cards/StS2_Necrobinder-SleightofFlesh.png"
+    },
+    "Spur": {
+      "description": "Retain . Summon 3. Osty heals 5 HP.",
+      "image": "cards/StS2_Necrobinder-Spur.png"
+    },
+    "Veilpiercer": {
+      "description": "Deal 10 damage. The next Ethereal card you play costs 0 .",
+      "image": "cards/StS2_Necrobinder-Veilpiercer.png"
+    },
+    "Banshee's Cry": {
+      "description": "Deal 33 damage to ALL enemies. Costs less for each Ethereal card played this combat.",
+      "image": "cards/StS2_Necrobinder-BansheesCry.png"
+    },
+    "Call of the Void": {
+      "description": "At the start of your turn, add 1 random card into your Hand. It gains Ethereal .",
+      "image": "cards/StS2_Necrobinder-CalloftheVoid.png"
+    },
+    "Demesne": {
+      "description": "Ethereal . At the start of your turn, gain and draw 1 additional card.",
+      "image": "cards/StS2_Necrobinder-Demesne.png"
+    },
+    "Devour Life": {
+      "description": "Whenever you play a Soul , Summon 1.",
+      "image": "cards/StS2_Necrobinder-DevourLife.png"
+    },
+    "Eidolon": {
+      "description": "Exhaust your Hand. If 9 cards were Exhausted this way, gain 1 Intangible .",
+      "image": "cards/StS2_Necrobinder-Eidolon.png"
+    },
+    "End of Days": {
+      "description": "Apply 29 Doom to ALL enemies. Kill enemies with at least as much Doom as HP.",
+      "image": "cards/StS2_Necrobinder-EndofDays.png"
+    },
+    "Eradicate": {
+      "description": "Retain . Deal 11 damage X times.",
+      "image": "cards/StS2_Necrobinder-Eradicate.png"
+    },
+    "Glimpse Beyond": {
+      "description": "ALL players add 3 Souls into their Draw Pile. Exhaust .",
+      "image": "cards/StS2_Necrobinder-GlimpseBeyond.png"
+    },
+    "Hang": {
+      "description": "Deal 10 damage. Double the damage ALL Hang cards deal to this enemy.",
+      "image": "cards/StS2_Necrobinder-Hang.png"
+    },
+    "Misery": {
+      "description": "Deal 7 damage. Apply any debuffs on the enemy to ALL other enemies.",
+      "image": "cards/StS2_Necrobinder-Misery.png"
+    },
+    "Necro Mastery": {
+      "description": "Summon 5. Whenever Osty loses HP, ALL enemies lose that much HP as well.",
+      "image": "cards/StS2_Necrobinder-NecroMastery.png"
+    },
+    "Neurosurge": {
+      "description": "Gain . Draw 2 cards. At the start of your turn, apply 3 Doom to yourself.",
+      "image": "cards/StS2_Necrobinder-Neurosurge.png"
+    },
+    "Oblivion": {
+      "description": "Whenever you play a card this turn, apply 3 Doom to the enemy.",
+      "image": "cards/StS2_Necrobinder-Oblivion.png"
+    },
+    "Reanimate": {
+      "description": "Summon 20. Exhaust .",
+      "image": "cards/StS2_Necrobinder-Reanimate.png"
+    },
+    "Reaper Form": {
+      "description": "Whenever Attacks deal damage, they also apply that much Doom .",
+      "image": "cards/StS2_Necrobinder-ReaperForm.png"
+    },
+    "Sacrifice": {
+      "description": "Retain . If Osty is alive, he dies and you gain Block equal to double his Max HP.",
+      "image": "cards/StS2_Necrobinder-Sacrifice.png"
+    },
+    "Seance": {
+      "description": "Ethereal . Transform a card in your Draw Pile into Soul.",
+      "image": "cards/StS2_Necrobinder-Seance.png"
+    },
+    "Sentry Mode": {
+      "description": "At the start of your turn, add 1 Sweeping Gaze into your Hand.",
+      "image": "cards/StS2_Necrobinder-SentryMode.png"
+    },
+    "Shared Fate": {
+      "description": "Lose 2 Strength . Enemy loses 2 Strength . Exhaust .",
+      "image": "cards/StS2_Necrobinder-SharedFate.png"
+    },
+    "Soul Storm": {
+      "description": "Deal 9 damage. Deals 2 additional damage for each Soul in your Exhaust Pile.",
+      "image": "cards/StS2_Necrobinder-SoulStorm.png"
+    },
+    "Spirit of Ash": {
+      "description": "Whenever you play an Ethereal card, gain 4 Block .",
+      "image": "cards/StS2_Necrobinder-SpiritofAsh.png"
+    },
+    "Squeeze": {
+      "description": "Osty deals 25 damage. Deals 5 additional damage for ALL your other Osty Attacks.",
+      "image": "cards/StS2_Necrobinder-Squeeze.png"
+    },
+    "The Scythe": {
+      "description": "Deal 13 damage. Permanently increase this card's damage by 3. Exhaust .",
+      "image": "cards/StS2_Necrobinder-TheScythe.png"
+    },
+    "Time's Up": {
+      "description": "Deal damage equal to the enemy's Doom . Exhaust .",
+      "image": "cards/StS2_Necrobinder-TimesUp.png"
+    },
+    "Transfigure": {
+      "description": "Add Replay to a card in your Hand. It costs an extra . Exhaust .",
+      "image": "cards/StS2_Necrobinder-Transfigure.png"
+    },
+    "Undeath": {
+      "description": "Gain 7 Block . Add a copy of this card into your Discard Pile.",
+      "image": "cards/StS2_Necrobinder-Undeath.png"
+    },
+    "Forbidden Grimoire": {
+      "description": "At the end of combat, you may remove a card from your Deck. Eternal.",
+      "image": "cards/StS2_Necrobinder-ForbiddenGrimoire.png"
+    },
+    "Protector": {
+      "description": "Osty deals 10 damage. Deals additional damage equal to Osty's Max HP.",
+      "image": "cards/StS2_Necrobinder-Protector.png"
+    },
+    "Defend (Defect)": {
+      "description": "Gain 5 Block .",
+      "image": "cards/StS2_Defect-Defend.png"
+    },
+    "Dualcast": {
+      "description": "Evoke your rightmost Orb twice.",
+      "image": "cards/StS2_Defect-Dualcast.png"
+    },
+    "Strike (Defect)": {
+      "description": "Deal 6 damage.",
+      "image": "cards/StS2_Defect-Strike.png"
+    },
+    "Zap": {
+      "description": "Channel 1 Lightning .",
+      "image": "cards/StS2_Defect-Zap.png"
+    },
+    "Ball Lightning": {
+      "description": "Deal 7 damage. Channel 1 Lightning .",
+      "image": "cards/StS2_Defect-BallLightning.png"
+    },
+    "Barrage": {
+      "description": "Deal 5 damage for each Channeled Orb.",
+      "image": "cards/StS2_Defect-Barrage.png"
+    },
+    "Beam Cell": {
+      "description": "Deal 3 damage. Apply 1 Vulnerable.",
+      "image": "cards/StS2_Defect-BeamCell.png"
+    },
+    "Boost Away": {
+      "description": "Gain 6 Block . Add a Dazed into your Discard Pile.",
+      "image": "cards/StS2_Defect-BoostAway.png"
+    },
+    "Charge Battery": {
+      "description": "Gain 7 Block . Next turn, gain .",
+      "image": "cards/StS2_Defect-ChargeBattery.png"
+    },
+    "Claw": {
+      "description": "Deal 3 damage. Increase the damage of ALL Claw cards by 2 this combat.",
+      "image": "cards/StS2_Defect-Claw.png"
+    },
+    "Cold Snap": {
+      "description": "Deal 6 damage. Channel 1 Frost .",
+      "image": "cards/StS2_Defect-ColdSnap.png"
+    },
+    "Compile Driver": {
+      "description": "Deal 7 damage. Draw 1 card for each unique Orb you have.",
+      "image": "cards/StS2_Defect-CompileDriver.png"
+    },
+    "Coolheaded": {
+      "description": "Channel 1 Frost . Draw 1 card.",
+      "image": "cards/StS2_Defect-Coolheaded.png"
+    },
+    "Focused Strike": {
+      "description": "Deal 9 damage. Gain 1 Focus this turn.",
+      "image": "cards/StS2_Defect-FocusedStrike.png"
+    },
+    "Go for the Eyes": {
+      "description": "Deal 3 damage. If the enemy intends to attack, apply 1 Weak.",
+      "image": "cards/StS2_Defect-GofortheEyes.png"
+    },
+    "Gunk Up": {
+      "description": "Deal 4 damage 3 times. Add a Slimed into your Discard Pile.",
+      "image": "cards/StS2_Defect-GunkUp.png"
+    },
+    "Hologram": {
+      "description": "Gain 3 Block . Put a card from your Discard Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Defect-Hologram.png"
+    },
+    "Hotfix": {
+      "description": "Gain 2 Focus this turn.",
+      "image": "cards/StS2_Defect-Hotfix.png"
+    },
+    "Leap": {
+      "description": "Gain 9 Block .",
+      "image": "cards/StS2_Defect-Leap.png"
+    },
+    "Lightning Rod": {
+      "description": "Gain 4 Block . At the start of the next 2 turns, Channel 1 Lightning .",
+      "image": "cards/StS2_Defect-LightningRod.png"
+    },
+    "Momentum Strike": {
+      "description": "Deal 10 damage. Reduce this card's cost to 0 .",
+      "image": "cards/StS2_Defect-MomentumStrike.png"
+    },
+    "Sweeping Beam": {
+      "description": "Deal 6 damage to ALL enemies. Draw 1 card.",
+      "image": "cards/StS2_Defect-SweepingBeam.png"
+    },
+    "TURBO": {
+      "description": "Gain . Add a Void into your Discard Pile.",
+      "image": "cards/StS2_Defect-TURBO.png"
+    },
+    "Uproar": {
+      "description": "Deal 5 damage twice. Play a random Attack from your Draw Pile.",
+      "image": "cards/StS2_Defect-Uproar.png"
+    },
+    "Boot Sequence": {
+      "description": "Innate . Gain 10 Block . Exhaust .",
+      "image": "cards/StS2_Defect-BootSequence.png"
+    },
+    "Bulk Up": {
+      "description": "Lose 1 Orb Slot. Gain 2 Strength . Gain 2 Dexterity .",
+      "image": "cards/StS2_Defect-BulkUp.png"
+    },
+    "Capacitor": {
+      "description": "Gain 2 Orb Slots.",
+      "image": "cards/StS2_Defect-Capacitor.png"
+    },
+    "Chaos": {
+      "description": "Channel 1 random Orb.",
+      "image": "cards/StS2_Defect-Chaos.png"
+    },
+    "Chill": {
+      "description": "Channel 1 Frost for each enemy. Exhaust .",
+      "image": "cards/StS2_Defect-Chill.png"
+    },
+    "Compact": {
+      "description": "Gain 6 Block . Transform all Status cards in your Hand into Fuel .",
+      "image": "cards/StS2_Defect-Compact.png"
+    },
+    "Darkness": {
+      "description": "Channel 1 Dark . Trigger the passive ability of all Dark Orbs.",
+      "image": "cards/StS2_Defect-Darkness.png"
+    },
+    "Double Energy": {
+      "description": "Double your Energy. Exhaust .",
+      "image": "cards/StS2_Defect-DoubleEnergy.png"
+    },
+    "Energy Surge": {
+      "description": "ALL players gain . Exhaust .",
+      "image": "cards/StS2_Defect-EnergySurge.png"
+    },
+    "FTL": {
+      "description": "Deal 5 damage. If you have played fewer than 3 cards this turn, draw 1 card.",
+      "image": "cards/StS2_Defect-FTL.png"
+    },
+    "Feral": {
+      "description": "The first time you play a 0 Attack each turn, return it to your Hand.",
+      "image": "cards/StS2_Defect-Feral.png"
+    },
+    "Fight Through": {
+      "description": "Gain 13 Block . Add 2 Wounds into your Discard Pile.",
+      "image": "cards/StS2_Defect-FightThrough.png"
+    },
+    "Fusion": {
+      "description": "Channel 1 Plasma .",
+      "image": "cards/StS2_Defect-Fusion.png"
+    },
+    "Glacier": {
+      "description": "Gain 6 Block . Channel 2 Frost .",
+      "image": "cards/StS2_Defect-Glacier.png"
+    },
+    "Glasswork": {
+      "description": "Gain 5 Block . Channel 1 Glass .",
+      "image": "cards/StS2_Defect-Glasswork.png"
+    },
+    "Hailstorm": {
+      "description": "At the end of your turn, if you have Frost , deal 6 damage to ALL enemies.",
+      "image": "cards/StS2_Defect-Hailstorm.png"
+    },
+    "Iteration": {
+      "description": "The first time you draw a Status card each turn, draw 2 cards.",
+      "image": "cards/StS2_Defect-Iteration.png"
+    },
+    "Loop": {
+      "description": "At the start of your turn, trigger the passive ability of your rightmost Orb.",
+      "image": "cards/StS2_Defect-Loop.png"
+    },
+    "Null": {
+      "description": "Deal 10 damage. Apply 2 Weak. Channel 1 Dark .",
+      "image": "cards/StS2_Defect-Null.png"
+    },
+    "Overclock": {
+      "description": "Draw 2 cards. Add a Burn into your Discard Pile.",
+      "image": "cards/StS2_Defect-Overclock.png"
+    },
+    "Refract": {
+      "description": "Deal 9 damage twice. Channel 2 Glass .",
+      "image": "cards/StS2_Defect-Refract.png"
+    },
+    "Rip and Tear": {
+      "description": "Deal 7 damage to a random enemy twice.",
+      "image": "cards/StS2_Defect-RipandTear.png"
+    },
+    "Rocket Punch": {
+      "description": "Deal 13 damage. Draw 1 card. When a Status card is created, reduce this card's cost to 0 this turn.",
+      "image": "cards/StS2_Defect-RocketPunch.png"
+    },
+    "Scavenge": {
+      "description": "Exhaust a card. Next turn, gain .",
+      "image": "cards/StS2_Defect-Scavenge.png"
+    },
+    "Scrape": {
+      "description": "Deal 7 damage. Draw 4 cards. Discard all cards drawn this way that do not cost 0 .",
+      "image": "cards/StS2_Defect-Scrape.png"
+    },
+    "Shadow Shield": {
+      "description": "Gain 11 Block . Channel 1 Dark .",
+      "image": "cards/StS2_Defect-ShadowShield.png"
+    },
+    "Skim": {
+      "description": "Draw 3 cards.",
+      "image": "cards/StS2_Defect-Skim.png"
+    },
+    "Smokestack": {
+      "description": "Whenever you create a Status, deal 5 damage to ALL enemies.",
+      "image": "cards/StS2_Defect-Smokestack.png"
+    },
+    "Storm": {
+      "description": "Whenever you play a Power, Channel 1 Lightning .",
+      "image": "cards/StS2_Defect-Storm.png"
+    },
+    "Subroutine": {
+      "description": "Whenever you play a Power, gain .",
+      "image": "cards/StS2_Defect-Subroutine.png"
+    },
+    "Sunder": {
+      "description": "Deal 24 damage. If this kills an enemy, gain .",
+      "image": "cards/StS2_Defect-Sunder.png"
+    },
+    "Synchronize": {
+      "description": "Gain 2 Focus this turn for each unique Orb you have. Exhaust .",
+      "image": "cards/StS2_Defect-Synchronize.png"
+    },
+    "Synthesis": {
+      "description": "Deal 12 damage. The next Power you play costs 0 .",
+      "image": "cards/StS2_Defect-Synthesis.png"
+    },
+    "Tempest": {
+      "description": "Channel X Lightning .",
+      "image": "cards/StS2_Defect-Tempest.png"
+    },
+    "Tesla Coil": {
+      "description": "Deal 3 damage. Trigger all Lightning against the enemy.",
+      "image": "cards/StS2_Defect-TeslaCoil.png"
+    },
+    "Thunder": {
+      "description": "Whenever you Evoke Lightning , deal 6 damage to each enemy hit.",
+      "image": "cards/StS2_Defect-Thunder.png"
+    },
+    "White Noise": {
+      "description": "Add a random Power into your Hand. It's free to play this turn. Exhaust .",
+      "image": "cards/StS2_Defect-WhiteNoise.png"
+    },
+    "Adaptive Strike": {
+      "description": "Deal 18 damage. Add a 0 copy of this card into your Discard Pile.",
+      "image": "cards/StS2_Defect-AdaptiveStrike.png"
+    },
+    "All for One": {
+      "description": "Deal 10 damage. Put ALL 0 cards from your Discard Pile into your Hand.",
+      "image": "cards/StS2_Defect-AllforOne.png"
+    },
+    "Buffer": {
+      "description": "Prevent the next time you would lose HP.",
+      "image": "cards/StS2_Defect-Buffer.png"
+    },
+    "Consuming Shadow": {
+      "description": "Channel 2 Dark . At the end of your turn, Evoke your leftmost Orb.",
+      "image": "cards/StS2_Defect-ConsumingShadow.png"
+    },
+    "Coolant": {
+      "description": "At the start of your turn, gain 2 Block for each unique Orb you have.",
+      "image": "cards/StS2_Defect-Coolant.png"
+    },
+    "Creative AI": {
+      "description": "At the start of your turn, add a random Power into your Hand.",
+      "image": "cards/StS2_Defect-CreativeAI.png"
+    },
+    "Defragment": {
+      "description": "Gain 1 Focus .",
+      "image": "cards/StS2_Defect-Defragment.png"
+    },
+    "Echo Form": {
+      "description": "Ethereal . The first card you play each turn is played an extra time.",
+      "image": "cards/StS2_Defect-EchoForm.png"
+    },
+    "Flak Cannon": {
+      "description": "Exhaust ALL your Status cards. Deal 8 damage to a random enemy for each card Exhausted .",
+      "image": "cards/StS2_Defect-FlakCannon.png"
+    },
+    "Genetic Algorithm": {
+      "description": "Gain 1 Block . Permanently increase this card's Block by 3. Exhaust .",
+      "image": "cards/StS2_Defect-GeneticAlgorithm.png"
+    },
+    "Helix Drill": {
+      "description": "Deal 3 damage for each previously spent this turn.",
+      "image": "cards/StS2_Defect-HelixDrill.png"
+    },
+    "Hyperbeam": {
+      "description": "Deal 26 damage to ALL enemies. Lose 3 Focus .",
+      "image": "cards/StS2_Defect-Hyperbeam.png"
+    },
+    "Ice Lance": {
+      "description": "Deal 19 damage. Channel 3 Frost .",
+      "image": "cards/StS2_Defect-IceLance.png"
+    },
+    "Ignition": {
+      "description": "Another player Channels Plasma . Exhaust .",
+      "image": "cards/StS2_Defect-Ignition.png"
+    },
+    "Machine Learning": {
+      "description": "At the start of your turn, draw 1 additional card.",
+      "image": "cards/StS2_Defect-MachineLearning.png"
+    },
+    "Meteor Strike": {
+      "description": "Deal 24 damage. Channel 3 Plasma .",
+      "image": "cards/StS2_Defect-MeteorStrike.png"
+    },
+    "Modded": {
+      "description": "Gain 1 Orb Slot. Draw 1 card. Increase this card's cost by 1.",
+      "image": "cards/StS2_Defect-Modded.png"
+    },
+    "Multi-Cast": {
+      "description": "Evoke your rightmost Orb X times.",
+      "image": "cards/StS2_Defect-Multi-Cast.png"
+    },
+    "Rainbow": {
+      "description": "Channel 1 Lightning . Channel 1 Frost . Channel 1 Dark . Exhaust .",
+      "image": "cards/StS2_Defect-Rainbow.png"
+    },
+    "Reboot": {
+      "description": "Shuffle ALL your cards into your Draw Pile. Draw 4 cards. Exhaust .",
+      "image": "cards/StS2_Defect-Reboot.png"
+    },
+    "Shatter": {
+      "description": "Deal 11 damage to ALL enemies. Evoke all of your Orbs.",
+      "image": "cards/StS2_Defect-Shatter.png"
+    },
+    "Signal Boost": {
+      "description": "The next Power you play is played an additional time. Exhaust .",
+      "image": "cards/StS2_Defect-SignalBoost.png"
+    },
+    "Spinner": {
+      "description": "At the start of your turn, Channel 1 Glass .",
+      "image": "cards/StS2_Defect-Spinner.png"
+    },
+    "Supercritical": {
+      "description": "Gain 4 . Exhaust .",
+      "image": "cards/StS2_Defect-Supercritical.png"
+    },
+    "Trash to Treasure": {
+      "description": "Whenever you create a Status card, Channel 1 random Orb.",
+      "image": "cards/StS2_Defect-TrashtoTreasure.png"
+    },
+    "Voltaic": {
+      "description": "Channel Lightning equal to the Lightning already Channeled this combat. Exhaust .",
+      "image": "cards/StS2_Defect-Voltaic.png"
+    },
+    "Biased Cognition": {
+      "description": "Gain 4 Focus . At the start of your turn, lose 1 Focus .",
+      "image": "cards/StS2_Defect-BiasedCognition.png"
+    },
+    "Quadcast": {
+      "description": "Evoke your rightmost Orb 4 times.",
+      "image": "cards/StS2_Defect-Quadcast.png"
+    },
+    "Hello World": {
+      "description": "At the start of your turn, add a random Common card into your Hand.",
+      "image": "cards/StS2_Defect-HelloWorld.png"
+    },
+    "Rebound": {
+      "description": "Deal 9 damage. Put the next card you play this turn on top of your Draw Pile.",
+      "image": "cards/StS2_Defect-Rebound.png"
+    },
+    "Stack": {
+      "description": "Gain Block equal to the number of cards in your Discard Pile.",
+      "image": "cards/StS2_Defect-Stack.png"
+    },
+    "Automation": {
+      "description": "Every 10 cards you draw, gain .",
+      "image": "cards/StS2_Colorless-Automation.png"
+    },
+    "Believe in You": {
+      "description": "Another player gains .",
+      "image": "cards/StS2_Colorless-BelieveinYou.png"
+    },
+    "Catastrophe": {
+      "description": "Play 2 random cards from your Draw Pile.",
+      "image": "cards/StS2_Colorless-Catastrophe.png"
+    },
+    "Coordinate": {
+      "description": "Give another player 5 Strength this turn.",
+      "image": "cards/StS2_Colorless-Coordinate.png"
+    },
+    "Dark Shackles": {
+      "description": "Enemy loses 9 Strength this turn. Exhaust .",
+      "image": "cards/StS2_Colorless-DarkShackles.png"
+    },
+    "Discovery": {
+      "description": "Choose 1 of 3 random cards to add into your Hand. It costs 0 this turn. Exhaust .",
+      "image": "cards/StS2_Colorless-Discovery.png"
+    },
+    "Dramatic Entrance": {
+      "description": "Innate . Deal 11 damage to ALL enemies. Exhaust .",
+      "image": "cards/StS2_Colorless-DramaticEntrance.png"
+    },
+    "Equilibrium": {
+      "description": "Gain 13 Block . Retain your Hand this turn.",
+      "image": "cards/StS2_Colorless-Equilibrium.png"
+    },
+    "Fasten": {
+      "description": "Gain an additional 5 Block from Defend cards.",
+      "image": "cards/StS2_Colorless-Fasten.png"
+    },
+    "Finesse": {
+      "description": "Gain 4 Block . Draw 1 card.",
+      "image": "cards/StS2_Colorless-Finesse.png"
+    },
+    "Fisticuffs": {
+      "description": "Deal 7 damage. Gain Block equal to damage dealt.",
+      "image": "cards/StS2_Colorless-Fisticuffs.png"
+    },
+    "Flash of Steel": {
+      "description": "Deal 5 damage. Draw 1 card.",
+      "image": "cards/StS2_Colorless-FlashofSteel.png"
+    },
+    "Gang Up": {
+      "description": "Deal 5 damage. Deals 5 additional damage for each time another player has attacked the enemy this turn.",
+      "image": "cards/StS2_Colorless-GangUp.png"
+    },
+    "Huddle Up": {
+      "description": "ALL allies draw 2 cards.",
+      "image": "cards/StS2_Colorless-HuddleUp.png"
+    },
+    "Impatience": {
+      "description": "If you have no Attacks in your Hand, draw 2 cards.",
+      "image": "cards/StS2_Colorless-Impatience.png"
+    },
+    "Intercept": {
+      "description": "Gain 9 Block . Redirect all incoming attacks that would be dealt to another player this turn to you.",
+      "image": "cards/StS2_Colorless-Intercept.png"
+    },
+    "Jack of All Trades": {
+      "description": "Add 1 random Colorless card into your Hand. Exhaust .",
+      "image": "cards/StS2_Colorless-JackofAllTrades.png"
+    },
+    "Lift": {
+      "description": "Give another player 11 Block .",
+      "image": "cards/StS2_Colorless-Lift.png"
+    },
+    "Mind Blast": {
+      "description": "Innate . Deal damage equal to the number of cards in your Draw Pile.",
+      "image": "cards/StS2_Colorless-MindBlast.png"
+    },
+    "Omnislice": {
+      "description": "Deal 8 damage. Damage ALL other enemies equal to the damage dealt.",
+      "image": "cards/StS2_Colorless-Omnislice.png"
+    },
+    "Panache": {
+      "description": "Every time you play 5 cards in a single turn, deal 10 damage to ALL enemies.",
+      "image": "cards/StS2_Colorless-Panache.png"
+    },
+    "Panic Button": {
+      "description": "Gain 30 Block . You cannot gain Block from cards for 2 turns. Exhaust .",
+      "image": "cards/StS2_Colorless-PanicButton.png"
+    },
+    "Prep Time": {
+      "description": "At the start of your turn, gain 4 Vigor .",
+      "image": "cards/StS2_Colorless-PrepTime.png"
+    },
+    "Production": {
+      "description": "Gain . Exhaust .",
+      "image": "cards/StS2_Colorless-Production.png"
+    },
+    "Prolong": {
+      "description": "Next turn, gain Block equal to your current Block . Exhaust .",
+      "image": "cards/StS2_Colorless-Prolong.png"
+    },
+    "Prowess": {
+      "description": "Gain 1 Strength . Gain 1 Dexterity .",
+      "image": "cards/StS2_Colorless-Prowess.png"
+    },
+    "Purity": {
+      "description": "Retain . Exhaust up to 3 cards in your Hand. Exhaust .",
+      "image": "cards/StS2_Colorless-Purity.png"
+    },
+    "Restlessness": {
+      "description": "Retain . If your Hand is empty, draw 2 cards and gain .",
+      "image": "cards/StS2_Colorless-Restlessness.png"
+    },
+    "Seeker Strike": {
+      "description": "Deal 6 damage. Choose 1 of 3 cards in your Draw Pile to add into your Hand.",
+      "image": "cards/StS2_Colorless-SeekerStrike.png"
+    },
+    "Shockwave": {
+      "description": "Apply 3 Weak and Vulnerable to ALL enemies. Exhaust .",
+      "image": "cards/StS2_Colorless-Shockwave.png"
+    },
+    "Splash": {
+      "description": "Choose 1 of 3 random Attacks from another character to add into your Hand. It's free to play this turn.",
+      "image": "cards/StS2_Colorless-Splash.png"
+    },
+    "Stratagem": {
+      "description": "Whenever you shuffle your Draw Pile, choose a card from it to put into your Hand.",
+      "image": "cards/StS2_Colorless-Stratagem.png"
+    },
+    "Tag Team": {
+      "description": "Deal 11 damage. The next Attack another player plays on the enemy is played an extra time.",
+      "image": "cards/StS2_Colorless-TagTeam.png"
+    },
+    "The Bomb": {
+      "description": "At the end of 3 turns, deal 40 damage to ALL enemies.",
+      "image": "cards/StS2_Colorless-TheBomb.png"
+    },
+    "Thinking Ahead": {
+      "description": "Draw 2 cards. Put 1 card from your Hand on top of your Draw Pile. Exhaust .",
+      "image": "cards/StS2_Colorless-ThinkingAhead.png"
+    },
+    "Thrumming Hatchet": {
+      "description": "Deal 11 damage. At the start of your next turn, return this to your Hand.",
+      "image": "cards/StS2_Colorless-ThrummingHatchet.png"
+    },
+    "Ultimate Defend": {
+      "description": "Gain 11 Block .",
+      "image": "cards/StS2_Colorless-UltimateDefend.png"
+    },
+    "Ultimate Strike": {
+      "description": "Deal 14 damage.",
+      "image": "cards/StS2_Colorless-UltimateStrike.png"
+    },
+    "Volley": {
+      "description": "Deal 10 damage to a random enemy X times.",
+      "image": "cards/StS2_Colorless-Volley.png"
+    },
+    "Alchemize": {
+      "description": "Procure a random potion. Exhaust .",
+      "image": "cards/StS2_Colorless-Alchemize.png"
+    },
+    "Anointed": {
+      "description": "Put every Rare card from your Draw Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Colorless-Anointed.png"
+    },
+    "Beacon of Hope": {
+      "description": "Whenever you gain Block on your turn, other players gain half that much Block .",
+      "image": "cards/StS2_Colorless-BeaconofHope.png"
+    },
+    "Beat Down": {
+      "description": "Play 3 random Attacks from your Discard Pile.",
+      "image": "cards/StS2_Colorless-BeatDown.png"
+    },
+    "Bolas": {
+      "description": "Deal 3 damage. At the start of your next turn, return this to your Hand.",
+      "image": "cards/StS2_Colorless-Bolas.png"
+    },
+    "Calamity": {
+      "description": "Whenever you play an Attack, add a random Attack into your Hand.",
+      "image": "cards/StS2_Colorless-Calamity.png"
+    },
+    "Entropy": {
+      "description": "At the start of your turn, Transform 1 card in your Hand.",
+      "image": "cards/StS2_Colorless-Entropy.png"
+    },
+    "Eternal Armor": {
+      "description": "Gain 7 Plating .",
+      "image": "cards/StS2_Colorless-EternalArmor.png"
+    },
+    "Gold Axe": {
+      "description": "Deal damage equal to the number of cards played this combat.",
+      "image": "cards/StS2_Colorless-GoldAxe.png"
+    },
+    "Hand of Greed": {
+      "description": "Deal 20 damage. If Fatal, gain 20 Gold.",
+      "image": "cards/StS2_Colorless-HandofGreed.png"
+    },
+    "Hidden Gem": {
+      "description": "A random card in your Draw Pile gains Replay 2.",
+      "image": "cards/StS2_Colorless-HiddenGem.png"
+    },
+    "Jackpot": {
+      "description": "Deal 25 damage. Add 3 random 0 cards into your Hand.",
+      "image": "cards/StS2_Colorless-Jackpot.png"
+    },
+    "Knockdown": {
+      "description": "Deal 10 damage. The enemy takes double damage from other players this turn.",
+      "image": "cards/StS2_Colorless-Knockdown.png"
+    },
+    "Master of Strategy": {
+      "description": "Draw 3 cards. Exhaust .",
+      "image": "cards/StS2_Colorless-MasterofStrategy.png"
+    },
+    "Mayhem": {
+      "description": "At the start of your turn, play the top card of your Draw Pile.",
+      "image": "cards/StS2_Colorless-Mayhem.png"
+    },
+    "Mimic": {
+      "description": "Gain Block equal to the Block on another player. Exhaust .",
+      "image": "cards/StS2_Colorless-Mimic.png"
+    },
+    "Nostalgia": {
+      "description": "The first Attack or Skill you play each turn is placed on top of your Draw Pile.",
+      "image": "cards/StS2_Colorless-Nostalgia.png"
+    },
+    "Rally": {
+      "description": "ALL players gain 12 Block .",
+      "image": "cards/StS2_Colorless-Rally.png"
+    },
+    "Rend": {
+      "description": "Deal 15 damage. Deals 5 additional damage for each unique debuff on the enemy.",
+      "image": "cards/StS2_Colorless-Rend.png"
+    },
+    "Rolling Boulder": {
+      "description": "At the start of your turn, deal 5 damage to ALL enemies and increase this damage by 5.",
+      "image": "cards/StS2_Colorless-RollingBoulder.png"
+    },
+    "Salvo": {
+      "description": "Deal 12 damage. Retain your Hand this turn.",
+      "image": "cards/StS2_Colorless-Salvo.png"
+    },
+    "Scrawl": {
+      "description": "Draw cards until your Hand is full. Exhaust .",
+      "image": "cards/StS2_Colorless-Scrawl.png"
+    },
+    "Secret Technique": {
+      "description": "Put a Skill from your Draw Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Colorless-SecretTechnique.png"
+    },
+    "Secret Weapon": {
+      "description": "Put an Attack from your Draw Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Colorless-SecretWeapon.png"
+    },
+    "The Gambit": {
+      "description": "Gain 50 Block . If you take unblocked attack damage this combat, die.",
+      "image": "cards/StS2_Colorless-TheGambit.png"
+    },
+    "Apotheosis": {
+      "description": "Innate . Upgrade ALL your cards. Exhaust .",
+      "image": "cards/StS2_Colorless-Apotheosis.png"
+    },
+    "Apparition": {
+      "description": "Ethereal . Gain 1 Intangible . Exhaust .",
+      "image": "cards/StS2_Colorless-Apparition.png"
+    },
+    "Brightest Flame": {
+      "description": "Gain . Draw 2 cards. Lose 1 Max HP.",
+      "image": "cards/StS2_Colorless-BrightestFlame.png"
+    },
+    "Maul": {
+      "description": "Deal 5 damage twice. Increase the damage of ALL Maul cards by 1 this combat.",
+      "image": "cards/StS2_Colorless-Maul.png"
+    },
+    "Neow's Fury": {
+      "description": "Deal 10 damage. Put 2 random cards from your Discard Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Colorless-NeowsFury.png"
+    },
+    "Relax": {
+      "description": "Gain 15 Block . Next turn, draw 2 cards and gain . Exhaust .",
+      "image": "cards/StS2_Colorless-Relax.png"
+    },
+    "Whistle": {
+      "description": "Deal 33 damage. Stun the enemy. Exhaust .",
+      "image": "cards/StS2_Colorless-Whistle.png"
+    },
+    "Wish": {
+      "description": "Put a card from your Draw Pile into your Hand. Exhaust .",
+      "image": "cards/StS2_Colorless-Wish.png"
+    },
+    "Beckon": {
+      "description": "At the end of your turn, if this is in your Hand, lose 6 HP.",
+      "image": "cards/StS2_Colorless-Beckon.png"
+    },
+    "Burn": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, take 2 damage.",
+      "image": "cards/StS2_Colorless-Burn.png"
+    },
+    "Dazed": {
+      "description": "Unplayable . Ethereal .",
+      "image": "cards/StS2_Colorless-Dazed.png"
+    },
+    "Debris": {
+      "description": "Exhaust .",
+      "image": "cards/StS2_Colorless-Debris.png"
+    },
+    "Disintegration": {
+      "description": "At the end of your turn, take 6 damage.",
+      "image": "cards/StS2_Colorless-Disintegration.png"
+    },
+    "Frantic Escape": {
+      "description": "Get farther away. Increase Sandpit by 1. Increase the cost of this card by 1.",
+      "image": "cards/StS2_Colorless-FranticEscape.png"
+    },
+    "Infection": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, take 3 damage.",
+      "image": "cards/StS2_Colorless-Infection.png"
+    },
+    "Mind Rot": {
+      "description": "Draw 1 fewer card each turn.",
+      "image": "cards/StS2_Colorless-MindRot.png"
+    },
+    "Slimed": {
+      "description": "Draw 1 card. Exhaust .",
+      "image": "cards/StS2_Colorless-Slimed.png"
+    },
+    "Sloth": {
+      "description": "You cannot play more than 3 cards each turn.",
+      "image": "cards/StS2_Colorless-Sloth.png"
+    },
+    "Soot": {
+      "description": "Unplayable .",
+      "image": "cards/StS2_Colorless-Soot.png"
+    },
+    "Toxic": {
+      "description": "At the end of your turn, if this is in your Hand, take 5 damage. Exhaust .",
+      "image": "cards/StS2_Colorless-Toxic.png"
+    },
+    "Void": {
+      "description": "Unplayable . Ethereal . Whenever you draw this card, lose .",
+      "image": "cards/StS2_Colorless-Void.png"
+    },
+    "Waste Away": {
+      "description": "Gain 1 less per turn.",
+      "image": "cards/StS2_Colorless-WasteAway.png"
+    },
+    "Wound": {
+      "description": "Unplayable .",
+      "image": "cards/StS2_Colorless-Wound.png"
+    },
+    "Ascender's Bane": {
+      "description": "Unplayable . Ethereal . Eternal .",
+      "image": "cards/StS2_Curse-AscendersBane.png"
+    },
+    "Bad Luck": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, lose 13 HP. Eternal .",
+      "image": "cards/StS2_Curse-BadLuck.png"
+    },
+    "Clumsy": {
+      "description": "Unplayable . Ethereal .",
+      "image": "cards/StS2_Curse-Clumsy.png"
+    },
+    "Curse of the Bell": {
+      "description": "Unplayable . Eternal .",
+      "image": "cards/StS2_Curse-CurseoftheBell.png"
+    },
+    "Debt": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, lose 10 Gold.",
+      "image": "cards/StS2_Curse-Debt.png"
+    },
+    "Decay": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, take 2 damage.",
+      "image": "cards/StS2_Curse-Decay.png"
+    },
+    "Doubt": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, gain 1 Weak .",
+      "image": "cards/StS2_Curse-Doubt.png"
+    },
+    "Enthralled": {
+      "description": "If this is in your Hand, it must be played before other cards. Eternal .",
+      "image": "cards/StS2_Curse-Enthralled.png"
+    },
+    "Folly": {
+      "description": "Unplayable . Innate . Eternal .",
+      "image": "cards/StS2_Curse-Folly.png"
+    },
+    "Greed": {
+      "description": "Unplayable . Eternal .",
+      "image": "cards/StS2_Curse-Greed.png"
+    },
+    "Guilty": {
+      "description": "Unplayable . Removed from your Deck after 5 combats.",
+      "image": "cards/StS2_Curse-Guilty.png"
+    },
+    "Injury": {
+      "description": "Unplayable .",
+      "image": "cards/StS2_Curse-Injury.png"
+    },
+    "Normality": {
+      "description": "Unplayable . You cannot play more than 3 cards this turn.",
+      "image": "cards/StS2_Curse-Normality.png"
+    },
+    "Poor Sleep": {
+      "description": "Unplayable . Retain .",
+      "image": "cards/StS2_Curse-PoorSleep.png"
+    },
+    "Regret": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, lose 1 HP for each card in your Hand.",
+      "image": "cards/StS2_Curse-Regret.png"
+    },
+    "Shame": {
+      "description": "Unplayable . At the end of your turn, if this is in your Hand, gain 1 Frail .",
+      "image": "cards/StS2_Curse-Shame.png"
+    },
+    "Spore Mind": {
+      "description": "Exhaust .",
+      "image": "cards/StS2_Curse-SporeMind.png"
+    },
+    "Writhe": {
+      "description": "Unplayable . Innate .",
+      "image": "cards/StS2_Curse-Writhe.png"
+    },
+    "Byrdonis Egg": {
+      "description": "Unplayable . Can be hatched at a Rest Site.",
+      "image": "cards/StS2_Quest-ByrdonisEgg.png"
+    },
+    "Lantern Key": {
+      "description": "Unplayable . Unlocks a special event in the next Act.",
+      "image": "cards/StS2_Quest-LanternKey.png"
+    },
+    "Spoils Map": {
+      "description": "Unplayable . Marks a site of 600 extra Gold in the next Act.",
+      "image": "cards/StS2_Quest-SpoilsMap.png"
+    },
+    "Fuel": {
+      "description": "Gain . Draw 1 card. Exhaust .",
+      "image": "cards/StS2_Colorless-Fuel.png"
+    },
+    "Giant Rock": {
+      "description": "Deal 16 damage.",
+      "image": "cards/StS2_Colorless-GiantRock.png"
+    },
+    "Luminesce": {
+      "description": "Retain . Gain . Exhaust .",
+      "image": "cards/StS2_Colorless-Luminesce.png"
+    },
+    "Minion Dive Bomb": {
+      "description": "Deal 13 damage. Exhaust .",
+      "image": "cards/StS2_Colorless-MinionDiveBomb.png"
+    },
+    "Minion Sacrifice": {
+      "description": "Gain 9 Block . Exhaust .",
+      "image": "cards/StS2_Colorless-MinionSacrifice.png"
+    },
+    "Minion Strike": {
+      "description": "Deal 7 damage. Draw 1 card. Exhaust .",
+      "image": "cards/StS2_Colorless-MinionStrike.png"
+    },
+    "Shiv": {
+      "description": "Deal 4 damage. Exhaust .",
+      "image": "cards/StS2_Colorless-Shiv.png"
+    },
+    "Soul": {
+      "description": "Draw 2 cards. Exhaust .",
+      "image": "cards/StS2_Colorless-Soul.png"
+    },
+    "Sovereign Blade": {
+      "description": "Retain . Deal 10 damage.",
+      "image": "cards/StS2_Colorless-SovereignBlade.png"
+    },
+    "Sweeping Gaze": {
+      "description": "Ethereal . Osty deals 10 damage to a random enemy. Exhaust .",
+      "image": "cards/StS2_Colorless-SweepingGaze.png"
+    },
+    "Byrd Swoop": {
+      "description": "Deal 14 damage.",
+      "image": "cards/StS2_Colorless-ByrdSwoop.png"
+    },
+    "Enlightenment": {
+      "description": "Reduce the cost of ALL cards in your Hand to 1 this turn. Exhaust .",
+      "image": "cards/StS2_Colorless-Enlightenment.png"
+    },
+    "Exterminate": {
+      "description": "Deal 3 damage 4 times to ALL enemies.",
+      "image": "cards/StS2_Colorless-Exterminate.png"
+    },
+    "Feeding Frenzy": {
+      "description": "Gain 5 Strength this turn.",
+      "image": "cards/StS2_Colorless-FeedingFrenzy.png"
+    },
+    "Mad Science": {
+      "description": "This card can be created and customized at the event Tinker Time .",
+      "image": ""
+    },
+    "Metamorphosis": {
+      "description": "Add 3 random Attacks into your Draw Pile. They're free to play this combat. Exhaust .",
+      "image": "cards/StS2_Colorless-Metamorphosis.png"
+    },
+    "Peck": {
+      "description": "Deal 2 damage 3 times.",
+      "image": "cards/StS2_Colorless-Peck.png"
+    },
+    "Squash": {
+      "description": "Deal 10 damage. Apply 2 Vulnerable .",
+      "image": "cards/StS2_Colorless-Squash.png"
+    },
+    "Toric Toughness": {
+      "description": "Gain 5 Block . Gain 5 Block at the start of the next 2 turns.",
+      "image": "cards/StS2_Colorless-ToricToughness.png"
+    }
+  },
+  "relics": {
+    "Burning Blood": {
+      "description": "At the end of combat, heal 6 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BurningBlood.png"
+    },
+    "Black Blood": {
+      "description": "At the end of combat, heal 12 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BlackBlood.png"
+    },
+    "Ring of the Snake": {
+      "description": "At the start of each combat, draw 2 additional cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RingoftheSnake.png"
+    },
+    "Ring of the Drake": {
+      "description": "At the start of your first 3 turns, draw 2 additional cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RingoftheDrake.png"
+    },
+    "Divine Right": {
+      "description": "At the start of each combat, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DivineRight.png"
+    },
+    "Divine Destiny": {
+      "description": "At the start of each combat, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DivineDestiny.png"
+    },
+    "Bound Phylactery": {
+      "description": "At the start of your turn, Summon 1.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BoundPhylactery.png"
+    },
+    "Phylactery Unbound": {
+      "description": "At the start of each combat, Summon 5. At the start of your turn, Summon 2.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PhylacteryUnbound.png"
+    },
+    "Cracked Core": {
+      "description": "At the start of each combat, Channel 1 Lightning .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_CrackedCore.png"
+    },
+    "Infused Core": {
+      "description": "At the start of each combat, Channel 3 Lightning .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_InfusedCore.png"
+    },
+    "Amethyst Aubergine": {
+      "description": "Enemies drop 10 additional Gold.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_AmethystAubergine.png"
+    },
+    "Anchor": {
+      "description": "Start each combat with 10 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Anchor.png"
+    },
+    "Bag of Preparation": {
+      "description": "At the start of each combat, draw 2 additional cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BagofPreparation.png"
+    },
+    "Blood Vial": {
+      "description": "At the start of each combat, heal 2 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BloodVial.png"
+    },
+    "Book of Five Rings": {
+      "description": "Every 5 cards you add to your Deck, heal 15 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BookofFiveRings.png"
+    },
+    "Bronze Scales": {
+      "description": "Start each combat with 3 Thorns .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BronzeScales.png"
+    },
+    "Centennial Puzzle": {
+      "description": "The first time you lose HP each combat, draw 3 cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_CentennialPuzzle.png"
+    },
+    "Festive Popper": {
+      "description": "At the start of each combat, deal 9 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FestivePopper.png"
+    },
+    "Gorget": {
+      "description": "At the start of each combat, gain 4 Plating .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Gorget.png"
+    },
+    "Happy Flower": {
+      "description": "Every 3 turns, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_HappyFlower.png"
+    },
+    "Juzu Bracelet": {
+      "description": "Regular enemy combats are no longer encountered in ? rooms.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_JuzuBracelet.png"
+    },
+    "Lantern": {
+      "description": "Start each combat with an additional .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Lantern.png"
+    },
+    "Meal Ticket": {
+      "description": "Whenever you enter a shop room, heal 15 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MealTicket.png"
+    },
+    "Oddly Smooth Stone": {
+      "description": "Start each combat with 1 Dexterity .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_OddlySmoothStone.png"
+    },
+    "Pendulum": {
+      "description": "Whenever you shuffle your Draw Pile, draw a card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Pendulum.png"
+    },
+    "Permafrost": {
+      "description": "The first time you play a Powers each combat, gain 6 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Permafrost.png"
+    },
+    "Potion Belt": {
+      "description": "Upon pickup, gain 2 potion slots.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PotionBelt.png"
+    },
+    "Regal Pillow": {
+      "description": "Whenever you Rest, heal an additional 15 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RegalPillow.png"
+    },
+    "Strawberry": {
+      "description": "Upon pickup, raise your Max HP by 7.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Strawberry.png"
+    },
+    "Strike Dummy": {
+      "description": "Cards containing “Strike” deal 3 additional damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_StrikeDummy.png"
+    },
+    "Tiny Mailbox": {
+      "description": "Whenever you Rest, procure a random potion.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TinyMailbox.png"
+    },
+    "Vajra": {
+      "description": "Start each combat with 1 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Vajra.png"
+    },
+    "Venerable Tea Set": {
+      "description": "Whenever you enter a Rest Site, start the next combat with an additional .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_VenerableTeaSet.png"
+    },
+    "War Paint": {
+      "description": "Upon pickup, Upgrade 2 random Skills .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WarPaint.png"
+    },
+    "Whetstone": {
+      "description": "Upon pickup, Upgrade 2 random Attacks .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Whetstone.png"
+    },
+    "Red Skull": {
+      "description": "While your HP is at or below 50%, you have 3 additional Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RedSkull.png"
+    },
+    "Snecko Skull": {
+      "description": "Whenever you apply Poison , apply an additional 1 Poison .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SneckoSkull.png"
+    },
+    "Fencing Manual": {
+      "description": "At the start of each combat, Forge 10.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FencingManual.png"
+    },
+    "Bone Flute": {
+      "description": "Whenever Osty attacks, gain 2 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BoneFlute.png"
+    },
+    "Data Disk": {
+      "description": "Start each combat with 1 Focus .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DataDisk.png"
+    },
+    "Akabeko": {
+      "description": "At the start of each combat, gain 8 Vigor .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Akabeko.png"
+    },
+    "Bag of Marbles": {
+      "description": "At the start of each combat, apply 1 Vulnerable to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BagofMarbles.png"
+    },
+    "Bellows": {
+      "description": "The first Hand you draw each combat is Upgraded .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Bellows.png"
+    },
+    "Bowler Hat": {
+      "description": "Gain 20% additional Gold.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BowlerHat.png"
+    },
+    "Candelabra": {
+      "description": "At the start of your 2nd turn, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Candelabra.png"
+    },
+    "Eternal Feather": {
+      "description": "For every 5 cards in your Deck, heal 3 HP whenever you enter a Rest Site.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_EternalFeather.png"
+    },
+    "Gremlin Horn": {
+      "description": "Whenever an enemy dies, gain and draw 1 card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GremlinHorn.png"
+    },
+    "Horn Cleat": {
+      "description": "At the start of your 2nd turn, gain 14 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_HornCleat.png"
+    },
+    "Joss Paper": {
+      "description": "Every 5 times you Exhaust a card, draw 1 card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_JossPaper.png"
+    },
+    "Kusarigama": {
+      "description": "Every time you play 3 Attacks in a single turn, deal 6 damage to a random enemy.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Kusarigama.png"
+    },
+    "Letter Opener": {
+      "description": "Every time you play 3 Skills in a single turn, deal 5 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LetterOpener.png"
+    },
+    "Lucky Fysh": {
+      "description": "Whenever you add a card to your Deck, gain 15 Gold.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LuckyFysh.png"
+    },
+    "Mercury Hourglass": {
+      "description": "At the start of your turn, deal 3 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MercuryHourglass.png"
+    },
+    "Miniature Cannon": {
+      "description": "Upgraded Attacks deal 3 additional damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MiniatureCannon.png"
+    },
+    "Nunchaku": {
+      "description": "Every time you play 10 Attacks , gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Nunchaku.png"
+    },
+    "Orichalcum": {
+      "description": "If you end your turn without Block , gain 6 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Orichalcum.png"
+    },
+    "Ornamental Fan": {
+      "description": "Every time you play 3 Attacks in a single turn, gain 4 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_OrnamentalFan.png"
+    },
+    "Pantograph": {
+      "description": "At the start of each Boss combat, heal 25 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Pantograph.png"
+    },
+    "Parrying Shield": {
+      "description": "If you end a turn with at least 10 Block , deal 6 damage to a random enemy.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ParryingShield.png"
+    },
+    "Pear": {
+      "description": "Upon pickup, raise your Max HP by 10.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Pear.png"
+    },
+    "Pen Nib": {
+      "description": "Every 10th Attack you play deals double damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PenNib.png"
+    },
+    "Petrified Toad": {
+      "description": "At the start of each combat, procure a Potion-Shaped Rock .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PetrifiedToad.png"
+    },
+    "Planisphere": {
+      "description": "Whenever you enter a ? room, heal 4 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Planisphere.png"
+    },
+    "Red Mask": {
+      "description": "At the start of each combat, apply 1 Weak to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RedMask.png"
+    },
+    "Reptile Trinket": {
+      "description": "Whenever you use a potion, gain 3 Strength this turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ReptileTrinket.png"
+    },
+    "Ripple Basin": {
+      "description": "If you did not play any Attacks during your turn, gain 4 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RippleBasin.png"
+    },
+    "Sparkling Rouge": {
+      "description": "At the start of your 3rd turn, gain 1 Strength and 1 Dexterity .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SparklingRouge.png"
+    },
+    "Stone Cracker": {
+      "description": "At the start of Boss combats, Upgrade 3 random cards in your Draw Pile for the rest of combat.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_StoneCracker.png"
+    },
+    "Tuning Fork": {
+      "description": "Every time you play 10 Skills , gain 7 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TuningFork.png"
+    },
+    "Vambrace": {
+      "description": "The first time you gain Block from a card each combat, double the amount gained.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Vambrace.png"
+    },
+    "Paper Phrog": {
+      "description": "Enemies with Vulnerable take 75% more damage rather than 50%.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaperPhrog.png"
+    },
+    "Self-Forming Clay": {
+      "description": "Whenever you lose HP in combat, gain 3 Block next turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Self-FormingClay.png"
+    },
+    "Tingsha": {
+      "description": "Whenever you discard a card during your turn, deal 3 damage to a random enemy for each card discarded.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Tingsha.png"
+    },
+    "Twisted Funnel": {
+      "description": "At the start of each combat, apply 4 Poison to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TwistedFunnel.png"
+    },
+    "Galactic Dust": {
+      "description": "For every 10 spent, gain 10 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GalacticDust.png"
+    },
+    "Regalite": {
+      "description": "Whenever you create a Colorless card, gain 2 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Regalite.png"
+    },
+    "Book Repair Knife": {
+      "description": "Whenever a non-Minion enemy dies to Doom , heal 3 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BookRepairKnife.png"
+    },
+    "Funerary Mask": {
+      "description": "At the start of each combat, add 3 Souls into your Draw Pile.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FuneraryMask.png"
+    },
+    "Gold-Plated Cables": {
+      "description": "Your rightmost Orb triggers its passive an additional time.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Gold-PlatedCables.png"
+    },
+    "Symbiotic Virus": {
+      "description": "At the start of each combat, Channel 1 Dark .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SymbioticVirus.png"
+    },
+    "Art of War": {
+      "description": "If you do not play any Attacks during your turn, gain an additional next turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ArtofWar.png"
+    },
+    "Beating Remnant": {
+      "description": "You cannot lose more than 20 HP in a single turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BeatingRemnant.png"
+    },
+    "Captain's Wheel": {
+      "description": "At the start of your 3rd turn, gain 18 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_CaptainsWheel.png"
+    },
+    "Chandelier": {
+      "description": "At the start of your 3rd turn, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Chandelier.png"
+    },
+    "Cloak Clasp": {
+      "description": "At the end of your turn, gain 1 Block for each card in your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_CloakClasp.png"
+    },
+    "Frozen Egg": {
+      "description": "Whenever you add a Powers into your Deck, Upgrade it.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FrozenEgg.png"
+    },
+    "Gambling Chip": {
+      "description": "At the start of each combat, discard any number of cards then draw that many.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GamblingChip.png"
+    },
+    "Game Piece": {
+      "description": "Whenever you play a Power , draw 1 card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GamePiece.png"
+    },
+    "Girya": {
+      "description": "You can now gain Strength at Rest Sites. (3 times max)",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Girya.png"
+    },
+    "Ice Cream": {
+      "description": "Energy is now conserved between turns.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_IceCream.png"
+    },
+    "Intimidating Helmet": {
+      "description": "Whenever you play a card that costs or more, gain 4 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_IntimidatingHelmet.png"
+    },
+    "Kunai": {
+      "description": "Every time you play 3 Attacks in a single turn, gain 1 Dexterity .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Kunai.png"
+    },
+    "Lasting Candy": {
+      "description": "Every other combat, your card rewards gain an additional Power .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LastingCandy.png"
+    },
+    "Lizard Tail": {
+      "description": "When you would die, heal to 50% of your Max HP instead (works once).",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LizardTail.png"
+    },
+    "Mango": {
+      "description": "Upon pickup, raise your Max HP by 14.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Mango.png"
+    },
+    "Meat on the Bone": {
+      "description": "If your HP is at or below 50% at the end of combat, heal 12 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MeatontheBone.png"
+    },
+    "Molten Egg": {
+      "description": "Whenever you add an Attack card to your Deck, Upgrade it.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MoltenEgg.png"
+    },
+    "Mummified Hand": {
+      "description": "Whenever you play a Power , a random card in your Hand is free to play that turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MummifiedHand.png"
+    },
+    "Old Coin": {
+      "description": "Upon pickup, gain 300 Gold.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_OldCoin.png"
+    },
+    "Pocketwatch": {
+      "description": "Whenever you play 3 or fewer cards during your turn, draw 3 additional cards at the start of your next turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Pocketwatch.png"
+    },
+    "Prayer Wheel": {
+      "description": "Normal enemies drop an additional card reward.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PrayerWheel.png"
+    },
+    "Rainbow Ring": {
+      "description": "The first time you play an Attack , Skill , and Powers each turn, gain 1 Strength and 1 Dexterity .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RainbowRing.png"
+    },
+    "Razor Tooth": {
+      "description": "Every time you play an Attack or Skill , Upgrade it for the remainder of combat.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RazorTooth.png"
+    },
+    "Shovel": {
+      "description": "You can now dig at Rest Sites to obtain a random Relic.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Shovel.png"
+    },
+    "Shuriken": {
+      "description": "Every time you play 3 Attacks in a single turn, gain 1 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Shuriken.png"
+    },
+    "Stone Calendar": {
+      "description": "At the end of turn 7, deal 52 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_StoneCalendar.png"
+    },
+    "Sturdy Clamp": {
+      "description": "Up to 10 Block persists across turns.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SturdyClamp.png"
+    },
+    "The Courier": {
+      "description": "The merchant no longer runs out of cards, relics, or potions and his prices are reduced by 20%.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TheCourier.png"
+    },
+    "Toxic Egg": {
+      "description": "Whenever you add a Skill into your Deck, Upgrade it.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ToxicEgg.png"
+    },
+    "Tungsten Rod": {
+      "description": "Whenever you would lose HP, lose 1 less.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TungstenRod.png"
+    },
+    "Unceasing Top": {
+      "description": "Whenever you have no cards in Hand during your turn, draw a card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_UnceasingTop.png"
+    },
+    "Unsettling Lamp": {
+      "description": "Each combat, the first time you play a card that Debuffs an enemy, double its effect.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_UnsettlingLamp.png"
+    },
+    "Vexing Puzzlebox": {
+      "description": "At the start of each combat, add a random card into your Hand. It costs 0 .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_VexingPuzzlebox.png"
+    },
+    "White Beast Statue": {
+      "description": "Potions always appear in combat rewards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WhiteBeastStatue.png"
+    },
+    "White Star": {
+      "description": "Elites drop an additional Rare card reward.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WhiteStar.png"
+    },
+    "Charon's Ashes": {
+      "description": "Whenever you Exhaust a card, deal 3 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_CharonsAshes.png"
+    },
+    "Demon Tongue": {
+      "description": "The first time you lose HP on your turn, heal HP equal to the amount lost.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DemonTongue.png"
+    },
+    "Ruined Helmet": {
+      "description": "The first time you gain Strength each combat, double the amount gained.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RuinedHelmet.png"
+    },
+    "Helical Dart": {
+      "description": "Whenever you play a Shiv, gain 1 Dexterity this turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_HelicalDart.png"
+    },
+    "Paper Krane": {
+      "description": "Enemies with Weak deal 40% less damage to you rather than 25%.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaperKrane.png"
+    },
+    "Tough Bandages": {
+      "description": "Whenever you discard a card during your turn, gain 3 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ToughBandages.png"
+    },
+    "Lunar Pastry": {
+      "description": "At the end of your turn, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LunarPastry.png"
+    },
+    "Mini Regent": {
+      "description": "The first time you spend each turn, gain 1 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MiniRegent.png"
+    },
+    "Orange Dough": {
+      "description": "At the start of each combat, add 2 random Colorless cards into your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_OrangeDough.png"
+    },
+    "Big Hat": {
+      "description": "At the start of each combat, add 2 random Ethereal cards into your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BigHat.png"
+    },
+    "Bookmark": {
+      "description": "At the end of each turn, lower the cost of a random Retained card by 1 until played.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Bookmark.png"
+    },
+    "Ivory Tile": {
+      "description": "Whenever you play a card that costs or more, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_IvoryTile.png"
+    },
+    "Emotion Chip": {
+      "description": "If you lost HP during the previous turn, trigger the passive ability of all Orbs at the start of your turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_EmotionChip.png"
+    },
+    "Metronome": {
+      "description": "The first time you Channel 7 Orbs each combat, deal 30 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Metronome.png"
+    },
+    "Power Cell": {
+      "description": "At the start of each combat, add 2 zero-cost cards from your Draw Pile into your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PowerCell.png"
+    },
+    "Arcane Scroll": {
+      "description": "Upon pickup, obtain a random Rare Card to add to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ArcaneScroll.png"
+    },
+    "Booming Conch": {
+      "description": "At the start of Elite combats, draw 2 additional cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BoomingConch.png"
+    },
+    "Cursed Pearl": {
+      "description": "Upon pickup, receive Greed . Gain 333 Gold.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_CursedPearl.png"
+    },
+    "Golden Pearl": {
+      "description": "Upon pickup, gain 150 Gold.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GoldenPearl.png"
+    },
+    "Large Capsule": {
+      "description": "Upon pickup, obtain 2 random Relics. Add an additional Strike and Defend to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LargeCapsule.png"
+    },
+    "Lava Rock": {
+      "description": "The Act 1 Boss drops 2 Relics.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LavaRock.png"
+    },
+    "Lead Paperweight": {
+      "description": "Upon pickup, choose 1 of 2 Colorless cards to add to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LeadPaperweight.png"
+    },
+    "Leafy Poultice": {
+      "description": "Upon pickup, Transform 1 of your Strikes and 1 of your Defends and lose 10 Max HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LeafyPoultice.png"
+    },
+    "Lost Coffer": {
+      "description": "Upon pickup, gain 1 card reward and procure 1 random potion.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LostCoffer.png"
+    },
+    "Massive Scroll": {
+      "description": "Upon pickup, choose 1 of 3 Multiplayer Colorless Cards to add to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MassiveScroll.png"
+    },
+    "Neow's Torment": {
+      "description": "Upon pickup, add 1 Neow's Fury to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_NeowsTorment.png"
+    },
+    "New Leaf": {
+      "description": "Upon pickup, Transform 1 card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_NewLeaf.png"
+    },
+    "Nutritious Oyster": {
+      "description": "Upon pickup, raise your Max HP by 11.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_NutritiousOyster.png"
+    },
+    "Pomander": {
+      "description": "Upon pickup, Upgrade a card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Pomander.png"
+    },
+    "Precarious Shears": {
+      "description": "Upon pickup, remove 2 cards from your Deck and take 13 damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PrecariousShears.png"
+    },
+    "Precise Scissors": {
+      "description": "Upon pickup, remove 1 card from your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PreciseScissors.png"
+    },
+    "Scroll Boxes": {
+      "description": "Upon pickup, lose all Gold and choose 1 of 2 packs of cards to add to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ScrollBoxes.png"
+    },
+    "Silver Crucible": {
+      "description": "The first 3 card rewards you see are Upgraded . The first Treasure Chest you open is empty.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SilverCrucible.png"
+    },
+    "Small Capsule": {
+      "description": "Upon pickup, obtain a random Relic.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SmallCapsule.png"
+    },
+    "Stone Humidifier": {
+      "description": "Whenever you Rest at a Rest Site, raise your Max HP by 5.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_StoneHumidifier.png"
+    },
+    "Alchemical Coffer": {
+      "description": "Upon pickup, gain 4 potion slots filled with random potions.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_AlchemicalCoffer.png"
+    },
+    "Archaic Tooth": {
+      "description": "Upon pickup, Transform a starter card with an ancient version.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ArchaicTooth.png"
+    },
+    "Driftwood": {
+      "description": "You may reroll each card reward once.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Driftwood.png"
+    },
+    "Electric Shrymp": {
+      "description": "Upon pickup, Enchant a Skill with Imbued .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ElectricShrymp.png"
+    },
+    "Glass Eye": {
+      "description": "Upon pickup, obtain 2 Common cards, 2 Uncommon cards, and 1 Rare card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GlassEye.png"
+    },
+    "Prismatic Gem": {
+      "description": "Gain at the start of each turn. Card rewards now contain cards from other colors.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PrismaticGem.png"
+    },
+    "Radiant Pearl": {
+      "description": "At the start of each combat, add 1 Luminesce into your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RadiantPearl.png"
+    },
+    "Sand Castle": {
+      "description": "Upon pickup, Upgrade 6 random cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SandCastle.png"
+    },
+    "Sea Glass": {
+      "description": "See 15 cards from another character. Choose any number of them to add to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SeaGlass.png"
+    },
+    "Touch of Orobas": {
+      "description": "Upon pickup, replace your starter Relic with an Ancient version.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TouchofOrobas.png"
+    },
+    "Pael's Blood": {
+      "description": "At the start of your turn, draw 1 additional card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsBlood.png"
+    },
+    "Pael's Claw": {
+      "description": "Upon pickup, Enchant all Defends with Goopy .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsClaw.png"
+    },
+    "Pael's Eye": {
+      "description": "The first time each combat you end your turn without playing cards, Exhaust your Hand, and take an extra turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsEye.png"
+    },
+    "Pael's Flesh": {
+      "description": "Gain an additional at the start of your 3rd turn, and every turn after that.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsFlesh.png"
+    },
+    "Pael's Growth": {
+      "description": "Upon pickup, Enchant a card with Clone .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsGrowth.png"
+    },
+    "Pael's Horn": {
+      "description": "Upon pickup, add 2 Relax to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsHorn.png"
+    },
+    "Pael's Legion": {
+      "description": "Doubles Block gained from a card, then goes to sleep for 2 turns.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsLegion.png"
+    },
+    "Pael's Tears": {
+      "description": "If you end your turn with unspent , gain an additional next turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsTears.png"
+    },
+    "Pael's Tooth": {
+      "description": "Upon pickup, remove 5 cards from your Deck. After each combat, randomly add 1 back Upgraded .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsTooth.png"
+    },
+    "Pael's Wing": {
+      "description": "You may sacrifice card rewards to Pael. Every 2 sacrifices, obtain a Relic.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PaelsWing.png"
+    },
+    "Biiig Hug": {
+      "description": "Upon pickup, remove 4 cards from your Deck. Whenever you shuffle your Draw Pile, add a Soot into your Draw Pile.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BiiigHug.png"
+    },
+    "Golden Compass": {
+      "description": "Upon pickup, replace the Act 2 Map with a single special path.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GoldenCompass.png"
+    },
+    "Nutritious Soup": {
+      "description": "Upon pickup, Enchant all Strikes in your Deck with Tezcatara's Ember .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_NutritiousSoup.png"
+    },
+    "Pumpkin Candle": {
+      "description": "Gain at the start of each turn. Extinguishes at the start of Act 3.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PumpkinCandle.png"
+    },
+    "Seal of Gold": {
+      "description": "At the start of your turn, spend 5 Gold to gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SealofGold.png"
+    },
+    "Storybook": {
+      "description": "Upon pickup, add 1 Brightest Flame to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Storybook.png"
+    },
+    "Toasty Mittens": {
+      "description": "At the start of your turn, Exhaust the top card of your Draw Pile and gain 1 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ToastyMittens.png"
+    },
+    "Toy Box": {
+      "description": "Upon pickup, obtain 4 Wax Relics. Every 3 combats, your left-most Wax Relic will melt away.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ToyBox.png"
+    },
+    "Very Hot Cocoa": {
+      "description": "Start each combat with an additional 4 .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_VeryHotCocoa.png"
+    },
+    "Yummy Cookie": {
+      "description": "Upon pickup, Upgrade 4 cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_YummyCookie.png"
+    },
+    "Beautiful Bracelet": {
+      "description": "Upon pickup, choose 3 cards in your Deck. Enchant them with Swift 3.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BeautifulBracelet.png"
+    },
+    "Blessed Antler": {
+      "description": "Gain at the start of each turn. At the start of each combat, shuffle 3 Dazed into your Draw Pile.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BlessedAntler.png"
+    },
+    "Brilliant Scarf": {
+      "description": "The 5th card you play each turn is free.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BrilliantScarf.png"
+    },
+    "Delicate Frond": {
+      "description": "At the start of each combat, fill all empty potion slots with random potions.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DelicateFrond.png"
+    },
+    "Diamond Diadem": {
+      "description": "Whenever you play 2 or fewer cards in a turn, take half damage from enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DiamondDiadem.png"
+    },
+    "Fur Coat": {
+      "description": "Upon pickup, mark 7 random combats. Enemies in those rooms have 1 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FurCoat.png"
+    },
+    "Glitter": {
+      "description": "Enchant all card rewards with Glam .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Glitter.png"
+    },
+    "Jewelry Box": {
+      "description": "Upon pickup, add 1 Apotheosis to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_JewelryBox.png"
+    },
+    "Looming Fruit": {
+      "description": "Upon pickup, raise your Max HP by 31.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LoomingFruit.png"
+    },
+    "Signet Ring": {
+      "description": "Upon pickup, gain 999 Gold.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SignetRing.png"
+    },
+    "Claws": {
+      "description": "Upon pickup, Transform up to 6 cards into Maul .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Claws.png"
+    },
+    "Crossbow": {
+      "description": "At the start of your turn, add a random Attack into your Hand. It costs 0 this turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Crossbow.png"
+    },
+    "Iron Club": {
+      "description": "Every 4 cards you play, draw 1 card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_IronClub.png"
+    },
+    "Meat Cleaver": {
+      "description": "You may Cook at Rest Sites.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MeatCleaver.png"
+    },
+    "Sai": {
+      "description": "At the start of your turn, gain 7 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Sai.png"
+    },
+    "Spiked Gauntlets": {
+      "description": "Gain at the start of each turn. Powers cost 1 more .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SpikedGauntlets.png"
+    },
+    "Tanx's Whistle": {
+      "description": "Upon pickup, add 1 Whistle to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TanxsWhistle.png"
+    },
+    "Throwing Axe": {
+      "description": "The first card you play each combat is played an extra time.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ThrowingAxe.png"
+    },
+    "Tri-Boomerang": {
+      "description": "Choose 3 Attacks in your Deck. Enchant them with Instinct .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Tri-Boomerang.png"
+    },
+    "War Hammer": {
+      "description": "Whenever you kill an Elite, Upgrade 4 random cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WarHammer.png"
+    },
+    "Blood-Soaked Rose": {
+      "description": "Upon pickup, add 1 Enthralled to your Deck. Gain at the start of each turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Blood-SoakedRose.png"
+    },
+    "Choices Paradox": {
+      "description": "At the start of each combat, add 1 of 5 random cards into your Hand. Add Retain to the chosen card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ChoicesParadox.png"
+    },
+    "Distinguished Cape": {
+      "description": "Upon pickup, lose 9 Max HP. Add 3 Apparitions to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DistinguishedCape.png"
+    },
+    "Fiddle": {
+      "description": "At the start of each turn, draw 2 additional cards. You may not draw cards during your turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Fiddle.png"
+    },
+    "Jeweled Mask": {
+      "description": "At the start of combat put a random Powers from your Draw Pile into your Hand, it's free to play.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_JeweledMask.png"
+    },
+    "Lord's Parasol": {
+      "description": "When you encounter the Merchant, immediately obtain EVERYTHING he sells.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LordsParasol.png"
+    },
+    "Music Box": {
+      "description": "Create an Ethereal copy of the first Attack you play each turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MusicBox.png"
+    },
+    "Preserved Fog": {
+      "description": "Upon pickup, remove 5 cards from your Deck. Add Folly to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PreservedFog.png"
+    },
+    "Sere Talon": {
+      "description": "Upon pickup, add 2 random Curses and 3 Wishes to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SereTalon.png"
+    },
+    "Whispering Earring": {
+      "description": "Gain at the start of each turn. Vakuu plays your first turn for you.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WhisperingEarring.png"
+    },
+    "Astrolabe": {
+      "description": "Upon pickup, Transform 3 cards, then Upgrade them.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Astrolabe.png"
+    },
+    "Black Star": {
+      "description": "Elites drop an additional Relic when defeated.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BlackStar.png"
+    },
+    "Calling Bell": {
+      "description": "Upon pickup, obtain a unique Curse and 3 Relics.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_CallingBell.png"
+    },
+    "Dusty Tome": {
+      "description": "Upon pickup, obtain an Ancient Card.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DustyTome.png"
+    },
+    "Ectoplasm": {
+      "description": "You can no longer gain Gold. Gain at the start of each turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Ectoplasm.png"
+    },
+    "Empty Cage": {
+      "description": "Upon pickup, remove 2 cards from your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_EmptyCage.png"
+    },
+    "Pandora's Box": {
+      "description": "Transform ALL Strikes and Defends.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PandorasBox.png"
+    },
+    "Philosopher's Stone": {
+      "description": "Gain at the start of each turn. ALL enemies start combat with 1 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PhilosophersStone.png"
+    },
+    "Runic Pyramid": {
+      "description": "At the end of your turn, you no longer discard your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RunicPyramid.png"
+    },
+    "Snecko Eye": {
+      "description": "At the start of your turn, draw 2 additional cards. Start each combat Confused .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SneckoEye.png"
+    },
+    "Sozu": {
+      "description": "Gain at the start of each turn. You can no longer obtain potions.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Sozu.png"
+    },
+    "Velvet Choker": {
+      "description": "Gain at the start of each turn. You cannot play more than 6 cards per turn.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_VelvetChoker.png"
+    },
+    "Belt Buckle": {
+      "description": "While you have no potions, you have 2 additional Dexterity .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BeltBuckle.png"
+    },
+    "Bread": {
+      "description": "At the start of your first turn, lose [E . At the start of all other turns, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Bread.png"
+    },
+    "Burning Sticks": {
+      "description": "The first time each combat you Exhaust a Skill , add a copy of it into your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BurningSticks.png"
+    },
+    "Cauldron": {
+      "description": "Upon pickup, brews 5 random potions.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Cauldron.png"
+    },
+    "Chemical X": {
+      "description": "The effects of your cost X cards are increased by 2.",
+      "flavor": "WARNING: Do not combine with sugar, spice, and everything nice.",
+      "image": "relics/StS2_ChemicalX.png"
+    },
+    "Dingy Rug": {
+      "description": "Card rewards can now contain Colorless cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DingyRug.png"
+    },
+    "Dolly's Mirror": {
+      "description": "Upon pickup, obtain an additional copy of a card in your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DollysMirror.png"
+    },
+    "Dragon Fruit": {
+      "description": "Whenever you gain Gold, raise your Max HP by 1.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DragonFruit.png"
+    },
+    "Ghost Seed": {
+      "description": "Strikes and Defends gain Ethereal .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GhostSeed.png"
+    },
+    "Gnarled Hammer": {
+      "description": "Upon pickup, Enchant up to 3 Attacks with Sharp 3.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_GnarledHammer.png"
+    },
+    "Kifuda": {
+      "description": "Upon pickup, Enchant up to 3 cards with Adroit .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Kifuda.png"
+    },
+    "Lava Lamp": {
+      "description": "At the end of combat, Upgrade all card rewards if you took no damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LavaLamp.png"
+    },
+    "Lee's Waffle": {
+      "description": "Upon pickup, raise your Max HP by 7 and heal all of your HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LeesWaffle.png"
+    },
+    "Membership Card": {
+      "description": "50% discount on all products!",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MembershipCard.png"
+    },
+    "Miniature Tent": {
+      "description": "You may choose any number of options at Rest Sites.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MiniatureTent.png"
+    },
+    "Mystic Lighter": {
+      "description": "Enchanted Attacks deal 9 additional damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MysticLighter.png"
+    },
+    "Orrery": {
+      "description": "Upon pickup, gain 5 card rewards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Orrery.png"
+    },
+    "Punch Dagger": {
+      "description": "Upon pickup, Enchant an Attack with Momentum 5.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PunchDagger.png"
+    },
+    "Ringing Triangle": {
+      "description": "Retain your Hand on the first turn of combat.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RingingTriangle.png"
+    },
+    "Royal Stamp": {
+      "description": "Upon pickup, choose an Attack or Skill in your Deck to Enchant with Royally Approved .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RoyalStamp.png"
+    },
+    "Screaming Flagon": {
+      "description": "If you end your turn with no cards in your Hand, deal 20 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ScreamingFlagon.png"
+    },
+    "Sling of Courage": {
+      "description": "Start each Elite combat with 2 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SlingofCourage.png"
+    },
+    "The Abacus": {
+      "description": "Whenever you shuffle your Draw Pile, gain 6 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TheAbacus.png"
+    },
+    "Toolbox": {
+      "description": "At the start of each combat, choose 1 of 3 random Colorless cards and add the chosen card into your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Toolbox.png"
+    },
+    "Wing Charm": {
+      "description": "A random card in each card reward is Enchanted with Swift 1.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WingCharm.png"
+    },
+    "Brimstone": {
+      "description": "At the start of your turn, gain 2 Strength and ALL enemies gain 1 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Brimstone.png"
+    },
+    "Ninja Scroll": {
+      "description": "At the start of each combat, add 3 Shivs into your Hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_NinjaScroll.png"
+    },
+    "Vitruvian Minion": {
+      "description": "Cards containing “Minion” deal double damage and gain double Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_VitruvianMinion.png"
+    },
+    "Undying Sigil": {
+      "description": "Enemies with at least as much Doom as HP deal 50% less damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_UndyingSigil.png"
+    },
+    "Runic Capacitor": {
+      "description": "Start each combat with 3 additional Orb Slots.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RunicCapacitor.png"
+    },
+    "Anchor???": {
+      "description": "Start each combat with 4 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeAnchor.png"
+    },
+    "Big Mushroom": {
+      "description": "Upon pickup, raise your Max HP by 20. At the start of each combat, draw 2 fewer cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BigMushroom.png"
+    },
+    "Bing Bong": {
+      "description": "Whenever you add a card to your Deck, add one additional copy.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BingBong.png"
+    },
+    "Blood Vial???": {
+      "description": "At the start of each combat, heal 1 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeBloodVial.png"
+    },
+    "Bone Tea": {
+      "description": "At the start of the next combat, Upgrade your starting hand.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_BoneTea.png"
+    },
+    "Byrdpip": {
+      "description": "Upon pickup, gain the card Byrd Swoop . A Byrdpip will accompany you in battles.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_Byrdpip.png"
+    },
+    "Darkstone Periapt": {
+      "description": "Whenever you obtain a Curse, raise your Max HP by 6.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DarkstonePeriapt.png"
+    },
+    "Daughter of the Wind": {
+      "description": "Whenever you play an Attack , gain 1 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DaughteroftheWind.png"
+    },
+    "Dream Catcher": {
+      "description": "Whenever you Rest, you may add a card to your Deck.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_DreamCatcher.png"
+    },
+    "Ember Tea": {
+      "description": "At the start of the next 5 combats, gain 2 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_EmberTea.png"
+    },
+    "Forgotten Soul": {
+      "description": "Whenever you Exhaust a card, deal 1 damage to a random enemy.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_ForgottenSoul.png"
+    },
+    "Fragrant Mushroom": {
+      "description": "Upon pickup, lose 15 HP and Upgrade 3 random cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FragrantMushroom.png"
+    },
+    "Fresnel Lens": {
+      "description": "Whenever you add a card that gains Block to your Deck, Enchant it with Nimble 2.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FresnelLens.png"
+    },
+    "Hand Drill": {
+      "description": "Whenever you break an enemy's Block , apply 2 Vulnerable .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_HandDrill.png"
+    },
+    "Happy Flower???": {
+      "description": "Every 5 turns, gain .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeHappyFlower.png"
+    },
+    "History Course": {
+      "description": "At the start of your turn, play a copy of your last played Attack or Skill.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_HistoryCourse.png"
+    },
+    "Lee's Waffle???": {
+      "description": "Upon pickup, heal 10% of your HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeLeesWaffle.png"
+    },
+    "Lost Wisp": {
+      "description": "Whenever you play a Power , deal 8 damage to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_LostWisp.png"
+    },
+    "Mango???": {
+      "description": "Upon pickup, raise your Max HP by 3.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeMango.png"
+    },
+    "Maw Bank": {
+      "description": "Whenever you climb a floor, gain 12 Gold. No longer works when you spend any Gold at the shop.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MawBank.png"
+    },
+    "Mr. Struggles": {
+      "description": "At the start of your turn, deal damage equal to the turn number to ALL enemies.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_MrStruggles.png"
+    },
+    "Orichalcum???": {
+      "description": "If you end your turn without Block , gain 3 Block .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeOrichalcum.png"
+    },
+    "Pollinous Core": {
+      "description": "Every 4 turns, draw 2 additional cards.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_PollinousCore.png"
+    },
+    "Royal Poison": {
+      "description": "At the start of each combat, lose 4 HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_RoyalPoison.png"
+    },
+    "Snecko Eye???": {
+      "description": "Start each combat Confused .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeSneckoEye.png"
+    },
+    "Strike Dummy???": {
+      "description": "Cards containing “Strike” deal 1 additional damage.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeStrikeDummy.png"
+    },
+    "Sword of Jade": {
+      "description": "Start each combat with 3 Strength .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SwordofJade.png"
+    },
+    "Sword of Stone": {
+      "description": "Transforms into a powerful Relic after defeating 5 Elites.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_SwordofStone.png"
+    },
+    "Tea of Discourtesy": {
+      "description": "At the start of the next combat, shuffle 2 Dazed into your Draw Pile.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TeaofDiscourtesy.png"
+    },
+    "The Boot": {
+      "description": "Whenever you would deal 4 or less unblocked attack damage, increase it to 5.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TheBoot.png"
+    },
+    "The Chosen Cheese": {
+      "description": "At the end of combat, gain 1 Max HP.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_TheChosenCheese.png"
+    },
+    "The Merchant's Rug???": {
+      "description": "Poor imitation. Does nothing.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeTheMerchantsRug.png"
+    },
+    "Venerable Tea Set???": {
+      "description": "Whenever you enter a Rest Site, start the next combat with an additional .",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_FakeVenerableTeaSet.png"
+    },
+    "Wongo Customer Appreciation Badge": {
+      "description": "Does nothing.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WongoCustomerAppreciationBadge.png"
+    },
+    "Wongo's Mystery Ticket": {
+      "description": "Receive 3 random Relics after 5 combats.",
+      "flavor": "Details for this relic will be revealed in the future...",
+      "image": "relics/StS2_WongosMysteryTicket.png"
+    },
+    "Circlet": {
+      "description": "It's a circlet.",
+      "flavor": "A curious relic which appears when there's a problem within the Spire or there are no more relics to discover.",
+      "image": "relics/StS2_Circlet.png"
+    }
+  },
+  "potions": {
+    "Attack Potion": {
+      "description": "Choose 1 of 3 random Attack cards to add into your Hand. It's free to play this turn.",
+      "image": "potions/StS2_AttackPotion.png"
+    },
+    "Block Potion": {
+      "description": "Gain 12 Block .",
+      "image": "potions/StS2_BlockPotion.png"
+    },
+    "Colorless Potion": {
+      "description": "Choose 1 of 3 random Colorless cards to add into your Hand. It's free to play this turn.",
+      "image": "potions/StS2_ColorlessPotion.png"
+    },
+    "Dexterity Potion": {
+      "description": "Gain 2 Dexterity .",
+      "image": "potions/StS2_DexterityPotion.png"
+    },
+    "Energy Potion": {
+      "description": "Gain .",
+      "image": "potions/StS2_EnergyPotion.png"
+    },
+    "Explosive Ampoule": {
+      "description": "Deal 10 damage to ALL enemies.",
+      "image": "potions/StS2_ExplosiveAmpoule.png"
+    },
+    "Fire Potion": {
+      "description": "Deal 20 damage.",
+      "image": "potions/StS2_FirePotion.png"
+    },
+    "Flex Potion": {
+      "description": "Gain 5 Strength . At the end of your turn, lose 5 Strength .",
+      "image": "potions/StS2_FlexPotion.png"
+    },
+    "Power Potion": {
+      "description": "Choose 1 of 3 random Power cards to add into your Hand. It's free to play this turn.",
+      "image": "potions/StS2_PowerPotion.png"
+    },
+    "Skill Potion": {
+      "description": "Choose 1 of 3 random Skill cards to add into your Hand. It's free to play this turn.",
+      "image": "potions/StS2_SkillPotion.png"
+    },
+    "Speed Potion": {
+      "description": "Gain 5 Dexterity . At the end of your turn, lose 5 Dexterity .",
+      "image": "potions/StS2_SpeedPotion.png"
+    },
+    "Strength Potion": {
+      "description": "Gain 2 Strength .",
+      "image": "potions/StS2_StrengthPotion.png"
+    },
+    "Swift Potion": {
+      "description": "Draw 3 cards.",
+      "image": "potions/StS2_SwiftPotion.png"
+    },
+    "Vulnerable Potion": {
+      "description": "Apply 3 Vulnerable .",
+      "image": "potions/StS2_VulnerablePotion.png"
+    },
+    "Weak Potion": {
+      "description": "Apply 3 Weak .",
+      "image": "potions/StS2_WeakPotion.png"
+    },
+    "Blood Potion": {
+      "description": "Heal for 20% of your Max HP.",
+      "image": "potions/StS2_BloodPotion.png"
+    },
+    "Poison Potion": {
+      "description": "Apply 6 Poison .",
+      "image": "potions/StS2_PoisonPotion.png"
+    },
+    "Star Potion": {
+      "description": "Gain",
+      "image": "potions/StS2_StarPotion.png"
+    },
+    "Potion of Doom": {
+      "description": "Apply 33 Doom .",
+      "image": "potions/StS2_PotionofDoom.png"
+    },
+    "Focus Potion": {
+      "description": "Gain 2 Focus .",
+      "image": "potions/StS2_FocusPotion.png"
+    },
+    "Blessing of the Forge": {
+      "description": "Upgrade all cards in your Hand for the rest of combat.",
+      "image": "potions/StS2_BlessingoftheForge.png"
+    },
+    "Clarity Extract": {
+      "description": "Draw 1 card. At the start of your next 3 turns, draw 1 additional card.",
+      "image": "potions/StS2_ClarityExtract.png"
+    },
+    "Cure All": {
+      "description": "Gain . Draw 2 cards.",
+      "image": "potions/StS2_CureAll.png"
+    },
+    "Duplicator": {
+      "description": "This turn, your next card is played an extra time.",
+      "image": "potions/StS2_Duplicator.png"
+    },
+    "Fortifier": {
+      "description": "Triple your Block .",
+      "image": "potions/StS2_Fortifier.png"
+    },
+    "Fysh Oil": {
+      "description": "Gain 1 Strength and 1 Dexterity .",
+      "image": "potions/StS2_FyshOil.png"
+    },
+    "Gambler's Brew": {
+      "description": "Discard any number of cards, then draw that many.",
+      "image": "potions/StS2_GamblersBrew.png"
+    },
+    "Heart of Iron": {
+      "description": "Gain 7 Plating .",
+      "image": "potions/StS2_HeartofIron.png"
+    },
+    "Liquid Bronze": {
+      "description": "Gain 3 Thorns .",
+      "image": "potions/StS2_LiquidBronze.png"
+    },
+    "Potion of Binding": {
+      "description": "Apply 1 Weak and 1 Vulnerable to ALL enemies.",
+      "image": "potions/StS2_PotionofBinding.png"
+    },
+    "Powdered Demise": {
+      "description": "Enemy loses 9 HP at the end of each of its turns.",
+      "image": "potions/StS2_PowderedDemise.png"
+    },
+    "Radiant Tincture": {
+      "description": "Gain . Gain an additional at the start of your next 3 turns.",
+      "image": "potions/StS2_RadiantTincture.png"
+    },
+    "Regen Potion": {
+      "description": "Gain 5 Regen .",
+      "image": "potions/StS2_RegenPotion.png"
+    },
+    "Stable Serum": {
+      "description": "Retain your Hand for 2 turns.",
+      "image": "potions/StS2_StableSerum.png"
+    },
+    "Touch of Insanity": {
+      "description": "Choose a card in your Hand. It is free to play this combat.",
+      "image": "potions/StS2_TouchofInsanity.png"
+    },
+    "Ashwater": {
+      "description": "Exhaust any number of cards in your Hand.",
+      "image": "potions/StS2_Ashwater.png"
+    },
+    "Cunning Potion": {
+      "description": "Add 3 Upgraded Shivs into your Hand.",
+      "image": "potions/StS2_CunningPotion.png"
+    },
+    "King's Courage": {
+      "description": "Forge 15.",
+      "image": "potions/StS2_KingsCourage.png"
+    },
+    "Bone Brew": {
+      "description": "Summon 15.",
+      "image": "potions/StS2_BoneBrew.png"
+    },
+    "Potion of Capacity": {
+      "description": "Gain 2 Orb Slots.",
+      "image": "potions/StS2_PotionofCapacity.png"
+    },
+    "Beetle Juice": {
+      "description": "Enemy's attacks deal 30% less damage for the next 4 turns.",
+      "image": "potions/StS2_BeetleJuice.png"
+    },
+    "Bottled Potential": {
+      "description": "Shuffle ALL your cards into your Draw Pile. Draw 5 cards.",
+      "image": "potions/StS2_BottledPotential.png"
+    },
+    "Distilled Chaos": {
+      "description": "Play the top 3 cards of your Draw Pile.",
+      "image": "potions/StS2_DistilledChaos.png"
+    },
+    "Droplet of Precognition": {
+      "description": "Choose a card in your Draw Pile and add it into your Hand.",
+      "image": "potions/StS2_DropletofPrecognition.png"
+    },
+    "Entropic Brew": {
+      "description": "Fill all your empty potion slots with random potions.",
+      "image": "potions/StS2_EntropicBrew.png"
+    },
+    "Fairy in a Bottle": {
+      "description": "When you would die, instead this potion is discarded and you heal to 30% of your Max HP.",
+      "image": "potions/StS2_FairyinaBottle.png"
+    },
+    "Fruit Juice": {
+      "description": "Gain 5 Max HP.",
+      "image": "potions/StS2_FruitJuice.png"
+    },
+    "Gigantification Potion": {
+      "description": "The next Attack you play deals triple damage.",
+      "image": "potions/StS2_GigantificationPotion.png"
+    },
+    "Liquid Memories": {
+      "description": "Put a card from your Discard Pile into your Hand. It costs 0 this turn.",
+      "image": "potions/StS2_LiquidMemories.png"
+    },
+    "Lucky Tonic": {
+      "description": "Gain 1 Buffer .",
+      "image": "potions/StS2_LuckyTonic.png"
+    },
+    "Mazaleth's Gift": {
+      "description": "Gain 1 Ritual .",
+      "image": "potions/StS2_MazalethsGift.png"
+    },
+    "Orobic Acid": {
+      "description": "Add a random Attack, Skill, and Power into your Hand. They're free to play this turn.",
+      "image": "potions/StS2_OrobicAcid.png"
+    },
+    "Shackling Potion": {
+      "description": "ALL enemies lose 7 Strength this turn.",
+      "image": "potions/StS2_ShacklingPotion.png"
+    },
+    "Ship in a Bottle": {
+      "description": "Gain 10 Block . Next turn, gain 10 Block .",
+      "image": "potions/StS2_ShipinaBottle.png"
+    },
+    "Snecko Oil": {
+      "description": "Draw 7 cards. Randomize the cost of cards in your Hand this turn.",
+      "image": "potions/StS2_SneckoOil.png"
+    },
+    "Soldier's Stew": {
+      "description": "All cards containing Strike gain 1 Replay this combat.",
+      "image": "potions/StS2_SoldiersStew.png"
+    },
+    "Ghost in a Jar": {
+      "description": "Gain 1 Intangible .",
+      "image": "potions/StS2_GhostinaJar.png"
+    },
+    "Cosmic Concoction": {
+      "description": "Add 3 Upgraded Colorless cards into your Hand.",
+      "image": "potions/StS2_CosmicConcoction.png"
+    },
+    "Pot of Ghouls": {
+      "description": "Add 2 Souls into your Hand.",
+      "image": "potions/StS2_PotofGhouls.png"
+    },
+    "Essence of Darkness": {
+      "description": "Channel a Dark for each of your Orb Slots.",
+      "image": "potions/StS2_EssenceofDarkness.png"
+    },
+    "Foul Potion": {
+      "description": "Deal 12 damage to EVERYONE. Can be thrown at the Merchant for 100 Gold instead.",
+      "image": "potions/StS2_FoulPotion.png"
+    },
+    "Glowwater Potion": {
+      "description": "Exhaust your Hand. Draw 10 cards.",
+      "image": "potions/StS2_GlowwaterPotion.png"
+    },
+    "Potion-Shaped Rock": {
+      "description": "Deal 15 damage.",
+      "image": "potions/StS2_Potion-ShapedRock.png"
+    }
+  }
+}

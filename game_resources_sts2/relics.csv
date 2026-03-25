@@ -1,0 +1,289 @@
+id,name,tier
+RELIC.BURNING_BLOOD,Burning Blood,Starter
+RELIC.BLACK_BLOOD,Black Blood,Starter
+RELIC.RING_OF_THE_SNAKE,Ring of the Snake,Starter
+RELIC.RING_OF_THE_DRAKE,Ring of the Drake,Starter
+RELIC.DIVINE_RIGHT,Divine Right,Starter
+RELIC.DIVINE_DESTINY,Divine Destiny,Starter
+RELIC.BOUND_PHYLACTERY,Bound Phylactery,Starter
+RELIC.PHYLACTERY_UNBOUND,Phylactery Unbound,Starter
+RELIC.CRACKED_CORE,Cracked Core,Starter
+RELIC.INFUSED_CORE,Infused Core,Starter
+RELIC.AMETHYST_AUBERGINE,Amethyst Aubergine,Common
+RELIC.ANCHOR,Anchor,Common
+RELIC.BAG_OF_PREPARATION,Bag of Preparation,Common
+RELIC.BLOOD_VIAL,Blood Vial,Common
+RELIC.BOOK_OF_FIVE_RINGS,Book of Five Rings,Common
+RELIC.BRONZE_SCALES,Bronze Scales,Common
+RELIC.CENTENNIAL_PUZZLE,Centennial Puzzle,Common
+RELIC.FESTIVE_POPPER,Festive Popper,Common
+RELIC.GORGET,Gorget,Common
+RELIC.HAPPY_FLOWER,Happy Flower,Common
+RELIC.JUZU_BRACELET,Juzu Bracelet,Common
+RELIC.LANTERN,Lantern,Common
+RELIC.MEAL_TICKET,Meal Ticket,Common
+RELIC.ODDLY_SMOOTH_STONE,Oddly Smooth Stone,Common
+RELIC.PENDULUM,Pendulum,Common
+RELIC.PERMAFROST,Permafrost,Common
+RELIC.POTION_BELT,Potion Belt,Common
+RELIC.REGAL_PILLOW,Regal Pillow,Common
+RELIC.STRAWBERRY,Strawberry,Common
+RELIC.STRIKE_DUMMY,Strike Dummy,Common
+RELIC.TINY_MAILBOX,Tiny Mailbox,Common
+RELIC.VAJRA,Vajra,Common
+RELIC.VENERABLE_TEA_SET,Venerable Tea Set,Common
+RELIC.WAR_PAINT,War Paint,Common
+RELIC.WHETSTONE,Whetstone,Common
+RELIC.RED_SKULL,Red Skull,Common
+RELIC.SNECKO_SKULL,Snecko Skull,Common
+RELIC.FENCING_MANUAL,Fencing Manual,Common
+RELIC.BONE_FLUTE,Bone Flute,Common
+RELIC.DATA_DISK,Data Disk,Common
+RELIC.AKABEKO,Akabeko,Uncommon
+RELIC.BAG_OF_MARBLES,Bag of Marbles,Uncommon
+RELIC.BELLOWS,Bellows,Uncommon
+RELIC.BOWLER_HAT,Bowler Hat,Uncommon
+RELIC.CANDELABRA,Candelabra,Uncommon
+RELIC.ETERNAL_FEATHER,Eternal Feather,Uncommon
+RELIC.GREMLIN_HORN,Gremlin Horn,Uncommon
+RELIC.HORN_CLEAT,Horn Cleat,Uncommon
+RELIC.JOSS_PAPER,Joss Paper,Uncommon
+RELIC.KUSARIGAMA,Kusarigama,Uncommon
+RELIC.LETTER_OPENER,Letter Opener,Uncommon
+RELIC.LUCKY_FYSH,Lucky Fysh,Uncommon
+RELIC.MERCURY_HOURGLASS,Mercury Hourglass,Uncommon
+RELIC.MINIATURE_CANNON,Miniature Cannon,Uncommon
+RELIC.NUNCHAKU,Nunchaku,Uncommon
+RELIC.ORICHALCUM,Orichalcum,Uncommon
+RELIC.ORNAMENTAL_FAN,Ornamental Fan,Uncommon
+RELIC.PANTOGRAPH,Pantograph,Uncommon
+RELIC.PARRYING_SHIELD,Parrying Shield,Uncommon
+RELIC.PEAR,Pear,Uncommon
+RELIC.PEN_NIB,Pen Nib,Uncommon
+RELIC.PETRIFIED_TOAD,Petrified Toad,Uncommon
+RELIC.PLANISPHERE,Planisphere,Uncommon
+RELIC.RED_MASK,Red Mask,Uncommon
+RELIC.REPTILE_TRINKET,Reptile Trinket,Uncommon
+RELIC.RIPPLE_BASIN,Ripple Basin,Uncommon
+RELIC.SPARKLING_ROUGE,Sparkling Rouge,Uncommon
+RELIC.STONE_CRACKER,Stone Cracker,Uncommon
+RELIC.TUNING_FORK,Tuning Fork,Uncommon
+RELIC.VAMBRACE,Vambrace,Uncommon
+RELIC.PAPER_PHROG,Paper Phrog,Uncommon
+RELIC.SELF_FORMING_CLAY,Self-Forming Clay,Uncommon
+RELIC.TINGSHA,Tingsha,Uncommon
+RELIC.TWISTED_FUNNEL,Twisted Funnel,Uncommon
+RELIC.GALACTIC_DUST,Galactic Dust,Uncommon
+RELIC.REGALITE,Regalite,Uncommon
+RELIC.BOOK_REPAIR_KNIFE,Book Repair Knife,Uncommon
+RELIC.FUNERARY_MASK,Funerary Mask,Uncommon
+RELIC.GOLD_PLATED_CABLES,Gold-Plated Cables,Uncommon
+RELIC.SYMBIOTIC_VIRUS,Symbiotic Virus,Uncommon
+RELIC.ART_OF_WAR,Art of War,Rare
+RELIC.BEATING_REMNANT,Beating Remnant,Rare
+RELIC.CAPTAINS_WHEEL,Captain's Wheel,Rare
+RELIC.CHANDELIER,Chandelier,Rare
+RELIC.CLOAK_CLASP,Cloak Clasp,Rare
+RELIC.FROZEN_EGG,Frozen Egg,Rare
+RELIC.GAMBLING_CHIP,Gambling Chip,Rare
+RELIC.GAME_PIECE,Game Piece,Rare
+RELIC.GIRYA,Girya,Rare
+RELIC.ICE_CREAM,Ice Cream,Rare
+RELIC.INTIMIDATING_HELMET,Intimidating Helmet,Rare
+RELIC.KUNAI,Kunai,Rare
+RELIC.LASTING_CANDY,Lasting Candy,Rare
+RELIC.LIZARD_TAIL,Lizard Tail,Rare
+RELIC.MANGO,Mango,Rare
+RELIC.MEAT_ON_THE_BONE,Meat on the Bone,Rare
+RELIC.MOLTEN_EGG,Molten Egg,Rare
+RELIC.MUMMIFIED_HAND,Mummified Hand,Rare
+RELIC.OLD_COIN,Old Coin,Rare
+RELIC.POCKETWATCH,Pocketwatch,Rare
+RELIC.PRAYER_WHEEL,Prayer Wheel,Rare
+RELIC.RAINBOW_RING,Rainbow Ring,Rare
+RELIC.RAZOR_TOOTH,Razor Tooth,Rare
+RELIC.SHOVEL,Shovel,Rare
+RELIC.SHURIKEN,Shuriken,Rare
+RELIC.STONE_CALENDAR,Stone Calendar,Rare
+RELIC.STURDY_CLAMP,Sturdy Clamp,Rare
+RELIC.THE_COURIER,The Courier,Rare
+RELIC.TOXIC_EGG,Toxic Egg,Rare
+RELIC.TUNGSTEN_ROD,Tungsten Rod,Rare
+RELIC.UNCEASING_TOP,Unceasing Top,Rare
+RELIC.UNSETTLING_LAMP,Unsettling Lamp,Rare
+RELIC.VEXING_PUZZLEBOX,Vexing Puzzlebox,Rare
+RELIC.WHITE_BEAST_STATUE,White Beast Statue,Rare
+RELIC.WHITE_STAR,White Star,Rare
+RELIC.CHARONS_ASHES,Charon's Ashes,Rare
+RELIC.DEMON_TONGUE,Demon Tongue,Rare
+RELIC.RUINED_HELMET,Ruined Helmet,Rare
+RELIC.HELICAL_DART,Helical Dart,Rare
+RELIC.PAPER_KRANE,Paper Krane,Rare
+RELIC.TOUGH_BANDAGES,Tough Bandages,Rare
+RELIC.LUNAR_PASTRY,Lunar Pastry,Rare
+RELIC.MINI_REGENT,Mini Regent,Rare
+RELIC.ORANGE_DOUGH,Orange Dough,Rare
+RELIC.BIG_HAT,Big Hat,Rare
+RELIC.BOOKMARK,Bookmark,Rare
+RELIC.IVORY_TILE,Ivory Tile,Rare
+RELIC.EMOTION_CHIP,Emotion Chip,Rare
+RELIC.METRONOME,Metronome,Rare
+RELIC.POWER_CELL,Power Cell,Rare
+RELIC.ARCANE_SCROLL,Arcane Scroll,Ancient
+RELIC.BOOMING_CONCH,Booming Conch,Ancient
+RELIC.CURSED_PEARL,Cursed Pearl,Ancient
+RELIC.GOLDEN_PEARL,Golden Pearl,Ancient
+RELIC.LARGE_CAPSULE,Large Capsule,Ancient
+RELIC.LAVA_ROCK,Lava Rock,Ancient
+RELIC.LEAD_PAPERWEIGHT,Lead Paperweight,Ancient
+RELIC.LEAFY_POULTICE,Leafy Poultice,Ancient
+RELIC.LOST_COFFER,Lost Coffer,Ancient
+RELIC.MASSIVE_SCROLL,Massive Scroll,Ancient
+RELIC.NEOWS_TORMENT,Neow's Torment,Ancient
+RELIC.NEW_LEAF,New Leaf,Ancient
+RELIC.NUTRITIOUS_OYSTER,Nutritious Oyster,Ancient
+RELIC.POMANDER,Pomander,Ancient
+RELIC.PRECARIOUS_SHEARS,Precarious Shears,Ancient
+RELIC.PRECISE_SCISSORS,Precise Scissors,Ancient
+RELIC.SCROLL_BOXES,Scroll Boxes,Ancient
+RELIC.SILVER_CRUCIBLE,Silver Crucible,Ancient
+RELIC.SMALL_CAPSULE,Small Capsule,Ancient
+RELIC.STONE_HUMIDIFIER,Stone Humidifier,Ancient
+RELIC.ALCHEMICAL_COFFER,Alchemical Coffer,Ancient
+RELIC.ARCHAIC_TOOTH,Archaic Tooth,Ancient
+RELIC.DRIFTWOOD,Driftwood,Ancient
+RELIC.ELECTRIC_SHRYMP,Electric Shrymp,Ancient
+RELIC.GLASS_EYE,Glass Eye,Ancient
+RELIC.PRISMATIC_GEM,Prismatic Gem,Ancient
+RELIC.RADIANT_PEARL,Radiant Pearl,Ancient
+RELIC.SAND_CASTLE,Sand Castle,Ancient
+RELIC.SEA_GLASS,Sea Glass,Ancient
+RELIC.TOUCH_OF_OROBAS,Touch of Orobas,Ancient
+RELIC.PAELS_BLOOD,Pael's Blood,Ancient
+RELIC.PAELS_CLAW,Pael's Claw,Ancient
+RELIC.PAELS_EYE,Pael's Eye,Ancient
+RELIC.PAELS_FLESH,Pael's Flesh,Ancient
+RELIC.PAELS_GROWTH,Pael's Growth,Ancient
+RELIC.PAELS_HORN,Pael's Horn,Ancient
+RELIC.PAELS_LEGION,Pael's Legion,Ancient
+RELIC.PAELS_TEARS,Pael's Tears,Ancient
+RELIC.PAELS_TOOTH,Pael's Tooth,Ancient
+RELIC.PAELS_WING,Pael's Wing,Ancient
+RELIC.BIIIG_HUG,Biiig Hug,Ancient
+RELIC.GOLDEN_COMPASS,Golden Compass,Ancient
+RELIC.NUTRITIOUS_SOUP,Nutritious Soup,Ancient
+RELIC.PUMPKIN_CANDLE,Pumpkin Candle,Ancient
+RELIC.SEAL_OF_GOLD,Seal of Gold,Ancient
+RELIC.STORYBOOK,Storybook,Ancient
+RELIC.TOASTY_MITTENS,Toasty Mittens,Ancient
+RELIC.TOY_BOX,Toy Box,Ancient
+RELIC.VERY_HOT_COCOA,Very Hot Cocoa,Ancient
+RELIC.YUMMY_COOKIE,Yummy Cookie,Ancient
+RELIC.BEAUTIFUL_BRACELET,Beautiful Bracelet,Ancient
+RELIC.BLESSED_ANTLER,Blessed Antler,Ancient
+RELIC.BRILLIANT_SCARF,Brilliant Scarf,Ancient
+RELIC.DELICATE_FROND,Delicate Frond,Ancient
+RELIC.DIAMOND_DIADEM,Diamond Diadem,Ancient
+RELIC.FUR_COAT,Fur Coat,Ancient
+RELIC.GLITTER,Glitter,Ancient
+RELIC.JEWELRY_BOX,Jewelry Box,Ancient
+RELIC.LOOMING_FRUIT,Looming Fruit,Ancient
+RELIC.SIGNET_RING,Signet Ring,Ancient
+RELIC.CLAWS,Claws,Ancient
+RELIC.CROSSBOW,Crossbow,Ancient
+RELIC.IRON_CLUB,Iron Club,Ancient
+RELIC.MEAT_CLEAVER,Meat Cleaver,Ancient
+RELIC.SAI,Sai,Ancient
+RELIC.SPIKED_GAUNTLETS,Spiked Gauntlets,Ancient
+RELIC.TANXS_WHISTLE,Tanx's Whistle,Ancient
+RELIC.THROWING_AXE,Throwing Axe,Ancient
+RELIC.TRI_BOOMERANG,Tri-Boomerang,Ancient
+RELIC.WAR_HAMMER,War Hammer,Ancient
+RELIC.BLOOD_SOAKED_ROSE,Blood-Soaked Rose,Ancient
+RELIC.CHOICES_PARADOX,Choices Paradox,Ancient
+RELIC.DISTINGUISHED_CAPE,Distinguished Cape,Ancient
+RELIC.FIDDLE,Fiddle,Ancient
+RELIC.JEWELED_MASK,Jeweled Mask,Ancient
+RELIC.LORDS_PARASOL,Lord's Parasol,Ancient
+RELIC.MUSIC_BOX,Music Box,Ancient
+RELIC.PRESERVED_FOG,Preserved Fog,Ancient
+RELIC.SERE_TALON,Sere Talon,Ancient
+RELIC.WHISPERING_EARRING,Whispering Earring,Ancient
+RELIC.ASTROLABE,Astrolabe,Ancient
+RELIC.BLACK_STAR,Black Star,Ancient
+RELIC.CALLING_BELL,Calling Bell,Ancient
+RELIC.DUSTY_TOME,Dusty Tome,Ancient
+RELIC.ECTOPLASM,Ectoplasm,Ancient
+RELIC.EMPTY_CAGE,Empty Cage,Ancient
+RELIC.PANDORAS_BOX,Pandora's Box,Ancient
+RELIC.PHILOSOPHERS_STONE,Philosopher's Stone,Ancient
+RELIC.RUNIC_PYRAMID,Runic Pyramid,Ancient
+RELIC.SNECKO_EYE,Snecko Eye,Ancient
+RELIC.SOZU,Sozu,Ancient
+RELIC.VELVET_CHOKER,Velvet Choker,Ancient
+RELIC.BELT_BUCKLE,Belt Buckle,Shop
+RELIC.BREAD,Bread,Shop
+RELIC.BURNING_STICKS,Burning Sticks,Shop
+RELIC.CAULDRON,Cauldron,Shop
+RELIC.CHEMICAL_X,Chemical X,Shop
+RELIC.DINGY_RUG,Dingy Rug,Shop
+RELIC.DOLLYS_MIRROR,Dolly's Mirror,Shop
+RELIC.DRAGON_FRUIT,Dragon Fruit,Shop
+RELIC.GHOST_SEED,Ghost Seed,Shop
+RELIC.GNARLED_HAMMER,Gnarled Hammer,Shop
+RELIC.KIFUDA,Kifuda,Shop
+RELIC.LAVA_LAMP,Lava Lamp,Shop
+RELIC.LEES_WAFFLE,Lee's Waffle,Shop
+RELIC.MEMBERSHIP_CARD,Membership Card,Shop
+RELIC.MINIATURE_TENT,Miniature Tent,Shop
+RELIC.MYSTIC_LIGHTER,Mystic Lighter,Shop
+RELIC.ORRERY,Orrery,Shop
+RELIC.PUNCH_DAGGER,Punch Dagger,Shop
+RELIC.RINGING_TRIANGLE,Ringing Triangle,Shop
+RELIC.ROYAL_STAMP,Royal Stamp,Shop
+RELIC.SCREAMING_FLAGON,Screaming Flagon,Shop
+RELIC.SLING_OF_COURAGE,Sling of Courage,Shop
+RELIC.THE_ABACUS,The Abacus,Shop
+RELIC.TOOLBOX,Toolbox,Shop
+RELIC.WING_CHARM,Wing Charm,Shop
+RELIC.BRIMSTONE,Brimstone,Shop
+RELIC.NINJA_SCROLL,Ninja Scroll,Shop
+RELIC.VITRUVIAN_MINION,Vitruvian Minion,Shop
+RELIC.UNDYING_SIGIL,Undying Sigil,Shop
+RELIC.RUNIC_CAPACITOR,Runic Capacitor,Shop
+RELIC.ANCHOR???,Anchor???,Event
+RELIC.BIG_MUSHROOM,Big Mushroom,Event
+RELIC.BING_BONG,Bing Bong,Event
+RELIC.BLOOD_VIAL???,Blood Vial???,Event
+RELIC.BONE_TEA,Bone Tea,Event
+RELIC.BYRDPIP,Byrdpip,Event
+RELIC.DARKSTONE_PERIAPT,Darkstone Periapt,Event
+RELIC.DAUGHTER_OF_THE_WIND,Daughter of the Wind,Event
+RELIC.DREAM_CATCHER,Dream Catcher,Event
+RELIC.EMBER_TEA,Ember Tea,Event
+RELIC.FORGOTTEN_SOUL,Forgotten Soul,Event
+RELIC.FRAGRANT_MUSHROOM,Fragrant Mushroom,Event
+RELIC.FRESNEL_LENS,Fresnel Lens,Event
+RELIC.HAND_DRILL,Hand Drill,Event
+RELIC.HAPPY_FLOWER???,Happy Flower???,Event
+RELIC.HISTORY_COURSE,History Course,Event
+RELIC.LEES_WAFFLE???,Lee's Waffle???,Event
+RELIC.LOST_WISP,Lost Wisp,Event
+RELIC.MANGO???,Mango???,Event
+RELIC.MAW_BANK,Maw Bank,Event
+RELIC.MR._STRUGGLES,Mr. Struggles,Event
+RELIC.ORICHALCUM???,Orichalcum???,Event
+RELIC.POLLINOUS_CORE,Pollinous Core,Event
+RELIC.ROYAL_POISON,Royal Poison,Event
+RELIC.SNECKO_EYE???,Snecko Eye???,Event
+RELIC.STRIKE_DUMMY???,Strike Dummy???,Event
+RELIC.SWORD_OF_JADE,Sword of Jade,Event
+RELIC.SWORD_OF_STONE,Sword of Stone,Event
+RELIC.TEA_OF_DISCOURTESY,Tea of Discourtesy,Event
+RELIC.THE_BOOT,The Boot,Event
+RELIC.THE_CHOSEN_CHEESE,The Chosen Cheese,Event
+RELIC.THE_MERCHANTS_RUG???,The Merchant's Rug???,Event
+RELIC.VENERABLE_TEA_SET???,Venerable Tea Set???,Event
+RELIC.WONGO_CUSTOMER_APPRECIATION_BADGE,Wongo Customer Appreciation Badge,Event
+RELIC.WONGOS_MYSTERY_TICKET,Wongo's Mystery Ticket,Event
+RELIC.CIRCLET,Circlet,Special
