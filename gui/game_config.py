@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-from gui.steam import sts2_save_dir
+from gui.steam import STS2_NEW_BASE_DIR, sts2_save_dir
 
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -21,7 +21,8 @@ class GameConfig:
     file_filter: str  # for QFileDialog
     game_resources_dir: Path
     encrypted: bool  # True for STS1 (XOR+Base64), False for STS2
-    has_card_upgrades: bool  # True for STS1, False for STS2
+    has_card_upgrades: bool  # Whether the game supports card upgrades
+    steam_user_id: str | None = None  # Short Steam ID for STS2 dual-write
 
 
 def sts1_config() -> GameConfig:
@@ -45,7 +46,7 @@ def sts2_config(steam_user_id: str | None = None) -> GameConfig:
     if steam_user_id:
         save_dir = sts2_save_dir(steam_user_id)
     else:
-        save_dir = Path.home() / "Library/Application Support/Steam/userdata"
+        save_dir = STS2_NEW_BASE_DIR
     return GameConfig(
         game_version=2,
         app_title="Slay the Spire 2 Save Editor",
@@ -55,4 +56,5 @@ def sts2_config(steam_user_id: str | None = None) -> GameConfig:
         game_resources_dir=_PROJECT_ROOT / "game_resources_sts2",
         encrypted=False,
         has_card_upgrades=True,
+        steam_user_id=steam_user_id,
     )

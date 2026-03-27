@@ -76,13 +76,28 @@ class TestSTS2Config:
 
     def test_save_dir_with_steam_user_id(self):
         cfg = sts2_config(steam_user_id="12345")
-        assert "12345" in str(cfg.save_dir)
-        assert "2868840" in str(cfg.save_dir)
+        from gui.steam import short_to_long_steam_id
+
+        long_id = short_to_long_steam_id("12345")
+        assert long_id in str(cfg.save_dir)
+        assert "SlayTheSpire2" in str(cfg.save_dir)
         assert str(cfg.save_dir).endswith("saves")
 
     def test_save_dir_without_steam_user_id(self):
         cfg = sts2_config()
-        assert str(cfg.save_dir).endswith("userdata")
+        assert "SlayTheSpire2" in str(cfg.save_dir)
+
+    def test_steam_user_id_stored(self):
+        cfg = sts2_config(steam_user_id="12345")
+        assert cfg.steam_user_id == "12345"
+
+    def test_steam_user_id_default_none(self):
+        cfg = sts2_config()
+        assert cfg.steam_user_id is None
+
+    def test_sts1_steam_user_id_none(self):
+        cfg = sts1_config()
+        assert cfg.steam_user_id is None
 
     def test_is_gameconfig_instance(self):
         assert isinstance(sts1_config(), GameConfig)

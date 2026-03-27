@@ -20,7 +20,22 @@ PySide6 desktop app for editing Slay the Spire save files. Supports both STS1 an
 Save location (macOS): `~/Library/Application Support/Steam/steamapps/common/SlayTheSpire/SlayTheSpire.app/Contents/Resources/saves/`
 
 **STS2:** Plain JSON `.save` files (no encryption). Nested structure with `players[0]` containing player data.
-Save location (macOS): `~/Library/Application Support/Steam/userdata/<id>/2868840/remote/profile1/saves/`
+Save location (macOS): `~/Library/Application Support/SlayTheSpire2/steam/<long_steam_id>/profile1/saves/`
+
+> **Important:** Steam Cloud sync must be disabled for STS2 save editing to work. Otherwise Steam Cloud will overwrite local changes on next launch. Disable via Steam → Right-click STS2 → Properties → General → uncheck "Keep game saves in the Steam Cloud".
+
+**STS2 save loading priority (game reads short-id location first):**
+1. Game loads from `Steam/userdata/<short_id>/2868840/remote/profile1/saves/` (validated via `remotecache.vdf` SHA)
+2. If backup (`.save.backup`) exists → game uses it over the primary file
+3. On "save & exit", game writes to long-id location which overwrites short-id on next sync
+
+**Our editor's write strategy** (makes edits take effect immediately):
+1. Write save to long-id folder (`SlayTheSpire2/steam/<long_id>/...`)
+2. Delete `.backup` file so it doesn't override our edit
+3. Copy save to short-id folder (`Steam/userdata/<short_id>/2868840/remote/...`)
+4. Update `remotecache.vdf` with new SHA-1, size, and timestamp
+
+**Steam ID mapping:** Directory names use long Steam IDs (Steam64, e.g. `76561198060466028`). The app converts to/from short IDs (account ID, e.g. `100200300`) via: `long = short + 76561197960265728`.
 
 ### Layers
 
@@ -28,13 +43,15 @@ Save location (macOS): `~/Library/Application Support/Steam/userdata/<id>/286884
 |-------|---------|---------|
 | Config | `gui/game_config.py` | Frozen dataclass with version-specific constants (save dir, file glob, encryption, etc.). Factory functions: `sts1_config()`, `sts2_config()`. |
 | Codec | `sts_save_editor.py` | XOR + Base64 encode/decode for STS1; also works as a standalone CLI (`decode`/`encode`/`edit`) |
-| File I/O | `gui/save_io.py` | `load_save`, `write_save`, `find_save_files` — accepts `GameConfig` to handle both encrypted (STS1) and plain JSON (STS2) |
+| File I/O | `gui/save_io.py` | `load_save`, `write_save`, `find_save_files` — accepts `GameConfig` to handle both encrypted (STS1) and plain JSON (STS2). STS2 `write_save` deletes `.backup`, syncs to old Steam location, and updates `remotecache.vdf`. |
 | Data model | `gui/save_model.py` | STS1 model: QObject wrapping flat save dict. Typed properties for ~10 fields. |
 | Data model (STS2) | `gui/save_model_sts2.py` | STS2 model: same API as SaveModel but routes through `players[0]` for the nested structure. Maps STS2 field names (`current_hp` → `current_health`). |
 | Game data | `gui/game_data.py` | Loads CSVs + `wiki_data.json` from configurable `resources_dir`. Works for both `game_resources/` (STS1) and `game_resources_sts2/` (STS2). |
-| Main window | `gui/main_window.py` | Accepts `GameConfig`, creates appropriate model and game data. Menu bar + QTabWidget with 5 panels + status bar. |
-| Panels | `gui/panels/{stats,cards,potions,relics}_panel.py` | One QWidget per tab. Cards panel hides upgrade controls in STS2 mode. |
+| Main window | `gui/main_window.py` | Accepts `GameConfig`, creates appropriate model and game data. Menu bar + QTabWidget with 5 panels + status bar. STS2 mode adds a Steam User toolbar for switching between detected accounts. |
+| Panels | `gui/panels/{stats,cards,potions,relics,raw_json}_panel.py` | One QWidget per tab. Cards panel supports upgrades for both STS1 and STS2 (Upgrade Selected / Upgrade All buttons). |
 | Widgets | `gui/widgets/` | `DetailStrip` (inline preview) and `ImagePreviewDialog` (modal zoom) |
+| Settings | `gui/settings.py` | Persists user preferences (Steam user ID) to `~/.config/sts-save-editor/settings.json`. |
+| Steam | `gui/steam.py` | Steam ID conversion (`short_to_long_steam_id`, `long_to_short_steam_id`), user detection by scanning `SlayTheSpire2/steam/`, persona name lookup from `loginusers.vdf`. Functions: `detect_steam_users()`, `sts2_save_dir()`, `get_steam_display_names()`. |
 
 ### Game resources
 

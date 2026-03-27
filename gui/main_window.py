@@ -28,7 +28,7 @@ from gui.save_io import find_save_files, load_save, write_save
 from gui.save_model import SaveModel
 from gui.save_model_sts2 import SaveModelSTS2
 from gui.settings import set_steam_user_id
-from gui.steam import detect_steam_users
+from gui.steam import detect_steam_users, get_steam_display_names
 
 
 class MainWindow(QMainWindow):
@@ -111,25 +111,33 @@ class MainWindow(QMainWindow):
     def _build_steam_toolbar(self) -> None:
         toolbar = QToolBar("Steam User")
         toolbar.setMovable(False)
-        toolbar.addWidget(QLabel("  Steam User ID: "))
+        toolbar.addWidget(QLabel("  Steam User: "))
         self._steam_user_combo = QComboBox()
-        self._steam_user_combo.setMinimumWidth(140)
+        self._steam_user_combo.setMinimumWidth(180)
         users = detect_steam_users()
+        display_names = get_steam_display_names()
         for uid in users:
-            self._steam_user_combo.addItem(uid, uid)
+            name = display_names.get(uid)
+            label = f"{name} ({uid})" if name else uid
+            self._steam_user_combo.addItem(label, uid)
         if self._steam_user_id and self._steam_user_id in users:
-            self._steam_user_combo.setCurrentText(self._steam_user_id)
-        self._steam_user_combo.currentTextChanged.connect(self._on_steam_user_changed)
+            idx = users.index(self._steam_user_id)
+            self._steam_user_combo.setCurrentIndex(idx)
+        self._steam_user_combo.currentIndexChanged.connect(
+            self._on_steam_user_index_changed
+        )
         toolbar.addWidget(self._steam_user_combo)
         self.addToolBar(toolbar)
 
-    def _on_steam_user_changed(self, user_id: str) -> None:
+    def _on_steam_user_index_changed(self, index: int) -> None:
+        user_id = self._steam_user_combo.itemData(index)
         if not user_id or user_id == self._steam_user_id:
             return
         self._steam_user_id = user_id
         set_steam_user_id(user_id)
         self._config = sts2_config(steam_user_id=user_id)
-        self._status_bar.showMessage(f"Switched to Steam user {user_id}")
+        label = self._steam_user_combo.itemText(index)
+        self._status_bar.showMessage(f"Switched to Steam user {label}")
 
     def _update_title(self) -> None:
         title = self._config.app_title

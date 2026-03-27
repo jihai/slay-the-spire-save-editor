@@ -1,5 +1,6 @@
 """Application entry point for the Slay the Spire Save Editor GUI."""
 
+import signal
 import sys
 
 from PySide6.QtWidgets import QApplication, QInputDialog
@@ -58,6 +59,7 @@ def main(game_version: int = 1) -> None:
     window = MainWindow(config=config, steam_user_id=steam_user_id)
     window.show()
 
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
     sys.exit(app.exec())
 
 
