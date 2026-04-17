@@ -19,6 +19,7 @@ from PySide6.QtWidgets import (
     QWidget,
 )
 
+from gui.game_config import GameConfig
 from gui.game_data import GameData, RelicInfo
 from gui.save_model import SaveModel
 from gui.widgets.detail_strip import DetailStrip
@@ -46,11 +47,16 @@ class RelicsPanel(QWidget):
     """Relic editor with available relics browser, search, and tier filter."""
 
     def __init__(
-        self, model: SaveModel, game_data: GameData, parent: QWidget | None = None
+        self,
+        model: SaveModel,
+        game_data: GameData,
+        config: GameConfig | None = None,
+        parent: QWidget | None = None,
     ) -> None:
         super().__init__(parent)
         self._model = model
         self._game_data = game_data
+        self._config = config
         self._updating = False
 
         layout = QHBoxLayout(self)
@@ -245,7 +251,13 @@ class RelicsPanel(QWidget):
         proxy_index = indexes[0]
         source_index = self._proxy_model.mapToSource(proxy_index)
         relic_name = self._avail_model.item(source_index.row(), 0).text()
-        self._model.add_relic(relic_name)
+        if self._config and self._config.game_version == 2:
+            relic_info = self._lookup_relic(relic_name)
+            if not relic_info:
+                return
+            self._model.add_relic(relic_info.id)
+        else:
+            self._model.add_relic(relic_name)
 
     def _on_remove_relic(self) -> None:
         row = self._relic_list.currentRow()

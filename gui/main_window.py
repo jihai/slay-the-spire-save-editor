@@ -62,7 +62,9 @@ class MainWindow(QMainWindow):
             self._model, self._game_data, config=self._config
         )
         self._potions_panel = PotionsPanel(self._model, self._game_data)
-        self._relics_panel = RelicsPanel(self._model, self._game_data)
+        self._relics_panel = RelicsPanel(
+            self._model, self._game_data, config=self._config
+        )
         self._raw_json_panel = RawJsonPanel(self._model)
 
         self._tabs.addTab(self._stats_panel, "Stats")
